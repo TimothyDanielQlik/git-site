@@ -926,6 +926,121 @@
             "title": "Staying in sync"
         }, 
         {
+            "location": "/complete/", 
+            "text": "A complete workflow\n\n\nThe other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more complete workflow without going into small details which are covered in other topics. When referring to git actions, I will use the command name (ex. \ngit merge\n), but you can do the action with the GUI or command line.\n\n\n\n\nInfo\n\n\n** marks a step that pulls content from the remote to your local branch.\n\n\n\n\nTable of Contents\n\n\n\n\n\n\nCreate a local branch (feature/cleanup/bug)\n\n\n\n\n\n\nCommit work to local branches\n\n\n\n\n\n\nMerge your local branch\n\n\n\n\n\n\nKeeping in sync\n\n\n\n\n\n\nBuild Jenkins\n\n\n\n\n\n\nSquash and cherry-pick to master\n\n\n\n\n\n\nCreate a local branch\n\n\nYou create branches to isolate work. When you create a branch, it exists on your machine only. I refer to these branches as \nlocal\n branches because they are local to you. You should not run \ngit push\n or \ngit pull\n on local branches, since these commands interface between your local repo and the remote repo.\n\n\nNaming\n\n\n\n\n\n\nfeature/HLP-XXXX\n\n\n\n\n\n\nfeature/PS-XXXX\n\n\n\n\n\n\nbug/HLP-XXXX\n\n\n\n\n\n\ncleanup/name\n\n\n\n\n\n\nScenario\n\n\nYou want to create a branch.\n\n\n\n\n\n\ngit checkout daily\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit branch branch-name\n (creates a branch) ... OR ...\n\n\ngit checkout -b branch-name\n (creates and checkouts branch)\n\n\n\n\n\n\nCommit your work\n\n\nCommitting means adding content to a repository. When you are on a branch, you modify files, you stage the modifications, then you commit those modifications to the local repository.\n\n\nScenario\n\n\nYou edit some files in Flare.\n\n\n\n\n\n\ngit status\n (to show you the files in the working area)\n\n\n\n\n\n\ngit add \nfile-name\n ... OR ...\n\n\n\n\n\n\ngit add --all\n (adds all files in the working area)\n\n\n\n\n\n\ngit commit -m \"a good commit message\"\n\n\n\n\n\n\nMerge your branch\n\n\nMerging means bring the commit history from one branch into another branch. We merge local branched into shared branches. Specifically, we merge local branches into \ndaily\n.\n\n\nScenario\n\n\nYou want to merge your local branch to \ndaily\n.\n\n\n\n\n\n\ngit checkout daily\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit merge \nfeature-branch\n\n\n\n\n\n\nKeeping in sync\n\n\nKeeping in sync means making sure that your local copies of the \nmaster\n and \ndaily\n branches have the latest content. Whenever you checkout a shared branch (\nmaster\n or \ndaily\n), you \nmust\n run \ngit pull\n first.\n\n\nScenarios\n\n\nYou want to merge your feature with \ndaily\n to run a Jenkins build\n\n\n\n\n\n\ngit checkout daily\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit merge feature/branch\n\n\n\n\n\n\n...\n\n\n\n\n\n\nYou want to cherry-pick your feature to \nmaster\n\n\n\n\n\n\ngit checkout master\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit merge --squash feature/branch\n\n\n\n\n\n\n...\n\n\n\n\n\n\nYou have a long running feature. You want to update your local branch with new content from \ndaily\n\n\nHow do we sync our \nlocal\n branch with a remote branch?\n\n\n\n\n\n\n\n\ngit checkout daily\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit checkout feature/branch\n\n\n\n\n\n\ngit rebase daily\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nCompare the two graph images. Notice what happens when you rebase \ndaily\n \nonto\n your feature branch. Git \nrewinds\n the head of your feature branch, then adds the commits from daily and then places your commit at the top.\n\n\n\n\nMore complex example\n\n\nRebasing daily onto your local branch works even when there are more than one branches involved. The image below shows a likely scenario:\n\n\n\n\n\n\nSome other writer has a local branch and they are merging to \ndaily\n.\n\n\n\n\n\n\nThe \ndaily\n branch has commits on it that are not part of your local branch.\n\n\n\n\n\n\nYou are working on a local branch and have been merging to \ndaily\n.\n\n\n\n\n\n\n\n\nTip\n\n\nDon't necessarily rebase all the time. I would restrict this to times when you know there is work that you need to grab from daily that was added after you branched off of \ndaily\n, or when you are working with another writer on a feature/area.\n\n\n\n\n\n\nWarning\n\n\nPay attention to what you are doing! Do not rebase onto shared branches. This increases the risk of having unwanted merge conflicts. Before rebasing, make sure you know what branch you have checked out.\n\n\n\n\n\n\n\n\n\n\ngit checkout daily\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit checkout feature/branch\n\n\n\n\n\n\ngit rebase daily\n\n\n\n\n\n\nThe result is the image below. Note that \ndaily\n and \nkyle\n point to the same commit which shows you that \nkyle\n has all of the content from the two parents: 1 from the running \ndaily\n branch and the other from \nother-writer\n.\n\n\n\n\nSummary\n\n\n\n\n\n\nUse \ngit pull\n whenever you interact with a shared branch. Even if you \nthink\n there is nothing new, get into the habit of pulling often. This is how you grab other writers work \nbefore\n you create a branch.\n\n\n\n\n\n\nUse \ngit merge\n to add content from your feature branch into \ndaily\n. Do this when you want to see the build output from Jenkins. Once you merge into \ndaily\n, other writers can see this content.\n\n\n\n\n\n\nUse \ngit rebase\n when you need to grab \nnewer\n content from \ndaily\n to bring it into your feature branch. This is how you manage to keep your local branch content from diverging too much from the \ndaily\n branch. This is probably not required for short lived features or if the area you are working in is not changing often.\n\n\n\n\n\n\nBuild in Jenkins\n\n\nTo build the output, Jenkins looks at the \ndaily\n branch on github.com. The Jenkins build environment asks you to select the product to build, which area or areas of that product's help site, and the branch to build from. The \ndaily\n branch is what you will build most often.\n\n\nSquash and cherry-pick\n\n\nThe \nmaster\n branch is a \nclean\n branch that we use to create release branches. This branch contains complete work that can be included in a release. \n\n\nWe want to avoid having a messy commit history on \nmaster\n by cherry-picking features, bugs, and cleanup work, onto \nmaster\n.\n\n\nThink of it like this:\n\n\n\n\n\n\nA merge commit results in a history of at least 2 commits:\n\n\n\n\n\n\n1 merge commit (E).\n\n\n\n\n\n\n1 commit from the branch being merged (B).\n\n\n\n\n\n\n    B\n     \\\nC--D--E (daily)\n\n\n\n\n\n\n\n\nIf the branch has many commits, then the number of commits in the branch history will be the number of commits + 1 merge commit.\n\n\n\n\n\n\nIf 14 writers merge 14 branches with 6 commits on each branch, then the commit history for 14 branches (maybe 14 features) results in 98 commits (14branches *7commits).\n\n\n\n\n\n\nTwo git actions\n\n\nSquash\n\n\nThis means to take 1+ commits and turn them into a single commit. A squash changes commits, therefore git is rewriting history.\n\n\nCherry-pick\n\n\nThis means to take a single commit and add it to the tip of a branch without making a merge commit.\n\n\nScenario\n\n\nYou have tested your feature on the \ndaily\n branch + Jenkins build. No more work needs to be done.\n\n\n\n\n\n\ngit checkout master\n\n\n\n\n\n\ngit pull\n **\n\n\n\n\n\n\ngit merge --squash \nfeature-branch\n\n\nThis command does not do a merge commit. The \n--squash\n option takes all of the modified files from all of the commits on the branch and puts them into the working area on \nmaster\n.\n\n\n\n\n\n\ngit add --all\n\n\n\n\n\n\ngit commit -m \"Squash + cherry-pick feature-xxxx to master\"\n\n\n\n\n\n\ngit push", 
+            "title": "Complete Workflow"
+        }, 
+        {
+            "location": "/complete/#a-complete-workflow", 
+            "text": "The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more complete workflow without going into small details which are covered in other topics. When referring to git actions, I will use the command name (ex.  git merge ), but you can do the action with the GUI or command line.   Info  ** marks a step that pulls content from the remote to your local branch.", 
+            "title": "A complete workflow"
+        }, 
+        {
+            "location": "/complete/#table-of-contents", 
+            "text": "Create a local branch (feature/cleanup/bug)    Commit work to local branches    Merge your local branch    Keeping in sync    Build Jenkins    Squash and cherry-pick to master", 
+            "title": "Table of Contents"
+        }, 
+        {
+            "location": "/complete/#create-a-local-branch", 
+            "text": "You create branches to isolate work. When you create a branch, it exists on your machine only. I refer to these branches as  local  branches because they are local to you. You should not run  git push  or  git pull  on local branches, since these commands interface between your local repo and the remote repo.", 
+            "title": "Create a local branch"
+        }, 
+        {
+            "location": "/complete/#naming", 
+            "text": "feature/HLP-XXXX    feature/PS-XXXX    bug/HLP-XXXX    cleanup/name", 
+            "title": "Naming"
+        }, 
+        {
+            "location": "/complete/#scenario", 
+            "text": "You want to create a branch.    git checkout daily    git pull  **    git branch branch-name  (creates a branch) ... OR ...  git checkout -b branch-name  (creates and checkouts branch)", 
+            "title": "Scenario"
+        }, 
+        {
+            "location": "/complete/#commit-your-work", 
+            "text": "Committing means adding content to a repository. When you are on a branch, you modify files, you stage the modifications, then you commit those modifications to the local repository.", 
+            "title": "Commit your work"
+        }, 
+        {
+            "location": "/complete/#scenario_1", 
+            "text": "You edit some files in Flare.    git status  (to show you the files in the working area)    git add  file-name  ... OR ...    git add --all  (adds all files in the working area)    git commit -m \"a good commit message\"", 
+            "title": "Scenario"
+        }, 
+        {
+            "location": "/complete/#merge-your-branch", 
+            "text": "Merging means bring the commit history from one branch into another branch. We merge local branched into shared branches. Specifically, we merge local branches into  daily .", 
+            "title": "Merge your branch"
+        }, 
+        {
+            "location": "/complete/#scenario_2", 
+            "text": "You want to merge your local branch to  daily .    git checkout daily    git pull  **    git merge  feature-branch", 
+            "title": "Scenario"
+        }, 
+        {
+            "location": "/complete/#keeping-in-sync", 
+            "text": "Keeping in sync means making sure that your local copies of the  master  and  daily  branches have the latest content. Whenever you checkout a shared branch ( master  or  daily ), you  must  run  git pull  first.", 
+            "title": "Keeping in sync"
+        }, 
+        {
+            "location": "/complete/#scenarios", 
+            "text": "", 
+            "title": "Scenarios"
+        }, 
+        {
+            "location": "/complete/#you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build", 
+            "text": "git checkout daily    git pull  **    git merge feature/branch    ...", 
+            "title": "You want to merge your feature with daily to run a Jenkins build"
+        }, 
+        {
+            "location": "/complete/#you-want-to-cherry-pick-your-feature-to-master", 
+            "text": "git checkout master    git pull  **    git merge --squash feature/branch    ...", 
+            "title": "You want to cherry-pick your feature to master"
+        }, 
+        {
+            "location": "/complete/#you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily", 
+            "text": "How do we sync our  local  branch with a remote branch?     git checkout daily    git pull  **    git checkout feature/branch    git rebase daily      Tip  Compare the two graph images. Notice what happens when you rebase  daily   onto  your feature branch. Git  rewinds  the head of your feature branch, then adds the commits from daily and then places your commit at the top.", 
+            "title": "You have a long running feature. You want to update your local branch with new content from daily"
+        }, 
+        {
+            "location": "/complete/#more-complex-example", 
+            "text": "Rebasing daily onto your local branch works even when there are more than one branches involved. The image below shows a likely scenario:    Some other writer has a local branch and they are merging to  daily .    The  daily  branch has commits on it that are not part of your local branch.    You are working on a local branch and have been merging to  daily .     Tip  Don't necessarily rebase all the time. I would restrict this to times when you know there is work that you need to grab from daily that was added after you branched off of  daily , or when you are working with another writer on a feature/area.    Warning  Pay attention to what you are doing! Do not rebase onto shared branches. This increases the risk of having unwanted merge conflicts. Before rebasing, make sure you know what branch you have checked out.      git checkout daily    git pull  **    git checkout feature/branch    git rebase daily    The result is the image below. Note that  daily  and  kyle  point to the same commit which shows you that  kyle  has all of the content from the two parents: 1 from the running  daily  branch and the other from  other-writer .", 
+            "title": "More complex example"
+        }, 
+        {
+            "location": "/complete/#summary", 
+            "text": "Use  git pull  whenever you interact with a shared branch. Even if you  think  there is nothing new, get into the habit of pulling often. This is how you grab other writers work  before  you create a branch.    Use  git merge  to add content from your feature branch into  daily . Do this when you want to see the build output from Jenkins. Once you merge into  daily , other writers can see this content.    Use  git rebase  when you need to grab  newer  content from  daily  to bring it into your feature branch. This is how you manage to keep your local branch content from diverging too much from the  daily  branch. This is probably not required for short lived features or if the area you are working in is not changing often.", 
+            "title": "Summary"
+        }, 
+        {
+            "location": "/complete/#build-in-jenkins", 
+            "text": "To build the output, Jenkins looks at the  daily  branch on github.com. The Jenkins build environment asks you to select the product to build, which area or areas of that product's help site, and the branch to build from. The  daily  branch is what you will build most often.", 
+            "title": "Build in Jenkins"
+        }, 
+        {
+            "location": "/complete/#squash-and-cherry-pick", 
+            "text": "The  master  branch is a  clean  branch that we use to create release branches. This branch contains complete work that can be included in a release.   We want to avoid having a messy commit history on  master  by cherry-picking features, bugs, and cleanup work, onto  master .  Think of it like this:    A merge commit results in a history of at least 2 commits:    1 merge commit (E).    1 commit from the branch being merged (B).        B\n     \\\nC--D--E (daily)    If the branch has many commits, then the number of commits in the branch history will be the number of commits + 1 merge commit.    If 14 writers merge 14 branches with 6 commits on each branch, then the commit history for 14 branches (maybe 14 features) results in 98 commits (14branches *7commits).", 
+            "title": "Squash and cherry-pick"
+        }, 
+        {
+            "location": "/complete/#two-git-actions", 
+            "text": "", 
+            "title": "Two git actions"
+        }, 
+        {
+            "location": "/complete/#squash", 
+            "text": "This means to take 1+ commits and turn them into a single commit. A squash changes commits, therefore git is rewriting history.", 
+            "title": "Squash"
+        }, 
+        {
+            "location": "/complete/#cherry-pick", 
+            "text": "This means to take a single commit and add it to the tip of a branch without making a merge commit.", 
+            "title": "Cherry-pick"
+        }, 
+        {
+            "location": "/complete/#scenario_3", 
+            "text": "You have tested your feature on the  daily  branch + Jenkins build. No more work needs to be done.    git checkout master    git pull  **    git merge --squash  feature-branch  This command does not do a merge commit. The  --squash  option takes all of the modified files from all of the commits on the branch and puts them into the working area on  master .    git add --all    git commit -m \"Squash + cherry-pick feature-xxxx to master\"    git push", 
+            "title": "Scenario"
+        }, 
+        {
             "location": "/sandbox/", 
             "text": "Sandbox Project\n\n\nWelcome to the sandbox environment. This repo contains one of the omni-project iterations that we can play with, without worrying about causing any irreversible problems. Use this repository for learning the many git operations. Make a bunch of branches. Create some merge conflicts. Reverse a commit. The sandbox is yours!\n\n\nPrerequisites\n\n\n\n\nHave a basic understanding of the basic git topics under \nLearn the basics\n on this site.\n\n\nHave Git, Git bash, and Sourcetree installed.\n\n\n\n\nLet's get started\n\n\nClone the sandbox repo.\n\n\n\n\nhttps://github.com/qlik-trial/help-doc-sandbox.git\n\n\n\n\nIf you need a reminder on how to clone the repo using Sourcetree, see \nClone the Project with Sourcetree\n.\n\n\nYou can use either Git bash or Sourcetree.\n\n\nRecommendation\nI recommend that you use Sourcetree. It is probably the tool you'll find most useful and intuitive for daily work, plus I am writing these tutorials from the perspective of Sourcetree!\nAfter you clone the repo, open Explorer and have a look around the folders. All of our projects are nested under \nContent\n. Each project is nested under its own folder. We have a single Flare project, many targets, many TOCs, and A LOT of topics. This is what the real omni project will look like (more or less).\n\n\nSourcetree\n\n\nWen you first open Sourcetree and the sandbox repo, it should look similar to this (perhaps a bit more graph elements).\n\n\n\n\nThe ribbon along the top gives you quick access to basic operations: \nmerge\n, \ncommit\n, \nbranch\n, \npush\n, and \npull\n. It also gives you the option to set up Git Flow (we may not implement this), you can open terminal, and your repo explorer.\n\n\nThe left-hand menu shows your file status, your local branches, your remote branches, your tags, and your stashes.\n\n\nThe three remaining window panes show the Git graph -- a visual representation of git branches and history. There is a file status area, and a file diff area where file changes are shown. These panes will become more familiar as we go through start-to-finish work examples.", 
             "title": "Sandbox Project"
