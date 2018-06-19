@@ -68,10 +68,10 @@ pages:
       - Fetch vs. Pull: fetch-v-pull.md
       - Merge Conflicts: conflicts.md
   - Workflow Scenarios:
+    - Complete Workflow: complete.md
     - Practice Examples:
       - Simple Workflow with Sourcetree: sourcetreeworkflow.md
       - Simple Workflow with Git Bash: gitbashworkflow.md
-      - Complete Workflow: complete.md
     - Omni-Sandbox Examples:
       - Sandbox Project: sandbox.md
       - Step 1 - Create, Add, Commit, Push: step1.md
