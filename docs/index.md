@@ -24,9 +24,6 @@ You need to install Git, Git Bash, and Git Extension. You also need to ensure th
 
 * [Install Git Extensions](gitExt-install.md)
 
-??? Tip
-    If you get stuck on the Git Extension installation, see [Troubleshooting Git Extension](sourcetree-trouble.md)
-
 ## Recommended learning path
 
 1. Learn the basics

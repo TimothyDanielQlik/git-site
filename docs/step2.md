@@ -85,7 +85,7 @@ Do the following:
 1. Select the staged file. You will see one staged hunk and one unstaged hunk. Open this file in your merge conflict tool, or a text editor.
 
     ??? Tip
-        Did you set up a text editor yet? If not, read [Set up Custom Actions](custom-action.md).
+        Did you set up a text editor yet?
 
 1. I use VS Code to see the conflict. It looks like this.
 

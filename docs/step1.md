@@ -61,4 +61,4 @@ You can open a previous version of a file.
 
     You'll notice that the file name is just a tempXXX number.
 
-If you do this with an .htm file, it will open in your browser. If you want to open files in another tool, see [Set up Custom Actions in Sourcetree](custom-action.md).
+If you do this with an .htm file, it will open in your browser.

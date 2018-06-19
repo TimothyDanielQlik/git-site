@@ -117,9 +117,6 @@ Since target files are mostly just config settings or text fields, using a `mine
 
 The best option is to open the file in a text editor and make the change manually.
 
-??? Tip
-    See [Set up Custom Actions in Sourcetree](custom-action.md) to link a text editor to your custom actions.
-
 Tove opens the file in VS Code.
 
 ![vs](assets/images/vs.png)
