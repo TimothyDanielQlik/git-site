@@ -1,23 +1,9 @@
 # A complete workflow
 
-The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more complete workflow without going into small details which are covered in other topics. When referring to git actions, I will use the command name (ex. `git merge`), but you can do the action with the GUI or command line.
+The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more highlevel workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. `git merge`), but you can do the action with the Git Extensions.
 
 !!! Info
-    ** marks a step that pulls content from the remote to your local branch.
-
-## Table of Contents
-
-* [Create a local branch (feature/cleanup/bug)](#create-a-local-branch)
-
-* [Commit work to local branches](#commit-your-work)
-
-* [Merge your local branch](#merge-your-branch)
-
-* [Keeping in sync](#keeping-in-sync)
-
-* [Build Jenkins](#build-in-jenkins)
-
-* [Squash and cherry-pick to master](#squash-and-cherry-pick)
+    ** marks a step that pulls content from the remote to your local branch. Pay attention to when you should run `git pull`.
 
 ## Create a local branch
 
@@ -53,7 +39,7 @@ Committing means adding content to a repository. When you are on a branch, you m
 
 You edit some files in Flare.
 
-1. `git status` (to show you the files in the working area)
+1. `git status` (to list the modified files that are in the working area)
 
 1. `git add <file-name>` ... OR ...
 
@@ -63,7 +49,7 @@ You edit some files in Flare.
 
 ## Merge your branch
 
-Merging means bring the commit history from one branch into another branch. We merge local branched into shared branches. Specifically, we merge local branches into `daily`.
+Merging means bringing the commit history from one branch into another branch. We merge local branches into shared branches.
 
 ### Scenario
 
@@ -81,7 +67,7 @@ Keeping in sync means making sure that your local copies of the `master` and `da
 
 ### Scenarios
 
-#### You want to merge your feature with `daily` to run a Jenkins build
+#### You want to merge your feature with `daily` so you can check the output with Jenkins
 
 1. `git checkout daily`
 
@@ -89,7 +75,8 @@ Keeping in sync means making sure that your local copies of the `master` and `da
 
 1. `git merge feature/branch`
 
-1. ...
+1. `git push` **
+
 
 #### You want to cherry-pick your feature to `master`
 
@@ -99,11 +86,14 @@ Keeping in sync means making sure that your local copies of the `master` and `da
 
 1. `git merge --squash feature/branch`
 
-1. ...
+1. `git push` **
 
 #### You have a long running feature. You want to update your local branch with new content from `daily`
 
 How do we sync our _local_ branch with a remote branch?
+
+!!! Tip
+    The `git pull` step is very important here. If you rebase a daily that is not up-to-date, you'll get into trouble later on.
 
 ![diverge](assets/images/diverge.png)
 
@@ -213,3 +203,29 @@ You have tested your feature on the `daily` branch + Jenkins build. No more work
 1. `git commit -m "Squash + cherry-pick feature-xxxx to master"`
 
 1. `git push`
+
+## Cleanup
+
+Cleanup refers to the steps from start to finish. A feature is finished when the feature has been cherry-picked to `master` and the local branch is deleted. You should have a checklist whenever you create a new branch.
+
+### Example checklist
+
+For each feature/bug/documentation task:
+
+1. I create a branch from `daily`.
+
+1. I label the branch according to the naming convention.
+
+1. I make sure that I have my branch checked out.
+
+1. I do my work and commit my work to my local branch.
+
+1. I merge my branch to daily, I push daily to the remote, I run a build from Jenkins.
+
+1. When my work is finished, I make sure my branch is merged to daily.
+
+1. I squash my commits into a single commit.
+
+1. I cherry-pick that single commit to `master`.
+
+1. I delete my local branch.
