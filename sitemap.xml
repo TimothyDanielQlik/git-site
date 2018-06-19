@@ -114,6 +114,12 @@
     
         
     <url>
+     <loc>/complete/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
@@ -147,18 +153,6 @@
         
     <url>
      <loc>/branch-graph-gitExt/</loc>
-     <lastmod>2018-06-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/sourcetree-trouble/</loc>
-     <lastmod>2018-06-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/custom-action/</loc>
      <lastmod>2018-06-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
