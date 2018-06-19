@@ -4,7 +4,7 @@ site_author: Kyle Weishaar
 
 site_description: A learning portal for working with git as a source control for Flare documentation
 
-repo_url: https://github.com/qlik-trial/help-writing-resources
+repo_url: https://github.com/kyleweishaar/git-site
 
 theme:
   name: material
@@ -19,6 +19,8 @@ markdown_extensions:
   - pymdownx.details
   - codehilite
   - pymdownx.superfences
+  - toc:
+      permalink: true
 
 pages:
   - Moving to Git: index.md
