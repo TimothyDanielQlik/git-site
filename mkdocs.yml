@@ -71,6 +71,7 @@ pages:
     - Practice Examples:
       - Simple Workflow with Sourcetree: sourcetreeworkflow.md
       - Simple Workflow with Git Bash: gitbashworkflow.md
+      - Complete Workflow: complete.md
     - Omni-Sandbox Examples:
       - Sandbox Project: sandbox.md
       - Step 1 - Create, Add, Commit, Push: step1.md
