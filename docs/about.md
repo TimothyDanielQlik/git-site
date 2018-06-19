@@ -10,7 +10,7 @@ To add a doc to the website, you must include it in the `yml` file in the root d
 
 ## Local build
 
-The website is built with mkdocs. You can run the build locally by running `mkdocs serve`. 
+The website is built with mkdocs. You can run the build locally by running `mkdocs serve`.
 The webiste runs locally on http://127.0.0.1:8000/
 
 If 8000 is busy, you specify the port number in the yml file.
@@ -19,7 +19,7 @@ If 8000 is busy, you specify the port number in the yml file.
 
 ## To deploy
 
-The website is built from the `gh-pages` branch. 
+The website is built from the `gh-pages` branch.
 
 !!! Warning
     Do not make changes to this branch!

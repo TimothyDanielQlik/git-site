@@ -81,7 +81,5 @@ pages:
     - Git Bash cheat sheet: cheat-gitbash.md
   - Git Extension Extras:
     - Git Extension Graph: branch-graph-gitExt.md
-    - Sourcetree Troubleshooting: sourcetree-trouble.md
-    - Set up Custom Actions in Sourcetree: custom-action.md
   - Git Terminology: gitterminology.md
   - About: about.md
