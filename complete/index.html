@@ -988,13 +988,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of Contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#create-a-local-branch" title="Create a local branch" class="md-nav__link">
     Create a local branch
   </a>
@@ -1078,8 +1071,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build" title="You want to merge your feature with daily to run a Jenkins build" class="md-nav__link">
-    You want to merge your feature with daily to run a Jenkins build
+  <a href="#you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins" title="You want to merge your feature with daily so you can check the output with Jenkins" class="md-nav__link">
+    You want to merge your feature with daily so you can check the output with Jenkins
   </a>
   
 </li>
@@ -1167,6 +1160,26 @@
           <li class="md-nav__item">
   <a href="#scenario_3" title="Scenario" class="md-nav__link">
     Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cleanup" title="Cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checklist" title="Example checklist" class="md-nav__link">
+    Example checklist
   </a>
   
 </li>
@@ -1427,13 +1440,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" title="Table of Contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#create-a-local-branch" title="Create a local branch" class="md-nav__link">
     Create a local branch
   </a>
@@ -1517,8 +1523,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build" title="You want to merge your feature with daily to run a Jenkins build" class="md-nav__link">
-    You want to merge your feature with daily to run a Jenkins build
+  <a href="#you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins" title="You want to merge your feature with daily so you can check the output with Jenkins" class="md-nav__link">
+    You want to merge your feature with daily so you can check the output with Jenkins
   </a>
   
 </li>
@@ -1615,6 +1621,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cleanup" title="Cleanup" class="md-nav__link">
+    Cleanup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checklist" title="Example checklist" class="md-nav__link">
+    Example checklist
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -1633,32 +1659,11 @@
                 
                 
                 <h1 id="a-complete-workflow">A complete workflow<a class="headerlink" href="#a-complete-workflow" title="Permanent link">&para;</a></h1>
-<p>The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more complete workflow without going into small details which are covered in other topics. When referring to git actions, I will use the command name (ex. <code>git merge</code>), but you can do the action with the GUI or command line.</p>
+<p>The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more highlevel workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. <code>git merge</code>), but you can do the action with the Git Extensions.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>** marks a step that pulls content from the remote to your local branch.</p>
+<p>** marks a step that pulls content from the remote to your local branch. Pay attention to when you should run <code>git pull</code>.</p>
 </div>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><a href="#create-a-local-branch">Create a local branch (feature/cleanup/bug)</a></p>
-</li>
-<li>
-<p><a href="#commit-your-work">Commit work to local branches</a></p>
-</li>
-<li>
-<p><a href="#merge-your-branch">Merge your local branch</a></p>
-</li>
-<li>
-<p><a href="#keeping-in-sync">Keeping in sync</a></p>
-</li>
-<li>
-<p><a href="#build-in-jenkins">Build Jenkins</a></p>
-</li>
-<li>
-<p><a href="#squash-and-cherry-pick">Squash and cherry-pick to master</a></p>
-</li>
-</ul>
 <h2 id="create-a-local-branch">Create a local branch<a class="headerlink" href="#create-a-local-branch" title="Permanent link">&para;</a></h2>
 <p>You create branches to isolate work. When you create a branch, it exists on your machine only. I refer to these branches as <em>local</em> branches because they are local to you. You should not run <code>git push</code> or <code>git pull</code> on local branches, since these commands interface between your local repo and the remote repo.</p>
 <h3 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h3>
@@ -1696,7 +1701,7 @@
 <p>You edit some files in Flare.</p>
 <ol>
 <li>
-<p><code>git status</code> (to show you the files in the working area)</p>
+<p><code>git status</code> (to list the modified files that are in the working area)</p>
 </li>
 <li>
 <p><code>git add &lt;file-name&gt;</code> ... OR ...</p>
@@ -1709,7 +1714,7 @@
 </li>
 </ol>
 <h2 id="merge-your-branch">Merge your branch<a class="headerlink" href="#merge-your-branch" title="Permanent link">&para;</a></h2>
-<p>Merging means bring the commit history from one branch into another branch. We merge local branched into shared branches. Specifically, we merge local branches into <code>daily</code>.</p>
+<p>Merging means bringing the commit history from one branch into another branch. We merge local branches into shared branches.</p>
 <h3 id="scenario_2">Scenario<a class="headerlink" href="#scenario_2" title="Permanent link">&para;</a></h3>
 <p>You want to merge your local branch to <code>daily</code>.</p>
 <ol>
@@ -1726,7 +1731,7 @@
 <h2 id="keeping-in-sync">Keeping in sync<a class="headerlink" href="#keeping-in-sync" title="Permanent link">&para;</a></h2>
 <p>Keeping in sync means making sure that your local copies of the <code>master</code> and <code>daily</code> branches have the latest content. Whenever you checkout a shared branch (<code>master</code> or <code>daily</code>), you <em>must</em> run <code>git pull</code> first.</p>
 <h3 id="scenarios">Scenarios<a class="headerlink" href="#scenarios" title="Permanent link">&para;</a></h3>
-<h4 id="you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build">You want to merge your feature with <code>daily</code> to run a Jenkins build<a class="headerlink" href="#you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build" title="Permanent link">&para;</a></h4>
+<h4 id="you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins">You want to merge your feature with <code>daily</code> so you can check the output with Jenkins<a class="headerlink" href="#you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p><code>git checkout daily</code></p>
@@ -1738,7 +1743,7 @@
 <p><code>git merge feature/branch</code></p>
 </li>
 <li>
-<p>...</p>
+<p><code>git push</code> **</p>
 </li>
 </ol>
 <h4 id="you-want-to-cherry-pick-your-feature-to-master">You want to cherry-pick your feature to <code>master</code><a class="headerlink" href="#you-want-to-cherry-pick-your-feature-to-master" title="Permanent link">&para;</a></h4>
@@ -1753,11 +1758,15 @@
 <p><code>git merge --squash feature/branch</code></p>
 </li>
 <li>
-<p>...</p>
+<p><code>git push</code> **</p>
 </li>
 </ol>
 <h4 id="you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily">You have a long running feature. You want to update your local branch with new content from <code>daily</code><a class="headerlink" href="#you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily" title="Permanent link">&para;</a></h4>
 <p>How do we sync our <em>local</em> branch with a remote branch?</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code>git pull</code> step is very important here. If you rebase a daily that is not up-to-date, you'll get into trouble later on.</p>
+</div>
 <p><img alt="diverge" src="../assets/images/diverge.png" /></p>
 <ol>
 <li>
@@ -1884,6 +1893,39 @@ C--D--E (daily)
 </li>
 <li>
 <p><code>git push</code></p>
+</li>
+</ol>
+<h2 id="cleanup">Cleanup<a class="headerlink" href="#cleanup" title="Permanent link">&para;</a></h2>
+<p>Cleanup refers to the steps from start to finish. A feature is finished when the feature has been cherry-picked to <code>master</code> and the local branch is deleted. You should have a checklist whenever you create a new branch.</p>
+<h3 id="example-checklist">Example checklist<a class="headerlink" href="#example-checklist" title="Permanent link">&para;</a></h3>
+<p>For each feature/bug/documentation task:</p>
+<ol>
+<li>
+<p>I create a branch from <code>daily</code>.</p>
+</li>
+<li>
+<p>I label the branch according to the naming convention.</p>
+</li>
+<li>
+<p>I make sure that I have my branch checked out.</p>
+</li>
+<li>
+<p>I do my work and commit my work to my local branch.</p>
+</li>
+<li>
+<p>I merge my branch to daily, I push daily to the remote, I run a build from Jenkins.</p>
+</li>
+<li>
+<p>When my work is finished, I make sure my branch is merged to daily.</p>
+</li>
+<li>
+<p>I squash my commits into a single commit.</p>
+</li>
+<li>
+<p>I cherry-pick that single commit to <code>master</code>.</p>
+</li>
+<li>
+<p>I delete my local branch.</p>
 </li>
 </ol>
                 
