@@ -1,0 +1,86 @@
+site_name: Writing Resources
+
+site_author: Kyle Weishaar
+
+site_description: A learning portal for working with git as a source control for Flare documentation
+
+repo_url: https://github.com/qlik-trial/help-writing-resources
+
+theme:
+  name: material
+  logo: 'assets/favicon.ico'
+
+extra_css:
+  - 'assets/stylesheets/custom-style1.css'
+  - 'assets/stylesheets/custom-style.css'
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - codehilite
+  - pymdownx.superfences
+
+pages:
+  - Moving to Git: index.md
+  - Downloads:
+    - Get Git: get-git.md
+    - Install Git Extension: gitExt-install.md
+    - Install Git LFS: lfs.md
+  - Learn the Basics:
+    - Clone the Repository:
+      - Clone the Project with Git Extension: get-code.md
+      - Clone the Project with Git Bash: get-code-cli.md
+      - Get the remote branches: remote.md
+    - Working on Files:
+      - Working on a File in Git Extension: working-gitExt.md
+      - Working on a File with Git Bash: working-gitbash.md
+    - Branching:
+      - About Branches: branches.md
+      - Create a Branch with Git Extension: branching_gitExt.md
+      - Create a Branch with Git Bash: branch-gitbash.md
+      - Git Extension Graph: branch-graph-gitExt.md
+      - Branching Best Practices: best-practice-branch.md
+    - Merging:
+      - Merge with Git Extension: merge-gitExt.md
+      - Merge with Git Bash: merge-gitbash.md
+    - Building:
+        - Run a build in Jenkins: build.md
+  - Advanced Topics:
+    - Cherry Pick:
+      - Cherry Pick with Git Extension: cherrypick-gitExt.md
+    - Blame:
+      - Blame with Git Extension: blame-gitExt.md
+    - Merge and Rebase:
+      - Rebase with Sourcetree: rebase-sourcetree.md
+      - Fastforward Merge with Sourcetree: ff-sourcetree.md
+    - Amend Commits:
+      - Amend Commits with Sourcetree: amend-sourcetree.md
+    - Squash Commits:
+      - Squash Commits with Git Extension: squash-gitExt.md
+      - Squash and Merge with Git Bash: squash_all.md
+    - Reverse Commits:
+      - Revert Commits with Git Extension: revert-gitExt.md
+      - Reset Commits with Git Extension: delete-gitExt.md
+      - Recover Deleted commits: recover.md
+      - Reversing Commits with Sourcetree: fix-workflow.md
+      - Revert merge commits: revert-merge-commit.md
+    - Important Concepts:
+      - Fetch vs. Pull: fetch-v-pull.md
+      - Merge Conflicts: conflicts.md
+  - Workflow Scenarios:
+    - Practice Examples:
+      - Simple Workflow with Sourcetree: sourcetreeworkflow.md
+      - Simple Workflow with Git Bash: gitbashworkflow.md
+    - Omni-Sandbox Examples:
+      - Sandbox Project: sandbox.md
+      - Step 1 - Create, Add, Commit, Push: step1.md
+      - Step 2 - Branch, Add, Commit, Merge: step2.md
+  - Git Bash Extras: 
+    - Tips for Using Git Bash: gitbash-tips.md
+    - Git Bash cheat sheet: cheat-gitbash.md
+  - Git Extension Extras:
+    - Git Extension Graph: branch-graph-gitExt.md
+    - Sourcetree Troubleshooting: sourcetree-trouble.md
+    - Set up Custom Actions in Sourcetree: custom-action.md
+  - Git Terminology: gitterminology.md
+  - About: about.md

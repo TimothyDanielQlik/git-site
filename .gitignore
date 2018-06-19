@@ -1,0 +1,5 @@
+# The build site folder
+site/
+
+# Project user
+/Projects/User/

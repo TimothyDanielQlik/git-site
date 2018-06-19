@@ -1,0 +1,148 @@
+/*
+This custom stylesheet is for the Materials theme
+*/
+
+/* ---------Main HTML elements --------------*/
+
+h1 {
+    border-bottom: 1px solid rgba(108,179,63,0.75);
+    border-bottom-right-radius:100em 100em;
+    padding:4px;
+  }
+
+body {
+    background-color:#FFFFFF;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+  }
+
+img:hover,
+pre:hover {
+    box-shadow: 2px 2px 2px rgba(154, 155, 154, 0.75);
+    transition: box-shadow 0.25s ease-out;
+  }
+
+/* Top page header */
+
+.md-header {
+    background-image: linear-gradient(to left, rgba(159,161,164,1) 0%, rgba(108,179,63,1) 90%);
+    border-bottom:2px solid #F8981D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 1s, border-bottom 1s;
+  }
+
+.md-header:hover {
+    border-bottom:3px solid #F8981D;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* ------------- Navigation elements --------------------- */
+.md-header-nav__title {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+  }
+
+.md-nav.md-nav--secondary {
+    border-left:0.25px solid #7e8083;
+    background-color:rgba(126, 128, 131,0.05);
+  }
+
+.md-sidebar__inner {
+    border-right: 0.25px solid #7e8083;
+  }
+
+/*-----------Resized navigation-------------*/
+
+@media only screen and (max-width: 76.1875em) {
+    .md-nav--primary {
+        visibility: unset;
+      }
+    html .md-nav--primary .md-nav__title,
+    .md-nav__source {
+        height: unset;
+        background-color:rgba(108,179,63,0.75);
+      }
+    }
+
+  /*-------------Links------------*/
+.md-nav__link:focus, .md-nav__link:hover, .md-nav__link--active,
+.md-typeset h2[id] .headerlink:focus, .md-typeset h2[id]:hover .headerlink:hover, .md-typeset h2[id]:target .headerlink,
+.md-typeset h3[id] .headerlink:focus, .md-typeset h3[id]:hover .headerlink:hover, .md-typeset h3[id]:target .headerlink,
+.md-typeset h4[id] .headerlink:focus, .md-typeset h4[id]:hover .headerlink:hover, .md-typeset h4[id]:target .headerlink {
+    color: rgba(108,179,63,0.75);
+    text-decoration: underline;
+  } 
+
+.md-nav__link--active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+.md-flex__cell--shrink:first-child {
+    vertical-align: middle;
+  }
+
+.md-icon.md-content__icon {
+    padding-right:3rem;
+  }
+
+.md-flex__ellipsis.md-header-nav__title {
+    padding-left:0;
+  }
+
+.md-header-nav__button.md-logo {
+    margin:0;
+    padding:0;
+  }
+
+.md-logo img {
+    height:4rem;
+    width:auto;
+    box-shadow: none;
+    transition: none;
+    padding-right:10px;
+  }
+
+
+/*----------div boxes-------------info,tip,waring,recommendation ----------------------------*/
+
+.md-typeset .admonition {
+    font-size: 1.6rem;
+  }
+
+/*------------------------------ Tip ----------------------------------------------------*/
+
+.md-typeset .admonition.tip>.admonition-title:before, .md-typeset .admonition.tip>summary:before, 
+.md-typeset details.tip>.admonition-title:before, .md-typeset details.tip>summary:before {
+    color: rgba(76, 140, 43, 1);
+  }
+
+.md-typeset .admonition.tip, .md-typeset details.tip {
+    border-left-color: rgba(76, 140, 43,1);
+  }
+
+.md-typeset .admonition.tip>.admonition-title, .md-typeset .admonition.tip>summary, 
+.md-typeset details.tip>.admonition-title, .md-typeset details.tip>summary {
+    background-color: rgba(76, 140, 43,0.1);
+  }
+
+/* Recommendation */
+
+.md-typeset .admonition.recommendation>.admonition-title:before, .md-typeset .admonition.recommendation>summary:before, 
+.md-typeset details.recommendation>.admonition-title:before, .md-typeset details.recommendation>summary:before {
+    color: #B71B2C;
+  }
+
+.md-typeset .admonition.recommendation, .md-typeset details.recommendation {
+    border-left-color: #B71B2C;
+  }
+
+.md-typeset .admonition.recommendation>.admonition-title, .md-typeset .admonition.recommendation>summary, 
+.md-typeset details.recommendation>.admonition-title, .md-typeset details.recommendation>summary {
+    background-color: #FF8882;
+  }
+
+
+
+
+  
+    
