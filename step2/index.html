@@ -1,0 +1,1465 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A learning portal for working with git as a source control for Flare documentation">
+      
+      
+      
+        <meta name="author" content="Kyle Weishaar">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
+    
+    
+      
+        <title>Step 2 - Branch, Add, Commit, Merge - Writing Resources</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/custom-style1.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/custom-style.css">
+    
+    
+  </head>
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Writing Resources" class="md-header-nav__button md-logo">
+          
+            <img src="../assets/favicon.ico" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Workflow Scenarios
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  Omni-Sandbox Examples
+                </span>
+              
+            
+            Step 2 - Branch, Add, Commit, Merge
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../assets/favicon.ico" width="24" height="24">
+      
+    </span>
+    Writing Resources
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Moving to Git" class="md-nav__link">
+      Moving to Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Downloads
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Downloads
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-git/" title="Get Git" class="md-nav__link">
+      Get Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitExt-install/" title="Install Git Extension" class="md-nav__link">
+      Install Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lfs/" title="Install Git LFS" class="md-nav__link">
+      Install Git LFS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Learn the Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Learn the Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Clone the Repository
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Clone the Repository
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-code/" title="Clone the Project with Git Extension" class="md-nav__link">
+      Clone the Project with Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get-code-cli/" title="Clone the Project with Git Bash" class="md-nav__link">
+      Clone the Project with Git Bash
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../remote/" title="Get the remote branches" class="md-nav__link">
+      Get the remote branches
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Working on Files
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Working on Files
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../working-gitExt/" title="Working on a File in Git Extension" class="md-nav__link">
+      Working on a File in Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../working-gitbash/" title="Working on a File with Git Bash" class="md-nav__link">
+      Working on a File with Git Bash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Branching
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Branching
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../branches/" title="About Branches" class="md-nav__link">
+      About Branches
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../branching_gitExt/" title="Create a Branch with Git Extension" class="md-nav__link">
+      Create a Branch with Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../branch-gitbash/" title="Create a Branch with Git Bash" class="md-nav__link">
+      Create a Branch with Git Bash
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../branch-graph-gitExt/" title="Git Extension Graph" class="md-nav__link">
+      Git Extension Graph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../best-practice-branch/" title="Branching Best Practices" class="md-nav__link">
+      Branching Best Practices
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      Merging
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        Merging
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../merge-gitExt/" title="Merge with Git Extension" class="md-nav__link">
+      Merge with Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../merge-gitbash/" title="Merge with Git Bash" class="md-nav__link">
+      Merge with Git Bash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5">
+    
+    <label class="md-nav__link" for="nav-3-5">
+      Building
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-5">
+        Building
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build/" title="Run a build in Jenkins" class="md-nav__link">
+      Run a build in Jenkins
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Advanced Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Advanced Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      Cherry Pick
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        Cherry Pick
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cherrypick-gitExt/" title="Cherry Pick with Git Extension" class="md-nav__link">
+      Cherry Pick with Git Extension
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Blame
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Blame
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../blame-gitExt/" title="Blame with Git Extension" class="md-nav__link">
+      Blame with Git Extension
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Merge and Rebase
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Merge and Rebase
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rebase-sourcetree/" title="Rebase with Sourcetree" class="md-nav__link">
+      Rebase with Sourcetree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ff-sourcetree/" title="Fastforward Merge with Sourcetree" class="md-nav__link">
+      Fastforward Merge with Sourcetree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Amend Commits
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        Amend Commits
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../amend-sourcetree/" title="Amend Commits with Sourcetree" class="md-nav__link">
+      Amend Commits with Sourcetree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Squash Commits
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Squash Commits
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../squash-gitExt/" title="Squash Commits with Git Extension" class="md-nav__link">
+      Squash Commits with Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../squash_all/" title="Squash and Merge with Git Bash" class="md-nav__link">
+      Squash and Merge with Git Bash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Reverse Commits
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Reverse Commits
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../revert-gitExt/" title="Revert Commits with Git Extension" class="md-nav__link">
+      Revert Commits with Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../delete-gitExt/" title="Reset Commits with Git Extension" class="md-nav__link">
+      Reset Commits with Git Extension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../recover/" title="Recover Deleted commits" class="md-nav__link">
+      Recover Deleted commits
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fix-workflow/" title="Reversing Commits with Sourcetree" class="md-nav__link">
+      Reversing Commits with Sourcetree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../revert-merge-commit/" title="Revert merge commits" class="md-nav__link">
+      Revert merge commits
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      Important Concepts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        Important Concepts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fetch-v-pull/" title="Fetch vs. Pull" class="md-nav__link">
+      Fetch vs. Pull
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../conflicts/" title="Merge Conflicts" class="md-nav__link">
+      Merge Conflicts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Workflow Scenarios
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Workflow Scenarios
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      Practice Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        Practice Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sourcetreeworkflow/" title="Simple Workflow with Sourcetree" class="md-nav__link">
+      Simple Workflow with Sourcetree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitbashworkflow/" title="Simple Workflow with Git Bash" class="md-nav__link">
+      Simple Workflow with Git Bash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" checked>
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Omni-Sandbox Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Omni-Sandbox Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sandbox/" title="Sandbox Project" class="md-nav__link">
+      Sandbox Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../step1/" title="Step 1 - Create, Add, Commit, Push" class="md-nav__link">
+      Step 1 - Create, Add, Commit, Push
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Step 2 - Branch, Add, Commit, Merge
+      </label>
+    
+    <a href="./" title="Step 2 - Branch, Add, Commit, Merge" class="md-nav__link md-nav__link--active">
+      Step 2 - Branch, Add, Commit, Merge
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-1-branch-and-merge" title="Exercise 1 - Branch and merge" class="md-nav__link">
+    Exercise 1 - Branch and merge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2-fix-merge-conflict" title="Exercise 2 - Fix merge conflict" class="md-nav__link">
+    Exercise 2 - Fix merge conflict
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Git Bash Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Git Bash Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitbash-tips/" title="Tips for Using Git Bash" class="md-nav__link">
+      Tips for Using Git Bash
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheat-gitbash/" title="Git Bash cheat sheet" class="md-nav__link">
+      Git Bash cheat sheet
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Git Extension Extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Git Extension Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../branch-graph-gitExt/" title="Git Extension Graph" class="md-nav__link">
+      Git Extension Graph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sourcetree-trouble/" title="Sourcetree Troubleshooting" class="md-nav__link">
+      Sourcetree Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../custom-action/" title="Set up Custom Actions in Sourcetree" class="md-nav__link">
+      Set up Custom Actions in Sourcetree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gitterminology/" title="Git Terminology" class="md-nav__link">
+      Git Terminology
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-1-branch-and-merge" title="Exercise 1 - Branch and merge" class="md-nav__link">
+    Exercise 1 - Branch and merge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-2-fix-merge-conflict" title="Exercise 2 - Fix merge conflict" class="md-nav__link">
+    Exercise 2 - Fix merge conflict
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/step2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="step-2-branch-add-commit-merge">Step 2 - Branch, Add, Commit, Merge</h1>
+<p>Let's make a branch! Branches are cheap and easy to make with git. In a system like TFS, branches are expensive, timely, and heavy. Why? Because a TFS branch is a copy of every single file in a branch. 100MB becomes 200MB.</p>
+<details class="recommendation"><summary>Recommendation</summary><p><a href="http://nfarina.com/post/9868516270/git-is-simpler">Git is Simpler Than You Think</a></p></details><h2 id="exercise-1-branch-and-merge">Exercise 1 - Branch and merge</h2>
+<p>Let's assume that the repo hasn't changed since the end of step 1.</p>
+<p><img alt="central" src="../assets/images/merged1.png" /></p>
+<p>We have one branch <code>master</code>. We will branch off of the latest commit on <code>master</code>.</p>
+<p>Do the following:</p>
+<ol>
+<li>
+<p>Create a branch from <code>master</code> and name it <code>feature-&lt;name&gt;</code>. If you need a reminder on how to branch, see <a href="../branching_gitExt/">Create a Branch with Sourcetree</a>. I created a branch called <code>feature-kyle</code>.</p>
+<p><img alt="branch" src="../assets/images/branchwork.png" /></p>
+<p>You should see it pointing to the same commit as <code>master</code>.</p>
+<details class="info"><summary>Info</summary><p>Remember, a branch is just a pointer to a commit, and our new branch points to the same commit as <code>master</code>. This is why branches are cheap. Git does not create redundant files etc.</p></details><p>Notice that the branch that is checked out is the new branch. This means any changes to files in my working directory are on this branch.</p>
+</li>
+<li>
+<p>Open up the file you created in the last exercise and change the title and/or make some other changes.</p>
+</li>
+<li>Go back to Sourcetree. You'll see <strong>uncommitted changes</strong> at the top of the graph.</li>
+<li>
+<p>Commit the changes with a good commit message. If you see the TOC in the staged files, that is because the TOC entry is an xref link, so when you changed the title, the toc was also updated. Git picks up this change and puts your changed files in the staging area.</p>
+<details class="info"><summary>Info</summary><p>Make sure you do not push the changes to the remote. We did not setup remote tracking when we created this new branch so it only exists on your local machine.</p></details><p><img alt="branch" src="../assets/images/branched.png" /></p>
+</li>
+</ol>
+<p>Your branch is now 1 commit ahead of <code>master</code>. Let's say the feature work is done and we want to merge our feature to <code>master</code>.</p>
+<p>Do the following:</p>
+<ol>
+<li>Checkout <code>master</code>.</li>
+<li>Click <strong>Merge</strong> from the ribbon.</li>
+<li>Select the commit latest commit of your branch.</li>
+<li>
+<p>Leave the default settings.</p>
+<p><img alt="push" src="../assets/images/ff-push.png" /></p>
+<details class="info"><summary>Info</summary><p>Remember, there were no other changes on <code>master</code>, so it does a fast-forward merge, which means <code>master</code> just moves to the latest commit.</p></details></li>
+</ol>
+<p>The <strong>Push</strong> button indicates that you that the local <code>master</code> is ahead of the remote <code>master</code>. So go ahead and push!</p>
+<h2 id="exercise-2-fix-merge-conflict">Exercise 2 - Fix merge conflict</h2>
+<p>Let's continue with a more complex example.</p>
+<details class="info"><summary>Info</summary><p>What I did for this example:
+I added an &lt;h2> and a &lt;p> following the header. I did this for the same file on both branches. Next, I will merge the two branches. This will produce a merge conflict since both branches have changes in the same spot in the file.</p></details><p>Do the following:</p>
+<ol>
+<li>Create another branch from master. Call it <code>feature-&lt;name&gt;-2</code>.</li>
+<li>Check out the new branch.</li>
+<li>Open your topic and add some Lorem Ipsum content.</li>
+<li>Stage and commit this change to your current feature branch.</li>
+<li>
+<p>Checkout <code>feature-&lt;name&gt;</code> and repeat steps 3 and 4.</p>
+<details class="info"><summary>Info</summary><p>Notice that when you switch your branch, the changes you made to the topic on the other branch are no longer there. When you checkout a different branch, Git rebuilds the working directory based on that branch (which does not have the changes you just made).</p></details><p><img alt="lorem" src="../assets/images/lorem.png" /></p>
+<p>We can see that from the commit that <code>master</code> points to, there are two branches for the feature branches. Three branches, all started from the same point, now all pointing to different commits. The topic file is different on each branch. <code>master</code> has the original version, the other two branches have different additions to the same topic. This could happen if two writers are working on the same file (feature files, TOCs, targets, etc.).</p>
+</li>
+<li>
+<p>Click <strong>Merge</strong> from the ribbon (we are still checkout on <code>feature-&lt;name&gt;</code>).</p>
+</li>
+<li>Select the latest commit from the other feature branch (<code>feature-&lt;name&gt;-2</code>) to merge into your current branch.</li>
+<li>
+<p>You should get a merge conflict, so select OK when the message pops up.</p>
+<p>Sourcetree will look like this: the file with the merge conflict appears in both staging areas. This is because it has the <code>feature-&lt;name&gt;</code> version in the <em>staged</em> area and the <code>feature-&lt;name&gt;-2</code> version in the <em>unstaged</em> area.</p>
+<p><img alt="conflict" src="../assets/images/conflicts.png" /></p>
+</li>
+<li>
+<p>Select the staged file. You will see one staged hunk and one unstaged hunk. Open this file in your merge conflict tool, or a text editor.</p>
+<details class="tip"><summary>Tip</summary><p>Did you set up a text editor yet? If not, read <a href="../custom-action/">Set up Custom Actions</a>.</p></details></li>
+<li>
+<p>I use VS Code to see the conflict. It looks like this.</p>
+<p><img alt="conflict" src="../assets/images/mergetool.png" /></p>
+<p>The file from <code>feature-&lt;name&gt;</code> appear in green, and the file from <code>feature-&lt;name&gt;-2</code> appears in blue. It is a conflict because the changes are in the same location in the file. I need to choose which file is correct, or merge the changes.</p>
+<p>VS Code gives the option to accept both changes, so I click Accept Both Changes. It places the first change above the other. I click save.</p>
+<details class="tip"><summary>Tip</summary><p>If you are using a text editor that does not have a built-in merge tool, you can simply delete the merge markup (=, &lt;, &gt;, HEAD) and organize the content how you like, then click save.</p></details></li>
+<li>
+<p>Go back to Sourcetree.</p>
+</li>
+<li>
+<p>Click stage all, then commit with a message. Your conflict should be resolved.</p>
+<p><img alt="after" src="../assets/images/aftermerge.png" /></p>
+<p>There! I've merged my changes from <code>feature-&lt;name&gt;-2</code> into <code>feature-&lt;name&gt;</code>. I can safely delete <code>feature-&lt;name&gt;-2</code>.</p>
+</li>
+<li>
+<p>Checkout <code>master</code>.</p>
+</li>
+<li>Click <strong>Merge</strong> from the ribbon.</li>
+<li>
+<p>Select the merged commit that you made on the feature branch.</p>
+<p>Now <code>master</code> has the changes from the two feature branches.</p>
+</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../step1/" title="Step 1 - Create, Add, Commit, Push" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Step 1 - Create, Add, Commit, Push
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gitbash-tips/" title="Tips for Using Git Bash" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Tips for Using Git Bash
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-8e4952e681.js"></script>
+      
+      <script>app.initialize({version:"0.17.1",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
