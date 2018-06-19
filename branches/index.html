@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1313,20 +1313,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/branches.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/branches.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="branches">Branches</h1>
-<h2 id="what-is-a-branch">What is a branch</h2>
+                <h1 id="branches">Branches<a class="headerlink" href="#branches" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-a-branch">What is a branch<a class="headerlink" href="#what-is-a-branch" title="Permanent link">&para;</a></h2>
 <p>Here is a really good article to read if you want to understand the underlying reference model of git:
 <a href="https://git-scm.com/book/en/v1/Git-Branching-What-a-Branch-Is">What is a branch</a>.</p>
 <p>Essentially, a branch just points to a snapshot of our data (Flare documentation). So, when we create a branch, what are we doing?</p>
-<h2 id="what-is-branching">What is branching</h2>
+<h2 id="what-is-branching">What is branching<a class="headerlink" href="#what-is-branching" title="Permanent link">&para;</a></h2>
 <p>When you create a new branch, you are copying the state of another branch. Git does this by writing a new file that references the same SHA1 that it was copied from.</p>
 <p><img alt="branch" src="../assets/images/branches-git.png" /></p>
 <p>When I create a branch called <code>testing</code> from <code>master</code>, <code>testing</code> and <code>master</code> are two branches that point to the exact same commit (since nothing has changed). This is how git gets away with not storing multiple copies of identical files (c.f. mapping different branches in TFS to your local machine).</p>
 <p>The advantage of branches in git is that you can copy the state of data to an isolated working area. You can then make changes to the data without disrupting the original source. You can share this branch with others, and you can make as many commits to this branch as you want. Branching is cheap, and it's a practical way to collaborate on our documentation.</p>
-<h2 id="working-directory">Working directory</h2>
+<h2 id="working-directory">Working directory<a class="headerlink" href="#working-directory" title="Permanent link">&para;</a></h2>
 <p>One major difference between git and TFS is that git does not care about the files in your working directory. Git looks at the commit that your current branch points to and creates a working directory based on that commit.</p>
 <p>The image below shows a personal git repo named <code>examples</code>. The command shell to the right shows that I am currently on the <code>master</code> branch of this repo. My working directory currently has three files: a README file, and two text <code>md</code> files (ignore the .git folder).</p>
 <p><img alt="wd1" src="../assets/images/wd1.png" /></p>
@@ -1345,7 +1345,7 @@ Your branch is up to date with <span class="s1">&#39;origin/example-branch&#39;<
 
 <p>When I switch branches, Git rebuilds the working directory based on this branch. Now my working directory has the same README file and a different <code>md</code> file. This means that my current branch does not have all of the files (and changes to files) that are on <code>master</code>, and vice versa.</p>
 <p><img alt="wd2" src="../assets/images/wd2.png" /></p>
-<h2 id="storage">Storage</h2>
+<h2 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h2>
 <p>Git doesn't store multiple copies of identical files. For example, the <code>examples</code> repo has 4 files: README, text, text_1, and text_2. And, your machine has the same 4 files. When you switch branches, git looks at the commit that the branch points to and builds a working directory based on that information. The versioned files are stored as blobs in the <code>.git</code> folder, but we don't want to do any work in there.</p>
                 
                   

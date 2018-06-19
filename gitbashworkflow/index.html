@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1409,17 +1409,17 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/gitbashworkflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/gitbashworkflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="simple-workflow-using-git-bash">Simple Workflow using Git Bash</h1>
-<h2 id="prerequisites">Prerequisites</h2>
+                <h1 id="simple-workflow-using-git-bash">Simple Workflow using Git Bash<a class="headerlink" href="#simple-workflow-using-git-bash" title="Permanent link">&para;</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>Make sure you have everything installed and set up so you can follow along with this tutorial.</p>
 <ul>
 <li><a href="../get-git/">Get Git</a></li>
 </ul>
 <p>Create a personal git repository on GitHub.</p>
-<h3 id="refresh-your-cli-skills">Refresh your CLI skills</h3>
+<h3 id="refresh-your-cli-skills">Refresh your CLI skills<a class="headerlink" href="#refresh-your-cli-skills" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><a href="../gitbash-tips/">Tips for Using Git Bash</a></p>
@@ -1436,7 +1436,7 @@
 <div class="codehilite"><pre><span></span>BDM@usott-bdm MINGW64 /c/git/&lt;name-of-repo&gt; <span class="o">(</span>master<span class="o">)</span>
 </pre></div>
 
-<h3 id="overview">Overview</h3>
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
 <p>An overview of the basic workflow looks like this:</p>
 <table>
 <thead>
@@ -1489,9 +1489,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="preamble">Preamble</h2>
+<h2 id="preamble">Preamble<a class="headerlink" href="#preamble" title="Permanent link">&para;</a></h2>
 <p>For these work instructions, I created an <code>examples</code> repository. Feel free to create a repo on your personal GitHub account to play with.</p>
-<h2 id="branching">Branching</h2>
+<h2 id="branching">Branching<a class="headerlink" href="#branching" title="Permanent link">&para;</a></h2>
 <p>Before you begin, run <code>git pull</code> to make sure that your current branch grabs any changes that are sitting on the remote that are not on your local branch.</p>
 <table>
 <thead>
@@ -1520,7 +1520,7 @@
 </tbody>
 </table>
 <details class="info"><summary>Info</summary><p><code>&lt;new-branch&gt;</code> should be replaced by a name, no brackets or special characters, and no spaces. Naming convention for branches should be to use lowercase and hyphens: <code>new-branch-name</code>.</p></details><p>When you create a new branch, it is based on a copy of the branch that you are currently on. So, if you are on master, and you <code>git branch &lt;new-branch&gt;</code>, then <code>&lt;new-branch&gt;</code> is a copy of master.</p>
-<h2 id="set-upstream-branch">Set upstream branch</h2>
+<h2 id="set-upstream-branch">Set upstream branch<a class="headerlink" href="#set-upstream-branch" title="Permanent link">&para;</a></h2>
 <p>You are creating branches locally. If you want to have the branch stored on GitHub so you can keep a backup, share your work, and submit pull requests for others to comment on your work, you need to push the branch to the repository and set it to track the branch upstream (meaning on GitHub).</p>
 <table>
 <thead>
@@ -1537,7 +1537,7 @@
 </tbody>
 </table>
 <details class="tip"><summary>Tip</summary><p>You only have to use this command once. Afterwards, <code>git push</code> will know where to push the changes.</p></details><p>When you are finished making changes to a file, you'll want to commit those changes. A file has three states in Git, <em>unstaged</em> (a file that has been changed but not staged), <em>staged</em> (a file that is ready to commit), <em>commited</em> (a file that is commited to the branch).</p>
-<h2 id="stage-and-commit">Stage and commit</h2>
+<h2 id="stage-and-commit">Stage and commit<a class="headerlink" href="#stage-and-commit" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1561,7 +1561,7 @@
 </tbody>
 </table>
 <p>Now that you have committed your files to your <code>&lt;new-branch&gt;</code>, you'll want to update the branch in GitHub. So far, your git commits are only local commits.</p>
-<h2 id="push-changes">Push changes</h2>
+<h2 id="push-changes">Push changes<a class="headerlink" href="#push-changes" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1576,10 +1576,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="keep-in-mind">Keep in mind</h2>
+<h2 id="keep-in-mind">Keep in mind<a class="headerlink" href="#keep-in-mind" title="Permanent link">&para;</a></h2>
 <p>When you are working on a file, you need to make sure that you are working on the appropriate branch. This is because Git changes your working directory based on the branch that you are on.</p>
 <p>See <a href="../branches/">Branches</a> for a more detailed explanation of branches and working directory.</p>
-<h2 id="staying-in-sync">Staying in sync</h2>
+<h2 id="staying-in-sync">Staying in sync<a class="headerlink" href="#staying-in-sync" title="Permanent link">&para;</a></h2>
 <p>As many people are working in this omni-project, we'll need to make sure that our branches are up-to-date. It is good practice to grab any changes to your branch that have been pushed to the GitHub repo <em>before</em> you push your changes.</p>
 <table>
 <thead>

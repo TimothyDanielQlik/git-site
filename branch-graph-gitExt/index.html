@@ -139,7 +139,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -185,7 +185,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1362,10 +1362,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/branch-graph-gitExt.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/branch-graph-gitExt.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="the-git-extension-graph">The Git Extension Graph</h1>
+                <h1 id="the-git-extension-graph">The Git Extension Graph<a class="headerlink" href="#the-git-extension-graph" title="Permanent link">&para;</a></h1>
 <p>When you open Git Extension, it looks something like this:</p>
 <p><img alt="tree" src="../assets/images/gitExt-branches.png" /></p>
 <p>When you first clone our documentation project (or any git repo), the first thing you'll notice a graph. This graph shows your commit history. Branches are indicated with labels that point to a commit. Each dot along the line is a previous commit with a commit message.</p>
@@ -1379,7 +1379,7 @@
 </li>
 </ol>
 <p>You can toggle which branches show up in the graph under <strong>View</strong>.</p>
-<h2 id="checking-commits">Checking commits</h2>
+<h2 id="checking-commits">Checking commits<a class="headerlink" href="#checking-commits" title="Permanent link">&para;</a></h2>
 <p>The commit history is important because it shows you what file(s) changed and what changed in the document.</p>
 <p>You can click on a commit to bring up the commit details. There are 4 tabs:</p>
 <table>
@@ -1409,7 +1409,7 @@
 </tbody>
 </table>
 <p><img alt="diffs" src="../assets/images/gitExt-d8.png" /></p>
-<h2 id="committing-your-work">Committing your work</h2>
+<h2 id="committing-your-work">Committing your work<a class="headerlink" href="#committing-your-work" title="Permanent link">&para;</a></h2>
 <p>When you work on a file locally, git detects that the files in your working directory have changed, and it tracks those changes.</p>
 <details class="info"><summary>Info</summary><p>Git detects file changes when you click <strong>save</strong>, for example, in Flare or in your text editor.</p></details><p>In the second menu bar, you will see an <strong>Commit</strong> button, sometimes it has a number beside it in parentheses. This number means that git has detected some file changes that you have not yet committed to the branch.</p>
 <p>When you work on files, they are added the working area and are currently unstaged. Before you add them to the repository, you need add them to the index by staging them.</p>
@@ -1435,7 +1435,7 @@
 </li>
 </ul>
 <p>After you commit files to the repository, you can close this dialog. You'll see a new commit at the top of the graph with your commit message.</p>
-<h2 id="committing-locally-but-not-pushing-to-remote">Committing locally but not pushing to remote</h2>
+<h2 id="committing-locally-but-not-pushing-to-remote">Committing locally but not pushing to remote<a class="headerlink" href="#committing-locally-but-not-pushing-to-remote" title="Permanent link">&para;</a></h2>
 <p>From the main window, you can toggle your remote branches under <strong>View</strong>. In the screen capture below, I have toggled them ON (in red) so that they appear in the graph.</p>
 <p><img alt="remotes" src="../assets/images/gitExt-d9.png" /></p>
 <p>Notice that they are pointing to previous commits, and importantly, different commits than their local counterparts. This means that my local <code>master</code> and <code>daily</code> are out-of-sync with the remotes.</p>
@@ -1462,7 +1462,7 @@
 <p>Force rewind is the inverse of fast-forward merge, but it happens on the remote rather   than the local branch.</p>
 </li>
 </ul>
-<h2 id="changes-upstream">Changes upstream</h2>
+<h2 id="changes-upstream">Changes upstream<a class="headerlink" href="#changes-upstream" title="Permanent link">&para;</a></h2>
 <p>What happens when someone else is working on the same branch as you, and they push their changes to <code>origin/master</code> while you have local changes committed but not pushed?</p>
 <p>When the remote and local branches diverge, the remote takes precedence in that we can't push changes to a remote if the history of the two branches is different. Git forces you to either <code>fetch</code> or <code>pull</code> the changes from the remote before you <code>push</code>.</p>
 <p>If you try to push first, Git Extension will throw this error.</p>

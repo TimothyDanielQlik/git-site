@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1351,18 +1351,18 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/fix-workflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/fix-workflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="reversing-commits-with-sourcetree">Reversing Commits with Sourcetree</h1>
+                <h1 id="reversing-commits-with-sourcetree">Reversing Commits with Sourcetree<a class="headerlink" href="#reversing-commits-with-sourcetree" title="Permanent link">&para;</a></h1>
 <p>This example is taken from the <code>omni-project</code> trial.</p>
-<h2 id="scenario">Scenario</h2>
+<h2 id="scenario">Scenario<a class="headerlink" href="#scenario" title="Permanent link">&para;</a></h2>
 <p>We had three commits that need to be reversed but not every single file change that was part of the commit should be reversed.
 Everything was committed to <code>master</code>.</p>
 <p>The three commits happened one after the other: "third wave", "second wave", "third wave".</p>
 <p><img alt="fix" src="../assets/images/branch-fix.png" /></p>
 <p>Each commit contained a whole lot of changes. Most of the changes in these three commits were changes to links. It turns out that the changes we made won't work, but we want to keep the non-link changes.</p>
-<h2 id="solution">Solution</h2>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h2>
 <details class="info"><summary>Info</summary><p>There are probably many solutions.</p></details><p>I create a branch called <code>verify-fix</code> that is just a copy of <code>master</code>. Then I <code>git reverse commit</code> the three commits that I don't want. <a href="../revert-gitExt/">Reverse commit</a> is a safe operation because it create a new commit that does not include the changes from the commit that I want to exclude.</p>
 <p>You can see above, the three commits on <code>verify-fix</code> has three reverse commits. Now, it does not have the same commit history as <code>master</code>.</p>
 <p>Now I want to re-add some of the files from those commits to my <code>verify-fix</code> branch.</p>
@@ -1378,10 +1378,10 @@ Everything was committed to <code>master</code>.</p>
 <p>When finished, select the <strong>uncommitted changes</strong>, write a commit message and commit.</p>
 </li>
 </ol>
-<h3 id="result">Result</h3>
+<h3 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h3>
 <p><img alt="fix" src="../assets/images/fix-diff.png" /></p>
 <p>I reversed the full commits I didn't want, and then I made a new commit and added the changed files from the reversed commits that I did want.</p>
-<h2 id="merge">Merge</h2>
+<h2 id="merge">Merge<a class="headerlink" href="#merge" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Checkout <code>master</code>.</li>
 <li>Click <strong>Pull</strong> to make sure I have the latest <code>master</code>.</li>
@@ -1394,7 +1394,7 @@ Everything was committed to <code>master</code>.</p>
 <p>Click <strong>OK</strong>.</p>
 </li>
 </ol>
-<h3 id="result_1">Result</h3>
+<h3 id="result_1">Result<a class="headerlink" href="#result_1" title="Permanent link">&para;</a></h3>
 <p><img alt="fix" src="../assets/images/fix-ff.png" /></p>
 <p>Since there were no other changes to <code>master</code>, git did a <a href="../ff-sourcetree/">fast-forward merge</a>.</p>
 <p>The last step is to push the changes to origin and to delete my branch if it is done.</p>

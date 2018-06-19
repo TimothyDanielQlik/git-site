@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1367,16 +1367,16 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/working-gitExt.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/working-gitExt.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="working-on-a-file-in-git-extension">Working on a file in Git Extension</h1>
+                <h1 id="working-on-a-file-in-git-extension">Working on a file in Git Extension<a class="headerlink" href="#working-on-a-file-in-git-extension" title="Permanent link">&para;</a></h1>
 <p>The majority of our work involves creating and editing individual files. Git Extension helps us do most of this work.</p>
-<h2 id="see-the-changes-to-a-file">See the changes to a file</h2>
+<h2 id="see-the-changes-to-a-file">See the changes to a file<a class="headerlink" href="#see-the-changes-to-a-file" title="Permanent link">&para;</a></h2>
 <p>When you start to edit a file in a git repo, git keeps tracks of the changes.</p>
 <p>Look at the image below. The second menu bar at the top indicates that we have <em>Commit (1)</em>, telling us that we have one uncommited change.</p>
 <p><img alt="diffs" src="../assets/images/gitExt-d2.png" /></p>
-<h2 id="stage-the-file-andor-changes">Stage the file and/or changes</h2>
+<h2 id="stage-the-file-andor-changes">Stage the file and/or changes<a class="headerlink" href="#stage-the-file-andor-changes" title="Permanent link">&para;</a></h2>
 <p>Files in git are in one of three states:</p>
 <ul>
 <li><em>unstaged</em> (they are modified and in the working area)</li>
@@ -1390,7 +1390,7 @@
 <li>You may want to commit small pieces so you can reverse-commit small changes (if needed).</li>
 <li>If it works for your workflow, then do it!</li>
 </ul>
-<h3 id="stage">Stage</h3>
+<h3 id="stage">Stage<a class="headerlink" href="#stage" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>To stage changes, click the <strong>Commit (X)</strong> button in the Git Extension task bar.</p>
@@ -1402,7 +1402,7 @@
 <p><img alt="stage" src="../assets/images/gitExt-d3.png" /></p>
 </li>
 </ol>
-<h3 id="stage-hunks">Stage hunks</h3>
+<h3 id="stage-hunks">Stage hunks<a class="headerlink" href="#stage-hunks" title="Permanent link">&para;</a></h3>
 <p>If you are working on a file and have many added/removed lines, you can stage hunks.</p>
 <ol>
 <li>
@@ -1414,7 +1414,7 @@
 <p><img alt="add/remove" src="../assets/images/gitExt-d4.png" /></p>
 <details class="tip"><summary>Tip</summary><p>Always stage <em>added</em> and <em>removed</em> lines together. If you don't, you'll end up with conflicts in the files.</p></details></li>
 </ol>
-<h2 id="commit-file-changes-to-a-branch">Commit file changes to a branch</h2>
+<h2 id="commit-file-changes-to-a-branch">Commit file changes to a branch<a class="headerlink" href="#commit-file-changes-to-a-branch" title="Permanent link">&para;</a></h2>
 <p>After you stage individual files, hunks, or lines, you then commit those staged files to the branch. When you commit, all <em>staged</em> files (files that are added to the index) are included in the commit.</p>
 <ol>
 <li>
@@ -1429,7 +1429,7 @@
 <p>After you commit the changes to the branch, the Git Extension graph will show the newest commit at the top with the message that you added.</p>
 <p><img alt="commit" src="../assets/images/commithistory.png" /></p>
 <p>More on branches in the <a href="../branches/">branching</a> section.</p>
-<h2 id="stash-file-changes-for-later">Stash file changes for later</h2>
+<h2 id="stash-file-changes-for-later">Stash file changes for later<a class="headerlink" href="#stash-file-changes-for-later" title="Permanent link">&para;</a></h2>
 <p>Git Extension helps you stash file changes so you can access them later. For example, at the end of the day, you have made a bunch of changes to a topic, but you don't want to commit these changes to a branch just yet. You can save the state of the file as a <em>stash</em> that you can retrieve later.</p>
 <p>Stashing moves to files out of your working area and the index, and saves them to an area called <em>stash</em>. This lets you work on other files without losing the changes you've already made, and it keeps them out of the way so you don't accidentally stage them with some other work.</p>
 <p>To stash changes:</p>
@@ -1469,7 +1469,7 @@
 <p>If you do not need to keep the stash, select the option <strong>Drop Selected Stash</strong>.</p>
 </li>
 </ol>
-<h2 id="recommit-previous-file-versions">Recommit previous file versions</h2>
+<h2 id="recommit-previous-file-versions">Recommit previous file versions<a class="headerlink" href="#recommit-previous-file-versions" title="Permanent link">&para;</a></h2>
 <p>It can be useful to be able to quickly see the state of a file at any point along the branch history and to change a file back to this state. You can do this by viewing the history of a file and revert the commit.</p>
 <ol>
 <li>

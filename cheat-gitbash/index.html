@@ -139,7 +139,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -185,7 +185,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1453,12 +1453,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/cheat-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/cheat-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="git-bash-cheat-sheet">Git Bash Cheat Sheet</h1>
+                <h1 id="git-bash-cheat-sheet">Git Bash Cheat Sheet<a class="headerlink" href="#git-bash-cheat-sheet" title="Permanent link">&para;</a></h1>
 <p>Wanna use the command line? Walk trough the examples in this topic and bookmark this page for a quick reference to simple commands.</p>
-<h2 id="before-you-begin">Before you begin</h2>
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h2>
 <p>Read the <a href="..">Moving to Git</a> page.</p>
 <p>On your local machine, <code>cd</code> to the git repo.</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> git/omni-project
@@ -1468,9 +1468,9 @@
 <div class="codehilite"><pre><span></span>BDM@usott-bdm MINGW64 /c/git/omni-project <span class="o">(</span>master<span class="o">)</span>
 </pre></div>
 
-<h2 id="basic-workflow-and-commands">Basic workflow and commands</h2>
+<h2 id="basic-workflow-and-commands">Basic workflow and commands<a class="headerlink" href="#basic-workflow-and-commands" title="Permanent link">&para;</a></h2>
 <p>The sections below follow a basic workflow of creating a branch, doing some work, and merging that branch.</p>
-<h3 id="basic-commands">Basic commands</h3>
+<h3 id="basic-commands">Basic commands<a class="headerlink" href="#basic-commands" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1494,7 +1494,7 @@
 </tbody>
 </table>
 <p>When you want to start working, you probably want to work on a new branch.</p>
-<h3 id="branching-commands">Branching commands</h3>
+<h3 id="branching-commands">Branching commands<a class="headerlink" href="#branching-commands" title="Permanent link">&para;</a></h3>
 <details class="info"><summary>Info</summary><p><code>&lt;new-branch&gt;</code> should be replaced by a name, no brackets or special characters, and no spaces.</p></details><table>
 <thead>
 <tr>
@@ -1523,7 +1523,7 @@
 </table>
 <p>When you create a new branch, it is based on a copy of the branch that you are currently on. So, if you are on master, and you run <code>git branch &lt;new-branch&gt;</code>, then <code>&lt;new-branch&gt;</code> is a copy of the latest commit on master.</p>
 <p>You create branches locally. If you want to have the branch stored on GitHub so you can keep a backup, share your work, and submit pull requests for others to comment on your work, you need to push the branch to the repository and set it to track the branch upstream (meaning on GitHub).</p>
-<h4 id="track-the-local-branch-on-gitub">Track the local branch on Gitub</h4>
+<h4 id="track-the-local-branch-on-gitub">Track the local branch on Gitub<a class="headerlink" href="#track-the-local-branch-on-gitub" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1538,7 +1538,7 @@
 </tr>
 </tbody>
 </table>
-<details class="tip"><summary>Tip</summary><p>You only have to use this command once. Afterwards, <code>git push</code> will know where to push the changes.</p></details><h3 id="stage-and-commit-commands">Stage and Commit commands</h3>
+<details class="tip"><summary>Tip</summary><p>You only have to use this command once. Afterwards, <code>git push</code> will know where to push the changes.</p></details><h3 id="stage-and-commit-commands">Stage and Commit commands<a class="headerlink" href="#stage-and-commit-commands" title="Permanent link">&para;</a></h3>
 <p>Changes passed through a staging area. When you change a file, the changes are initially <em>unstaged</em>, you add them to the index so they become <em>staged</em>, and then you commit then to the branch.</p>
 <details class="info"><summary>Info</summary><p>It's 1990, and to store photos, you first get them developed and printed, spread out on the living room floor (unstaged). Once organized, you place them in a photo album, sorted in such as way that you can retrace your steps as your turn the pages (staged). The album looks great, so you label and date the spine, put it on the shelf, and wait for someone to ask "How was your trip?" (committed).</p></details><table>
 <thead>
@@ -1563,7 +1563,7 @@
 </tbody>
 </table>
 <p>Now that you have committed your files to your <code>&lt;new-branch&gt;</code>, you'll want to update the branch in GitHub. So far, your git commits are only local commits.</p>
-<h4 id="push-your-commits">Push your commits</h4>
+<h4 id="push-your-commits">Push your commits<a class="headerlink" href="#push-your-commits" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -1578,14 +1578,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="keep-in-mind">Keep in mind</h2>
+<h2 id="keep-in-mind">Keep in mind<a class="headerlink" href="#keep-in-mind" title="Permanent link">&para;</a></h2>
 <p>When you are working on a file, you need to make sure that you are working on the appropriate branch. This is because Git changes your working directory based on the branch that you are on.</p>
 <p>For example, if you are on <code>&lt;new-branch&gt;</code> and you change an <code>.htm</code> file in Flare, and then you switch to <code>master</code>, you'll notice that file changes back to the state it was in on <code>master</code> (it won't show the changes tat you did on <code>&lt;new-branch&gt;</code>.</p>
 <p>A TFS branch is a copy of every single file. A git branch is a tiny reference object that points to a tree that points to individual blobs (files). Git only stores the new change and adds that change to the index.</p>
 <p>To open a file on a branch in git, you just switch to that branch. The same working directory reflects the objects of the checked out branch.</p>
 <p>To open a file on a branch in TFS, you navigate to the working directory where you have a copy of that branch. I have four release branches stored locally, each is a full copy. This is redundant * 4.</p>
 <p><img alt="assets" src="../assets/images/TFS.png" /></p>
-<h2 id="keeping-in-sync">Keeping in sync</h2>
+<h2 id="keeping-in-sync">Keeping in sync<a class="headerlink" href="#keeping-in-sync" title="Permanent link">&para;</a></h2>
 <p>As many people are working in this omni-project, we'll need to make sure that our branches are up-to-date. It is good practice to do a <code>git pull</code> of <code>git fetch</code> before you do a <code>git push</code>.</p>
 <table>
 <thead>
@@ -1609,7 +1609,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="working-together">Working together</h3>
+<h3 id="working-together">Working together<a class="headerlink" href="#working-together" title="Permanent link">&para;</a></h3>
 <p>Let's say your colleague Thor asks you for help on his new feature. He as his local branch and it is tracked on the remote GitHub server too. Let's say the branch is called <code>thors-branch</code>. When you do <code>git branch</code> you don't see <code>thors-branch</code> because it hasn't been fetched from remote. You just have to fetch the remote and then checkout the new branch.</p>
 <div class="codehilite"><pre><span></span>git fetch
 From https://github.com/qlik-trial/omni-project
@@ -1618,7 +1618,7 @@ git checkout <span class="sb">`</span>thors-branch<span class="sb">`</span>
 </pre></div>
 
 <p>Git will fetch remote branches and list them for you so that you can then check it out.</p>
-<h2 id="revert-a-merge-commit">Revert a merge commit</h2>
+<h2 id="revert-a-merge-commit">Revert a merge commit<a class="headerlink" href="#revert-a-merge-commit" title="Permanent link">&para;</a></h2>
 <p>Made a mistake? That's ok. Use <code>git revert</code>.</p>
 <ul>
 <li>Safe process.</li>

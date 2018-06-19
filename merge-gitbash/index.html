@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1325,10 +1325,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/merge-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/merge-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="merge-with-git-bash">Merge with Git Bash</h1>
+                <h1 id="merge-with-git-bash">Merge with Git Bash<a class="headerlink" href="#merge-with-git-bash" title="Permanent link">&para;</a></h1>
 <p>After you have finished with a feature or a task, you may want to merge your feature branch into another branch.</p>
 <p><code>git merge</code> is one of the processes that git uses when you run <code>git pull</code> to retrieve commits from the remote (the other is <code>git fetch</code>). When we want to merge different branches however, we must do this manually.</p>
 <p>Say we have the following structure, <code>branch-X</code> and <code>master</code>.</p>
@@ -1353,7 +1353,7 @@ D--E--F--G---H master
 </pre></div>
 
 <p><code>master</code> now points to a new commit H that has both commit H and commit C as its parents.</p>
-<h2 id="merge">Merge</h2>
+<h2 id="merge">Merge<a class="headerlink" href="#merge" title="Permanent link">&para;</a></h2>
 <p>I'll use my <code>examples</code> repo again to show a merge with Git Bash.</p>
 <p>I created a <code>branch-X</code> and did some work on this branch, and let's assume there are some other commits on <code>master</code> that are not on <code>branch-x</code>. When I run <code>git branch</code> I can see my branches and which branch I have checked out.</p>
 <p><div class="codehilite"><pre><span></span>BDM@usott-bdm MINGW64 /c/git/examples <span class="o">(</span>master<span class="o">)</span>
@@ -1393,7 +1393,7 @@ nothing to commit, working tree clean
 
 <p>Next time you run git status you'll see a message that your up-to-date. </p>
 <p>We still have the 2 branches, and we no longer need <code>branch-x</code>.</p>
-<h2 id="delete">Delete</h2>
+<h2 id="delete">Delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h2>
 <p>Make sure you are not checkout on the branch that you want to delete.</p>
 <div class="codehilite"><pre><span></span>BDM@usott-bdm MINGW64 /c/git/examples <span class="o">(</span>master<span class="o">)</span>
 $ git branch
@@ -1402,7 +1402,7 @@ $ git branch
 </pre></div>
 
 <p>We need to delete the branch both locally and remotely.</p>
-<h3 id="remotely">Remotely</h3>
+<h3 id="remotely">Remotely<a class="headerlink" href="#remotely" title="Permanent link">&para;</a></h3>
 <p>We delete the local branch and then push that change to origin.</p>
 <div class="codehilite"><pre><span></span>git push origin -d branch-x
 To https://github.com/kyleweishaar/examples.git
@@ -1411,7 +1411,7 @@ To https://github.com/kyleweishaar/examples.git
 
 <p><code>origin</code> is most often the name of the remote unless you manually changed the name in GitHub or specified another name when you pushed your branch to the remote.</p>
 <p>You will get a confirmation string that the branch is deleted.</p>
-<h3 id="locally">Locally</h3>
+<h3 id="locally">Locally<a class="headerlink" href="#locally" title="Permanent link">&para;</a></h3>
 <p>After we delete the branch remotely, check your branches again. The syntax to delete the branch locally is more obvious. After you delete your local branch, check branches again.</p>
 <div class="codehilite"><pre><span></span>git branch
   branch-x

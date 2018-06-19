@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1419,10 +1419,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/conflicts.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/conflicts.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="conflicts">Conflicts</h1>
+                <h1 id="conflicts">Conflicts<a class="headerlink" href="#conflicts" title="Permanent link">&para;</a></h1>
 <p>Merge conflicts can happen when:</p>
 <ol>
 <li>You merge changes where a document(s) are in conflict.</li>
@@ -1440,7 +1440,7 @@
 </pre></div>
 
 <p>If the same file has changed on both branches, which version, F or C, is correct when you merge to create G?</p>
-<h2 id="conflicts-with-sourcetree">Conflicts with Sourcetree</h2>
+<h2 id="conflicts-with-sourcetree">Conflicts with Sourcetree<a class="headerlink" href="#conflicts-with-sourcetree" title="Permanent link">&para;</a></h2>
 <p>Let's say we have two writers, Albin and Tove, and they are working together on a new product scenario. They both edit the same file, and there is a conflict when one of them merges the two branches.</p>
 <table>
 <thead>
@@ -1457,7 +1457,7 @@
 </tbody>
 </table>
 <p>Let's say that Tove wants to merge Albin's branch with hers. When Tove clicks <strong>Merge</strong>, she sees a merge conflict error. There are several ways to solve the conflict.</p>
-<h3 id="simple-resolution-using-mine-vs-theirs">Simple resolution using Mine vs. Theirs</h3>
+<h3 id="simple-resolution-using-mine-vs-theirs">Simple resolution using Mine vs. Theirs<a class="headerlink" href="#simple-resolution-using-mine-vs-theirs" title="Permanent link">&para;</a></h3>
 <p>Click the file and look at the File diff window.</p>
 <p><img alt="diff" src="../assets/images/cf-diff.png" /></p>
 <p>The conflict is highlighted by angle brackets (&lt;,&gt;) and the the two conflicts are separated by equal signs (=).</p>
@@ -1496,7 +1496,7 @@
 </li>
 </ol>
 <p>The conflict is resolved. You can now safely delete unused branches.</p>
-<h3 id="using-an-external-merge-tool">Using an external merge tool</h3>
+<h3 id="using-an-external-merge-tool">Using an external merge tool<a class="headerlink" href="#using-an-external-merge-tool" title="Permanent link">&para;</a></h3>
 <p>Solving a conflict might not always be as easy as picking mine or theirs. Sometimes you'll need to customize the merge. This is also easy with a simple text editor.</p>
 <p>Let's go through a complex and likely scenario.</p>
 <ul>
@@ -1512,7 +1512,7 @@
 <p>Each writer branch has its own commit history.</p>
 <p>Let's say that Tove is responsible for delivering this feature, so she merges Albin's branch with hers. The TOC does not produce a conflict even though they both changed it. This is because each other's changes do not conflict with the other.</p>
 <p>When Tove clicks on the conflict target file, she sees exactly what is conflicting.</p>
-<h4 id="fixing-the-target-conflict">Fixing the target conflict</h4>
+<h4 id="fixing-the-target-conflict">Fixing the target conflict<a class="headerlink" href="#fixing-the-target-conflict" title="Permanent link">&para;</a></h4>
 <p><img alt="target" src="../assets/images/target.png" /></p>
 <p>The change in the green box is not in conflict (there are no conflict characters &lt;,&gt;,=).</p>
 <p>The first red box shows that the stylesheet was changed on both branches. The second red box shows a new line <code>UseDeviceWidth ="true"</code>.</p>
@@ -1525,9 +1525,9 @@
 <p>Tove opens the file in VS Code.</p>
 <p><img alt="vs" src="../assets/images/vs.png" /></p>
 <p>With VS Code, Tove selects which changes to keep and then saves the file. She goes back to Sourcetree. The target conflicts are gone.</p>
-<h4 id="fixing-the-htm-conflict">Fixing the htm conflict</h4>
+<h4 id="fixing-the-htm-conflict">Fixing the htm conflict<a class="headerlink" href="#fixing-the-htm-conflict" title="Permanent link">&para;</a></h4>
 <p>Tove will fix the htm file in the exact same way. She opens the file in VS Code. She select which changes to keep. She saves the file, and then she goes back to Sourcetree.</p>
-<h4 id="finishing-the-commit">Finishing the commit</h4>
+<h4 id="finishing-the-commit">Finishing the commit<a class="headerlink" href="#finishing-the-commit" title="Permanent link">&para;</a></h4>
 <p>Tove still has the same files in both <em>staged</em> and <em>unstaged</em> areas. She needs to clean up before the commit.</p>
 <ol>
 <li>
@@ -1539,12 +1539,12 @@
 </li>
 </ol>
 <p>Tove will build locally and verify the changes before deleting unused branches.</p>
-<h4 id="fringe-case-deleted-files">Fringe case: deleted files</h4>
+<h4 id="fringe-case-deleted-files">Fringe case: deleted files<a class="headerlink" href="#fringe-case-deleted-files" title="Permanent link">&para;</a></h4>
 <p>Tove deleted a file called New Text Document. Albin didn't know and was editing this document on his branch. When Tove merged Albin's branch, there was a merge conflict for the deleted file.</p>
 <p>Sourcetree will not show a conflict in file diff area because a diff requires two files. Currently there is only a file on <code>albin-branch</code>. Tove cannot resolve using a <code>mine</code>-<code>theirs</code> strategy because the file does not exist. If she selects <code>mine</code> (meaning hers), Sourcetree throws an error.</p>
 <p>Assuming there are other changes on Albin's branch that Tove wants to keep, she will right-click the deleted file and select <strong>Remove</strong>. This should remove it from all file areas in Sourcetree.</p>
 <p>Tove can now commit the remaing changes and merge.</p>
-<h2 id="conflicts-with-git-bash">Conflicts with Git Bash</h2>
+<h2 id="conflicts-with-git-bash">Conflicts with Git Bash<a class="headerlink" href="#conflicts-with-git-bash" title="Permanent link">&para;</a></h2>
 <details class="recommendation"><summary>Recommendation</summary><p>Read the Sourcetree example which goes into more detail about the conflicts. The GUI will help you visuzalize what is happening with a conflict.</p></details><p>Let's say I <code>git push</code> and I get an error like the following:</p>
 <div class="codehilite"><pre><span></span>git push
 To https://github.com/qlik-trial/omni-project.git
@@ -1570,7 +1570,7 @@ git push
 </pre></div>
 
 <p>If the changes that someone else pushed to the remote branch are not in conflict with your changes, this process will move seamlessly.</p>
-<h3 id="when-conflicts-need-fixing">When conflicts need fixing</h3>
+<h3 id="when-conflicts-need-fixing">When conflicts need fixing<a class="headerlink" href="#when-conflicts-need-fixing" title="Permanent link">&para;</a></h3>
 <p>Let's say another writer working on <code>new-branch</code> changed the title of a document and then pushed her changes to the remote branch. Meanwhile, you also changed the title of that same document on your copy of <code>new-branch</code>. When you <code>git push</code> your changes to remote, you see a conflict error as above. So you try the <code>fetch</code>, <code>merge</code>, <code>push</code>. The real problem comes when you run <code>merge</code>:</p>
 <div class="codehilite"><pre><span></span>git fetch
 git merge

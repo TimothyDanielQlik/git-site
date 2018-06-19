@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1449,12 +1449,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/working-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/working-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="working-on-a-file-with-git-bash">Working on a file with Git Bash</h1>
+                <h1 id="working-on-a-file-with-git-bash">Working on a file with Git Bash<a class="headerlink" href="#working-on-a-file-with-git-bash" title="Permanent link">&para;</a></h1>
 <p>The majority of our work involves creating and editing individual files. We can use Git Bash to do things like see file changes, stage files, commit files, and stash changes.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>You should be familiar with the basic git commands using Git Bash.</p>
 <ul>
 <li><a href="../gitbash-tips/">Tips for using Git Bash</a></li>
@@ -1463,7 +1463,7 @@
 <ul>
 <li><a href="../cheat-gitbash/">Git Bash Cheat Sheet</a></li>
 </ul>
-<details class="tip"><summary>Tip</summary><p>If Git Bash goes into interactive shell mode when you are running the commands on this page, you can type <code>q</code> then hit <code>Enter</code> to return to the command shell. If you enter vim (the shell-bashed text editor), hit <code>esc</code> then type <code>x</code>, then hit <code>enter</code>.</p></details><h2 id="see-the-changes-to-a-file">See the changes to a file</h2>
+<details class="tip"><summary>Tip</summary><p>If Git Bash goes into interactive shell mode when you are running the commands on this page, you can type <code>q</code> then hit <code>Enter</code> to return to the command shell. If you enter vim (the shell-bashed text editor), hit <code>esc</code> then type <code>x</code>, then hit <code>enter</code>.</p></details><h2 id="see-the-changes-to-a-file">See the changes to a file<a class="headerlink" href="#see-the-changes-to-a-file" title="Permanent link">&para;</a></h2>
 <p>When you start to edit a file in a git repo, git keeps tracks of the change and places the file in an <em>unstaged</em> state.</p>
 <ul>
 <li>Run: <code>git status</code></li>
@@ -1502,7 +1502,7 @@ index a791549..818c005 <span class="m">100644</span>
 </pre></div>
 
 <p>"# Title" is removed and "# Gaius Marius" is added.</p>
-<h2 id="stage-the-file-andor-changes">Stage the file and/or changes</h2>
+<h2 id="stage-the-file-andor-changes">Stage the file and/or changes<a class="headerlink" href="#stage-the-file-andor-changes" title="Permanent link">&para;</a></h2>
 <p>Files in git are in one of three states:</p>
 <ul>
 <li><em>unstaged</em> (they are being worked on - not in index)</li>
@@ -1530,7 +1530,7 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 modified:   text_3.md
 </pre></div>
 
-<h3 id="stage-all">Stage all</h3>
+<h3 id="stage-all">Stage all<a class="headerlink" href="#stage-all" title="Permanent link">&para;</a></h3>
 <p>If you have many files to stage, use a shorthand command to stage all.</p>
 <p>Run <code>git add .</code> or <code>git add --all</code> or <code>git add -A</code>. Stage individual files with <code>git add &lt;file&gt;</code>.</p>
 <div class="codehilite"><pre><span></span>git add --all
@@ -1543,7 +1543,7 @@ git status
 git reset HEAD text_3.md
 </pre></div>
 
-<h3 id="stage-hunks">Stage hunks</h3>
+<h3 id="stage-hunks">Stage hunks<a class="headerlink" href="#stage-hunks" title="Permanent link">&para;</a></h3>
 <p>You can stage a subset of the file by staging hunks. You can do this with the <code>git add -p</code> or <code>git add --patch</code> command. Git determines hunks by proximity/distance. Changes that are close together are <em>hunked</em> together.</p>
 <p>First, run <code>git status</code> to see your <em>unstaged</em> files, then run <code>git add -p &lt;file-name&gt;</code> to open the <code>diff</code> in Git Bash. Git will show you each hunk and ask you what to do in interactive shell mode.</p>
 <p>If Git calculates multiple hunks, Git will show you one hunk at a time. After the hunk, Git gives the following options:</p>
@@ -1608,12 +1608,12 @@ Changes not staged <span class="k">for</span> commit:
 </pre></div>
 
 <p>The reason to do this might be to have a specific changeset associated with a single commit. This is useful when you want to reverse commit some changes or you want a more granular and focused commit history.</p>
-<h3 id="split-hunks-with-patch">Split hunks with patch</h3>
+<h3 id="split-hunks-with-patch">Split hunks with patch<a class="headerlink" href="#split-hunks-with-patch" title="Permanent link">&para;</a></h3>
 <p>If you have a file that you want to stage in hunks, but it only shows you one hunk, you can force a split.</p>
 <p>After running <code>git add -p &lt;file-name&gt;</code>, print the patch help by entering <code>?</code> option. Notice that you have more options than what's displayed.</p>
 <p><code>s - split the current hunk into smaller hunk</code></p>
 <p>Enter <code>s</code> and press enter. If git is able to automatically split the hunk, it will. If the hunk cannot be split, you'll have to do this manually with a GUI like Sourcetree (or read the git documentation to do this manually with Git Bash: <a href="https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging">Git Tools - Interactive Staging</a>).</p>
-<details class="info"><summary>Info</summary><p>I am not documenting splitting hunks with Git Bash because it is much easier just to use Sourcetree. </br>See how you can do this with a GUI: <a href="../working-gitExt/#stage-the-file-andor-changes">Stage the file and/or changes</a>.</p></details><h2 id="commit-file-changes-to-a-branch">Commit file changes to a branch</h2>
+<details class="info"><summary>Info</summary><p>I am not documenting splitting hunks with Git Bash because it is much easier just to use Sourcetree. </br>See how you can do this with a GUI: <a href="../working-gitExt/#stage-the-file-andor-changes">Stage the file and/or changes</a>.</p></details><h2 id="commit-file-changes-to-a-branch">Commit file changes to a branch<a class="headerlink" href="#commit-file-changes-to-a-branch" title="Permanent link">&para;</a></h2>
 <p>Your files are staged, now you commit.</p>
 <p>Run <code>git commit</code> to commit the changes.</p>
 <div class="codehilite"><pre><span></span>git commit -m <span class="s2">&quot;some message&quot;</span>
@@ -1640,7 +1640,7 @@ nothing to commit, working tree clean
 </pre></div>
 
 <p>To learn about branching, and tracking branches upstream, see: <a href="../branch-gitbash/">Branching with Git Bash</a>.</p>
-<h2 id="stash-file-changes-for-later">Stash file changes for later</h2>
+<h2 id="stash-file-changes-for-later">Stash file changes for later<a class="headerlink" href="#stash-file-changes-for-later" title="Permanent link">&para;</a></h2>
 <p>You can stash changes to a file with the <code>git stash</code> command. Stash stores the changes to a file and the index, and returns to a clean working directory. This is helpful when you are making changes to a file that you do not yet want to commit to a branch, but that you don't want to lose.</p>
 <p>There are a couple ways to do this. If we have a single file that has changes, we can stage and then stash.</p>
 <p><div class="codehilite"><pre><span></span>git add &lt;file&gt;
@@ -1673,7 +1673,7 @@ stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>: 
 <p>This would apply the second stash, at index position 1.</p>
 <p>To force delete a stash, use <code>git stash drop stash@{index}</code>.</p>
 <p>To delete all stashes, use <code>git stash clear</code>.</p>
-<h2 id="recommit-a-file-to-a-previous-version">Recommit a file to a previous version</h2>
+<h2 id="recommit-a-file-to-a-previous-version">Recommit a file to a previous version<a class="headerlink" href="#recommit-a-file-to-a-previous-version" title="Permanent link">&para;</a></h2>
 <p>Sometimes you need to return a file to a previous version. You can do this with Git Bash by restoring a specific file to the state it was in for a given commit.</p>
 <p>You need to take several steps:</p>
 <ol>
@@ -1682,7 +1682,7 @@ stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>: 
 <li>Checkout the file from that commit.</li>
 <li>Commit the file again.</li>
 </ol>
-<h3 id="find-the-commit-hash">Find the commit hash</h3>
+<h3 id="find-the-commit-hash">Find the commit hash<a class="headerlink" href="#find-the-commit-hash" title="Permanent link">&para;</a></h3>
 <p>You can see a quick commit history by running <code>git log</code>. This command returns a list of commits and their SHA1s, dates, and commit messages. You might want to see a history for a specific file rather than the commit history of a branch. Run the following command to get a file history for a specific file.</p>
 <div class="codehilite"><pre><span></span>git log -p -- &lt;file-name&gt;
 </pre></div>
@@ -1693,7 +1693,7 @@ stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>: 
 </pre></div>
 
 <p>When you see the commit you want to recommit, copy the first 6 digits of the SHA1.</p>
-<h3 id="check-the-file">Check the file</h3>
+<h3 id="check-the-file">Check the file<a class="headerlink" href="#check-the-file" title="Permanent link">&para;</a></h3>
 <p>To see all of the file changes at a commit, use <code>git diff</code>.</p>
 <div class="codehilite"><pre><span></span>git diff -p &lt;hash&gt; -- &lt;file-name&gt;
 </pre></div>
@@ -1705,7 +1705,7 @@ You'll see the patches for the named file for the specified commit.</p>
 </pre></div>
 
 <p>You'll see the state of the file at this commit. You won't see what patches are associated with the commit.</p>
-<h3 id="checkout-and-recommit">Checkout and recommit</h3>
+<h3 id="checkout-and-recommit">Checkout and recommit<a class="headerlink" href="#checkout-and-recommit" title="Permanent link">&para;</a></h3>
 <p>To restore the file to a previous version, run the following commands.</p>
 <div class="codehilite"><pre><span></span>git checkout &lt;hash&gt; -- &lt;file-name&gt;
 git add &lt;file-name&gt;

@@ -139,7 +139,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -185,7 +185,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1629,16 +1629,16 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/complete.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/complete.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="a-complete-workflow">A complete workflow</h1>
+                <h1 id="a-complete-workflow">A complete workflow<a class="headerlink" href="#a-complete-workflow" title="Permanent link">&para;</a></h1>
 <p>The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more complete workflow without going into small details which are covered in other topics. When referring to git actions, I will use the command name (ex. <code>git merge</code>), but you can do the action with the GUI or command line.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>** marks a step that pulls content from the remote to your local branch.</p>
 </div>
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="#create-a-local-branch">Create a local branch (feature/cleanup/bug)</a></p>
@@ -1659,9 +1659,9 @@
 <p><a href="#squash-and-cherry-pick">Squash and cherry-pick to master</a></p>
 </li>
 </ul>
-<h2 id="create-a-local-branch">Create a local branch</h2>
+<h2 id="create-a-local-branch">Create a local branch<a class="headerlink" href="#create-a-local-branch" title="Permanent link">&para;</a></h2>
 <p>You create branches to isolate work. When you create a branch, it exists on your machine only. I refer to these branches as <em>local</em> branches because they are local to you. You should not run <code>git push</code> or <code>git pull</code> on local branches, since these commands interface between your local repo and the remote repo.</p>
-<h3 id="naming">Naming</h3>
+<h3 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>feature/HLP-XXXX</p>
@@ -1676,7 +1676,7 @@
 <p>cleanup/name</p>
 </li>
 </ul>
-<h3 id="scenario">Scenario</h3>
+<h3 id="scenario">Scenario<a class="headerlink" href="#scenario" title="Permanent link">&para;</a></h3>
 <p>You want to create a branch.</p>
 <ol>
 <li>
@@ -1690,9 +1690,9 @@
 <p><code>git checkout -b branch-name</code> (creates and checkouts branch)</p>
 </li>
 </ol>
-<h2 id="commit-your-work">Commit your work</h2>
+<h2 id="commit-your-work">Commit your work<a class="headerlink" href="#commit-your-work" title="Permanent link">&para;</a></h2>
 <p>Committing means adding content to a repository. When you are on a branch, you modify files, you stage the modifications, then you commit those modifications to the local repository.</p>
-<h3 id="scenario_1">Scenario</h3>
+<h3 id="scenario_1">Scenario<a class="headerlink" href="#scenario_1" title="Permanent link">&para;</a></h3>
 <p>You edit some files in Flare.</p>
 <ol>
 <li>
@@ -1708,9 +1708,9 @@
 <p><code>git commit -m "a good commit message"</code></p>
 </li>
 </ol>
-<h2 id="merge-your-branch">Merge your branch</h2>
+<h2 id="merge-your-branch">Merge your branch<a class="headerlink" href="#merge-your-branch" title="Permanent link">&para;</a></h2>
 <p>Merging means bring the commit history from one branch into another branch. We merge local branched into shared branches. Specifically, we merge local branches into <code>daily</code>.</p>
-<h3 id="scenario_2">Scenario</h3>
+<h3 id="scenario_2">Scenario<a class="headerlink" href="#scenario_2" title="Permanent link">&para;</a></h3>
 <p>You want to merge your local branch to <code>daily</code>.</p>
 <ol>
 <li>
@@ -1723,10 +1723,10 @@
 <p><code>git merge &lt;feature-branch&gt;</code></p>
 </li>
 </ol>
-<h2 id="keeping-in-sync">Keeping in sync</h2>
+<h2 id="keeping-in-sync">Keeping in sync<a class="headerlink" href="#keeping-in-sync" title="Permanent link">&para;</a></h2>
 <p>Keeping in sync means making sure that your local copies of the <code>master</code> and <code>daily</code> branches have the latest content. Whenever you checkout a shared branch (<code>master</code> or <code>daily</code>), you <em>must</em> run <code>git pull</code> first.</p>
-<h3 id="scenarios">Scenarios</h3>
-<h4 id="you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build">You want to merge your feature with <code>daily</code> to run a Jenkins build</h4>
+<h3 id="scenarios">Scenarios<a class="headerlink" href="#scenarios" title="Permanent link">&para;</a></h3>
+<h4 id="you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build">You want to merge your feature with <code>daily</code> to run a Jenkins build<a class="headerlink" href="#you-want-to-merge-your-feature-with-daily-to-run-a-jenkins-build" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p><code>git checkout daily</code></p>
@@ -1741,7 +1741,7 @@
 <p>...</p>
 </li>
 </ol>
-<h4 id="you-want-to-cherry-pick-your-feature-to-master">You want to cherry-pick your feature to <code>master</code></h4>
+<h4 id="you-want-to-cherry-pick-your-feature-to-master">You want to cherry-pick your feature to <code>master</code><a class="headerlink" href="#you-want-to-cherry-pick-your-feature-to-master" title="Permanent link">&para;</a></h4>
 <ol>
 <li>
 <p><code>git checkout master</code></p>
@@ -1756,7 +1756,7 @@
 <p>...</p>
 </li>
 </ol>
-<h4 id="you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily">You have a long running feature. You want to update your local branch with new content from <code>daily</code></h4>
+<h4 id="you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily">You have a long running feature. You want to update your local branch with new content from <code>daily</code><a class="headerlink" href="#you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily" title="Permanent link">&para;</a></h4>
 <p>How do we sync our <em>local</em> branch with a remote branch?</p>
 <p><img alt="diverge" src="../assets/images/diverge.png" /></p>
 <ol>
@@ -1778,7 +1778,7 @@
 <p class="admonition-title">Tip</p>
 <p>Compare the two graph images. Notice what happens when you rebase <code>daily</code> <em>onto</em> your feature branch. Git <em>rewinds</em> the head of your feature branch, then adds the commits from daily and then places your commit at the top.</p>
 </div>
-<h4 id="more-complex-example">More complex example</h4>
+<h4 id="more-complex-example">More complex example<a class="headerlink" href="#more-complex-example" title="Permanent link">&para;</a></h4>
 <p>Rebasing daily onto your local branch works even when there are more than one branches involved. The image below shows a likely scenario:</p>
 <ul>
 <li>
@@ -1816,7 +1816,7 @@
 </ol>
 <p>The result is the image below. Note that <code>daily</code> and <code>kyle</code> point to the same commit which shows you that <code>kyle</code> has all of the content from the two parents: 1 from the running <code>daily</code> branch and the other from <code>other-writer</code>.</p>
 <p><img alt="long" src="../assets/images/long2.png" /></p>
-<h3 id="summary">Summary</h3>
+<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>Use <code>git pull</code> whenever you interact with a shared branch. Even if you <em>think</em> there is nothing new, get into the habit of pulling often. This is how you grab other writers work <em>before</em> you create a branch.</p>
@@ -1828,9 +1828,9 @@
 <p>Use <code>git rebase</code> when you need to grab <em>newer</em> content from <code>daily</code> to bring it into your feature branch. This is how you manage to keep your local branch content from diverging too much from the <code>daily</code> branch. This is probably not required for short lived features or if the area you are working in is not changing often.</p>
 </li>
 </ul>
-<h2 id="build-in-jenkins">Build in Jenkins</h2>
+<h2 id="build-in-jenkins">Build in Jenkins<a class="headerlink" href="#build-in-jenkins" title="Permanent link">&para;</a></h2>
 <p>To build the output, Jenkins looks at the <code>daily</code> branch on github.com. The Jenkins build environment asks you to select the product to build, which area or areas of that product's help site, and the branch to build from. The <code>daily</code> branch is what you will build most often.</p>
-<h2 id="squash-and-cherry-pick">Squash and cherry-pick</h2>
+<h2 id="squash-and-cherry-pick">Squash and cherry-pick<a class="headerlink" href="#squash-and-cherry-pick" title="Permanent link">&para;</a></h2>
 <p>The <code>master</code> branch is a <em>clean</em> branch that we use to create release branches. This branch contains complete work that can be included in a release. </p>
 <p>We want to avoid having a messy commit history on <code>master</code> by cherry-picking features, bugs, and cleanup work, onto <code>master</code>.</p>
 <p>Think of it like this:</p>
@@ -1858,12 +1858,12 @@ C--D--E (daily)
 <p>If 14 writers merge 14 branches with 6 commits on each branch, then the commit history for 14 branches (maybe 14 features) results in 98 commits (14branches *7commits).</p>
 </li>
 </ul>
-<h3 id="two-git-actions">Two git actions</h3>
-<h4 id="squash">Squash</h4>
+<h3 id="two-git-actions">Two git actions<a class="headerlink" href="#two-git-actions" title="Permanent link">&para;</a></h3>
+<h4 id="squash">Squash<a class="headerlink" href="#squash" title="Permanent link">&para;</a></h4>
 <p>This means to take 1+ commits and turn them into a single commit. A squash changes commits, therefore git is rewriting history.</p>
-<h4 id="cherry-pick">Cherry-pick</h4>
+<h4 id="cherry-pick">Cherry-pick<a class="headerlink" href="#cherry-pick" title="Permanent link">&para;</a></h4>
 <p>This means to take a single commit and add it to the tip of a branch without making a merge commit.</p>
-<h3 id="scenario_3">Scenario</h3>
+<h3 id="scenario_3">Scenario<a class="headerlink" href="#scenario_3" title="Permanent link">&para;</a></h3>
 <p>You have tested your feature on the <code>daily</code> branch + Jenkins build. No more work needs to be done.</p>
 <ol>
 <li>

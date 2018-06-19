@@ -143,7 +143,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,7 +189,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1407,17 +1407,17 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/sourcetreeworkflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/sourcetreeworkflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="simple-workflow-using-sourcetree">Simple Workflow using Sourcetree</h1>
-<h2 id="prerequisites">Prerequisites</h2>
+                <h1 id="simple-workflow-using-sourcetree">Simple Workflow using Sourcetree<a class="headerlink" href="#simple-workflow-using-sourcetree" title="Permanent link">&para;</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <p>Make sure you have everything installed and set up so you can follow along with this tutorial.</p>
 <ul>
 <li><a href="../get-git/">Get Git</a></li>
 </ul>
 <p>Create a personal git repository on GitHub.</p>
-<h3 id="overview">Overview</h3>
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
 <p>The steps involved in a basic workflow look like this:</p>
 <details class="info"><summary>Info</summary><p>This table is taken from <a href="../gitbashworkflow/">Simple workflow using Git Bash</a>, but we need to do the same thing with Sourcetree. In the end, you'll see that it is simpler to use the GUI as we can combine some of our git commands.</p></details><table>
 <thead>
@@ -1470,12 +1470,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="preamble">Preamble</h2>
+<h2 id="preamble">Preamble<a class="headerlink" href="#preamble" title="Permanent link">&para;</a></h2>
 <p>For these work instructions, I created an <code>examples</code> repository. Feel free to create a repo on your personal GitHub account to play with.</p>
 <p><img alt="sourcetree" src="../assets/images/sourcetreesexample1.png" /></p>
 <p>Under <strong>Branches</strong>, I have a single <code>master</code> branch. The graph shows some previous commits, but we shouldn't concern ourselves with that right now.</p>
 <p>The labels on the graph show that our local <code>master</code> and <code>origin/master</code> are pointing to the same commit (they are in sync) and the <code>origin/HEAD</code> is pointing the the latest commit. If I don't want to see the labels for remote branches, I deselect <strong>Show Remote Branches</strong>.</p>
-<h2 id="branching">Branching</h2>
+<h2 id="branching">Branching<a class="headerlink" href="#branching" title="Permanent link">&para;</a></h2>
 <p>Before you begin, click <strong>Pull</strong> in the ribbon to make sure that your current branch grabs any changes that are sitting on the remote that are not on your local branch. No one else is working in this repo so there won't be any changes. However, in our omni-project, we'll all be working in the same repo, so this is just good practice.</p>
 <p>To create a new branch:</p>
 <ol>
@@ -1486,7 +1486,7 @@
 </ol>
 <p><img alt="newbranch" src="../assets/images/createbranch-sourcetree.png" /></p>
 <p>You'll see the new branch appear in the <strong>Branches</strong> section in Sourcetree, and you'll see that it has a small circle beside it (meaning it is checkout).</p>
-<h2 id="set-upstream-branch">Set upstream branch</h2>
+<h2 id="set-upstream-branch">Set upstream branch<a class="headerlink" href="#set-upstream-branch" title="Permanent link">&para;</a></h2>
 <p>So, we've created a branch locally. If this branch is just for personal work that we are not sharing with anyone, you can leave it as is. If you want to push your work to the remote GitHub server, you need to push it upstream to track changes.</p>
 <p>For example, <code>master</code> is on your local machine and on GitHub. You make changes locally, commit them to your local branch, and then you push those changes to the remote branch. Let's say that I want to set my branch upstream because I want someone to help me with this feature work.</p>
 <ol>
@@ -1503,7 +1503,7 @@
 <p>In the graph, we can see that all labels (<code>master</code> and <code>develop</code>) point to the exact same commit.</p>
 <p><img alt="graph" src="../assets/images/bnewbranchgraph.png" /></p>
 <p>Now work on some content! When you're finished working, we can stage and commit our work.</p>
-<details class="tip"><summary>Tip</summary><p>Add a couple of text files to your repo.</p></details><h2 id="stage-commit-and-push">Stage, commit, and push</h2>
+<details class="tip"><summary>Tip</summary><p>Add a couple of text files to your repo.</p></details><h2 id="stage-commit-and-push">Stage, commit, and push<a class="headerlink" href="#stage-commit-and-push" title="Permanent link">&para;</a></h2>
 <p>Sourcetree tracks the files that are part of your current branch. When you save your changes, say, to your .htm files in Flare, Sourcetree detects these changes.</p>
 <p>The image below shows us that we are on the <code>develop</code> branch. At the top of the graph we have some uncommitted changes, and in the lowest pane, Sourcetree lists the unstaged files. In this case, I created a small markdown file named <code>text</code>. It appears in the unstaged file pane.</p>
 <p><img alt="unstaged" src="../assets/images/unstaged.png" /></p>
@@ -1513,7 +1513,7 @@
 <li>Commit the changes to the branch.</li>
 <li>Push changes from local branch to remote branch.</li>
 </ol>
-<h3 id="stage">Stage</h3>
+<h3 id="stage">Stage<a class="headerlink" href="#stage" title="Permanent link">&para;</a></h3>
 <p>We want to click on the unstaged file. The pane to the right shows us the changed content (green = content added || red = content removed).</p>
 <ol>
 <li>
@@ -1521,7 +1521,7 @@
 <p>Your unstaged file will move to the staged file pane.</p>
 </li>
 </ol>
-<h3 id="commit-and-push">Commit and push</h3>
+<h3 id="commit-and-push">Commit and push<a class="headerlink" href="#commit-and-push" title="Permanent link">&para;</a></h3>
 <p>We want to commit the changes and add a commit message.</p>
 <ol>
 <li>Click the <strong>Commit</strong> button in the ribbon.</br>A text field opens at the bottom.</li>
@@ -1529,7 +1529,7 @@
 <li>Select <strong>Push changes immediately to origin/develop</strong> </br> You can commit changes locally without pushing to the remote, but we are using the remote <code>develop</code> branch to backup our work and to collaborate with others, so it is a good idea to push when committing.</li>
 <li>Click <strong>Commit</strong>.</li>
 </ol>
-<h2 id="where-we-are-at">Where we are at</h2>
+<h2 id="where-we-are-at">Where we are at<a class="headerlink" href="#where-we-are-at" title="Permanent link">&para;</a></h2>
 <p>When we started, <code>develop</code> and <code>master</code> pointed to the same commit. We switched to the <code>develop</code> branch and did some work, committed that work, and pushed changes to the <code>origin/develop</code> branch. Let's look at the graph.</p>
 <p><img alt="stock" src="../assets/images/takestock.png" /></p>
 <p><code>master</code> points to the previous commit. <code>develop</code> is ahead by one. You can continue to work on this branch making small commits often. Every time you commit, you'll see the <code>develop</code> pointer move up to the latest commit. Eventually, you'll want to merge this branch back into <code>master</code>. Merging is covered in the <a href="../merge-gitExt/">Merge with Git Extension</a> topic.</p>

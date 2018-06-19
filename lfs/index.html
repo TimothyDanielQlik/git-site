@@ -139,7 +139,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -185,7 +185,7 @@
   
 
 
-  <a href="https://github.com/qlik-trial/help-writing-resources/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/kyleweishaar/git-site/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1319,14 +1319,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/qlik-trial/help-writing-resources/edit/master/docs/lfs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/lfs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="git-large-file-storage">Git Large File Storage</h1>
+                <h1 id="git-large-file-storage">Git Large File Storage<a class="headerlink" href="#git-large-file-storage" title="Permanent link">&para;</a></h1>
 <p>Git is not meant to be a source control repository for large binary files, such as <code>png</code>, <code>svg</code>, and <code>pptx</code> files. In our documentation, we of course include a lot of images. We handle this by using a small program called git lfs. At Qlik, the trunk team has configured git lfs to work with artifactory. Of course, this requires a small set up.</p>
-<h2 id="what-is-lfs">What is lfs</h2>
+<h2 id="what-is-lfs">What is lfs<a class="headerlink" href="#what-is-lfs" title="Permanent link">&para;</a></h2>
 <p>Git lfs lets git indirectly track large binary files by keeping those files in one location (in our case, artifactory), and pointing to them from the git repository. So, git is stil tracking those files but github is not storing those files. This lets us keep the size of the repository under control.</p>
-<h2 id="setup">Setup</h2>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You should install LFS before you clone the repository.</p>
@@ -1355,7 +1355,7 @@
 <p>Copy this key to the clip board.</p>
 </li>
 </ol>
-<h2 id="test-credentials">Test credentials</h2>
+<h2 id="test-credentials">Test credentials<a class="headerlink" href="#test-credentials" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>From the command line, run <code>git pull</code>.</p>
@@ -1403,7 +1403,7 @@ error: failed to push some refs to <span class="s1">&#39;https://github.com/qlik
 </pre></div>
 
 <p>then you'll need to fix your credential manager.</p>
-<h3 id="credential-manager">Credential manager</h3>
+<h3 id="credential-manager">Credential manager<a class="headerlink" href="#credential-manager" title="Permanent link">&para;</a></h3>
 <p>Artifactory credential are stored in the windows credential manager, and git uses this to send the api call to artifactory when you run <code>git push</code>.</p>
 <ol>
 <li>
