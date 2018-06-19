@@ -204,9 +204,9 @@ You have tested your feature on the `daily` branch + Jenkins build. No more work
 
 1. `git push`
 
-## Cleanup
+## Writer's checklist
 
-Cleanup refers to the steps from start to finish. A feature is finished when the feature has been cherry-picked to `master` and the local branch is deleted. You should have a checklist whenever you create a new branch.
+The writer's checklist refers to the steps from start to finish. A feature is finished when the feature has been cherry-picked to `master` and the local branch is deleted. You should have a checklist whenever you create a new branch.
 
 ### Example checklist
 
