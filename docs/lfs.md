@@ -25,7 +25,7 @@ This is done from the command line.
 
 1. Now, log into okta > artifactory.
 
-1. Click your trigram nn the top right-hand corner.
+1. Click your trigram in the top right-hand corner.
 
 1. Under *Authentication Settings*, generate API key.
 
@@ -35,7 +35,7 @@ This is done from the command line.
 
 1. From the command line, run `git pull`.
 
-1. Make sure you are on the `daily` branch. See [Get the remote branches](remote.md) if you wanted grabbed the `daily` branch yet.
+1. Make sure you are on the `daily` branch. See [Get the remote branches](remote.md) if you haven't yet grabbed the `daily` branch.
 
 1. Save any small `png` file to your desktop (Google images).
 

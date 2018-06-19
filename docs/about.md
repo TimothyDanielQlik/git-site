@@ -22,7 +22,7 @@ If 8000 is busy, you specify the port number in the yml file.
 The website is built from the `gh-pages` branch. 
 
 !!! Warning
-Do not make changes to this branch!
+    Do not make changes to this branch!
 
 1. Checkout master branch.
 1. Run `mkdocs gh-pages` to rebuild the site.
