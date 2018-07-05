@@ -60,6 +60,7 @@ pages:
     - Squash Commits:
       - Squash Commits with Git Extension: squash-gitExt.md
       - Squash and Merge with Git Bash: squash_all.md
+    - Recover a deleted branch: recover-branch.md
     - Reverse Commits:
       - Revert Commits with Git Extension: revert-gitExt.md
       - Reset Commits with Git Extension: delete-gitExt.md
@@ -69,6 +70,7 @@ pages:
     - Important Concepts:
       - Fetch vs. Pull: fetch-v-pull.md
       - Merge Conflicts: conflicts.md
+      - Git log: history.md
   - Workflow Scenarios:
     - Complete Workflow: complete.md
     - Practice Examples:
