@@ -77,7 +77,6 @@ Keeping in sync means making sure that your local copies of the `master` and `da
 
 1. `git push` **
 
-
 #### You want to cherry-pick your feature to `master`
 
 1. `git checkout master`
