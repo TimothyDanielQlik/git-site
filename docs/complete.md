@@ -86,6 +86,12 @@ Keeping in sync means making sure that your local copies of the `master` and `da
 
 1. `git merge --squash feature/branch`
 
+1. `git add <file-name>` ... OR ...
+
+1. `git add --all` (adds all files in the working area)
+
+1. `git commit -m "a good commit message"`
+
 1. `git push` **
 
 #### You have a long running feature. You want to update your local branch with new content from `daily`
