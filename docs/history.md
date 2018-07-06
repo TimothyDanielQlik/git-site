@@ -1,8 +1,12 @@
 # Git History
 
-Use Git Bash to find, change, and reorganize git history.
+Use Git Bash to explore your git history.
 
 ## The git graph
+
+The git graph is the ASCII version of a git GUI, like Git Extension.
+
+Here are some important commands:
 
 |command|argument|description|
 |---    |---        |---|
@@ -15,6 +19,10 @@ Use Git Bash to find, change, and reorganize git history.
 
 ## Show a commit
 
+Use Git Bash to explore the contents of a commit.
+
+Here are some important commands:
+
 |command|argument|description|
 |---    |---        |---|
 |`git show <something>`|--|Prints out info about a commit|
@@ -22,9 +30,9 @@ Use Git Bash to find, change, and reorganize git history.
 ||`<branch>`|Shows the commit that the branch is pointing to|
 ||`HEAD`|Shows the commit that the HEAD is pointing to|
 
-In the image above, `HEAD` and `feature/HLP-3162` and `cc67576a` all point to the same commit.
+In the image in the previous section, `HEAD` and `feature/HLP-3162` and `cc67576a` all point to the same commit.
 
-The following commands print the same results:
+The following commands print the same results to the terminal:
 
 ```bash
 git show HEAD
@@ -63,3 +71,84 @@ index 39644002..423cb586 100644
  </CatapultTarget>
 \ No newline at end of file
 ```
+
+Above, you can see the modified files and their changes that are associated with this commit.
+
+How can we target a commit that is not the `HEAD` or a commit that is not pointed to by a branch?
+
+You can use the sha1 number, but this can be annoying to find and copy.
+
+You can also specify the distance from the `HEAD`. Say I want to target commit B, C or G.
+
+```ASCII
+HEAD||feature/HLP-3162      A cc67576a
+                            |
+                            B cd64321a
+                            |
+                            C ed69576a
+                           /|
+                          / D kl67876a
+                0q60006a G  |
+                            E ll63576a
+```
+
+* Target B = `git show HEAD~1` OR `git show HEAD^`
+
+    Go to HEAD, and then go down 1 commit.
+
+* Target C = `git show HEAD~2` OR `git show HEAD^^`
+
+    Go to HEAD, and then go down 2 commits.
+
+* Target G = `git show HEAD~2^2`
+
+    Go to HEAD, and then go down 2 commits, and then pick the second parent of that commit.
+
+## Find the source of each line
+
+Blame is a git command that shows you the line-by-line additions to a file.
+
+Here are some important commands:
+
+|command|argument|description|
+|---    |---        |---|
+|`git blame <something>`|--|Prints out info about a commit|
+||`<path/to/file>`|Shows the file line-by-line.|
+
+
+```bash
+/c/git/git-site (master)
+$ git blame mkdocs.yml
+
+...
+
+^bc3dcf1 (kyleweishaar 2018-06-19 14:39:49 -0400 17) markdown_extensions:
+^bc3dcf1 (kyleweishaar 2018-06-19 14:39:49 -0400 18)   - admonition
+^bc3dcf1 (kyleweishaar 2018-06-19 14:39:49 -0400 21)   - pymdownx.superfences
+699f4be6 (kyleweishaar 2018-06-19 15:26:03 -0400 22)   - toc:
+699f4be6 (kyleweishaar 2018-06-19 15:26:03 -0400 23)       permalink: true
+
+...
+
+^bc3dcf1 (kyleweishaar 2018-06-19 14:39:49 -0400 26)   - Moving to Git: index.md
+
+...
+
+cdfac27b (kyleweishaar 2018-07-06 09:03:20 -0400 31)     - Install Meld: meld.md
+^bc3dcf1 (kyleweishaar 2018-06-19 14:39:49 -0400 32)   - Learn the Basics:
+
+```
+
+In the terminal, I can see the lines enumerated on the right, the `SHA1` on the left, and in between, the author of the change the modification.
+
+The `^` beside the `SHA1` indicates that the line was added at the first first. `SHA1` numbers without the `^` means they were added later.
+
+### Comparing commits
+
+Use `git diff` to compare two commits.
+
+Here are some important commands:
+
+|command|argument|description|
+|---    |---        |---|
+|`git diff HEAD HEAD~2`|--|Prints out the diff between the current commit and the commit 2 commits below the HEAD.|
