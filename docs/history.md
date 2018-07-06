@@ -152,3 +152,15 @@ Here are some important commands:
 |command|argument|description|
 |---    |---        |---|
 |`git diff HEAD HEAD~2`|--|Prints out the diff between the current commit and the commit 2 commits below the HEAD.|
+|`git diff <branch> <branch1>`|--|Prints out the diff between tips of two branches.|
+
+## More on `git log`
+
+Here are some important commands:
+
+|command|argument|description|
+|---    |---        |---|
+|`git log`|--|Prints out the commit history in a list.|
+||`--patch`|Prints a detailed diff for each commit in the log.|
+||`--grep <string>`|Filters the log to show only commits that contain the string|
+||`-n`|Shows the log for _n_ commits back.|
