@@ -28,6 +28,7 @@ pages:
     - Get Git: get-git.md
     - Install Git Extension: gitExt-install.md
     - Install Git LFS: lfs.md
+    - Install Meld: meld.md
   - Learn the Basics:
     - Clone the Repository:
       - Clone the Project with Git Extension: get-code.md
