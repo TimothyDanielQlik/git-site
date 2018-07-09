@@ -32,9 +32,9 @@ When a conflict occurs, Git Extensions suggests that you solve the conflict. The
 
 |Color | Indicates|
 |---    |---    |
-|Red| Lines are in conflict|
-|Blue|Resolved conflict lines|
-|Green|Line modifications that are not in conflict|
+|Red|Lines in conflict|
+|Blue|Lines with resolved conflicts|
+|Green|Added lines|
 
 ![meld](assets/images/meld1.png)
 
