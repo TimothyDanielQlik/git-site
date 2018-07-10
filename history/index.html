@@ -1002,6 +1002,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#find-the-source-of-each-line" title="Find the source of each line" class="md-nav__link">
+    Find the source of each line
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparing-commits" title="Comparing commits" class="md-nav__link">
+    Comparing commits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-on-git-log" title="More on git log" class="md-nav__link">
+    More on git log
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1307,6 +1334,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#find-the-source-of-each-line" title="Find the source of each line" class="md-nav__link">
+    Find the source of each line
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparing-commits" title="Comparing commits" class="md-nav__link">
+    Comparing commits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-on-git-log" title="More on git log" class="md-nav__link">
+    More on git log
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1325,8 +1379,10 @@
                 
                 
                 <h1 id="git-history">Git History<a class="headerlink" href="#git-history" title="Permanent link">&para;</a></h1>
-<p>Use Git Bash to find, change, and reorganize git history.</p>
+<p>Use Git Bash to explore your git history.</p>
 <h2 id="the-git-graph">The git graph<a class="headerlink" href="#the-git-graph" title="Permanent link">&para;</a></h2>
+<p>The git graph is the ASCII version of a git GUI, like Git Extension.</p>
+<p>Here are some important commands:</p>
 <table>
 <thead>
 <tr>
@@ -1360,6 +1416,8 @@
 </table>
 <p><img alt="log" src="../assets/images/gitlog.png" /></p>
 <h2 id="show-a-commit">Show a commit<a class="headerlink" href="#show-a-commit" title="Permanent link">&para;</a></h2>
+<p>Use Git Bash to explore the contents of a commit.</p>
+<p>Here are some important commands:</p>
 <table>
 <thead>
 <tr>
@@ -1391,8 +1449,8 @@
 </tr>
 </tbody>
 </table>
-<p>In the image above, <code>HEAD</code> and <code>feature/HLP-3162</code> and <code>cc67576a</code> all point to the same commit.</p>
-<p>The following commands print the same results:</p>
+<p>In the image in the previous section, <code>HEAD</code> and <code>feature/HLP-3162</code> and <code>cc67576a</code> all point to the same commit.</p>
+<p>The following commands print the same results to the terminal:</p>
 <div class="codehilite"><pre><span></span>git show HEAD
 <span class="c1">#OR</span>
 git show <span class="sb">`</span>feature/HLP-3162<span class="sb">`</span>
@@ -1429,6 +1487,140 @@ index <span class="m">39644002</span>..423cb586 <span class="m">100644</span>
  &lt;/CatapultTarget&gt;
 <span class="se">\ </span>No newline at end of file
 </pre></div>
+
+<p>Above, you can see the modified files and their changes that are associated with this commit.</p>
+<p>How can we target a commit that is not the <code>HEAD</code> or a commit that is not pointed to by a branch?</p>
+<p>You can use the sha1 number, but this can be annoying to find and copy.</p>
+<p>You can also specify the distance from the <code>HEAD</code>. Say I want to target commit B, C or G.</p>
+<div class="codehilite"><pre><span></span>HEAD||feature/HLP-3162      A cc67576a
+                            |
+                            B cd64321a
+                            |
+                            C ed69576a
+                           /|
+                          / D kl67876a
+                0q60006a G  |
+                            E ll63576a
+</pre></div>
+
+<ul>
+<li>
+<p>Target B = <code>git show HEAD~1</code> OR <code>git show HEAD^</code></p>
+<p>Go to HEAD, and then go down 1 commit.</p>
+</li>
+<li>
+<p>Target C = <code>git show HEAD~2</code> OR <code>git show HEAD^^</code></p>
+<p>Go to HEAD, and then go down 2 commits.</p>
+</li>
+<li>
+<p>Target G = <code>git show HEAD~2^2</code></p>
+<p>Go to HEAD, and then go down 2 commits, and then pick the second parent of that commit.</p>
+</li>
+</ul>
+<h2 id="find-the-source-of-each-line">Find the source of each line<a class="headerlink" href="#find-the-source-of-each-line" title="Permanent link">&para;</a></h2>
+<p>Blame is a git command that shows you the line-by-line additions to a file.</p>
+<p>Here are some important commands:</p>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git blame &lt;something&gt;</code></td>
+<td>--</td>
+<td>Prints out info about a commit</td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;path/to/file&gt;</code></td>
+<td>Shows the file line-by-line.</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span>/c/git/git-site <span class="o">(</span>master<span class="o">)</span>
+$ git blame mkdocs.yml
+
+...
+
+^bc3dcf1 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">14</span>:39:49 -0400 <span class="m">17</span><span class="o">)</span> markdown_extensions:
+^bc3dcf1 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">14</span>:39:49 -0400 <span class="m">18</span><span class="o">)</span>   - admonition
+^bc3dcf1 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">14</span>:39:49 -0400 <span class="m">21</span><span class="o">)</span>   - pymdownx.superfences
+699f4be6 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">15</span>:26:03 -0400 <span class="m">22</span><span class="o">)</span>   - toc:
+699f4be6 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">15</span>:26:03 -0400 <span class="m">23</span><span class="o">)</span>       permalink: <span class="nb">true</span>
+
+...
+
+^bc3dcf1 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">14</span>:39:49 -0400 <span class="m">26</span><span class="o">)</span>   - Moving to Git: index.md
+
+...
+
+cdfac27b <span class="o">(</span>kyleweishaar <span class="m">2018</span>-07-06 <span class="m">09</span>:03:20 -0400 <span class="m">31</span><span class="o">)</span>     - Install Meld: meld.md
+^bc3dcf1 <span class="o">(</span>kyleweishaar <span class="m">2018</span>-06-19 <span class="m">14</span>:39:49 -0400 <span class="m">32</span><span class="o">)</span>   - Learn the Basics:
+</pre></div>
+
+<p>In the terminal, I can see the lines enumerated on the right, the <code>SHA1</code> on the left, and in between, the author of the change the modification.</p>
+<p>The <code>^</code> beside the <code>SHA1</code> indicates that the line was added at the first first. <code>SHA1</code> numbers without the <code>^</code> means they were added later.</p>
+<h3 id="comparing-commits">Comparing commits<a class="headerlink" href="#comparing-commits" title="Permanent link">&para;</a></h3>
+<p>Use <code>git diff</code> to compare two commits.</p>
+<p>Here are some important commands:</p>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git diff HEAD HEAD~2</code></td>
+<td>--</td>
+<td>Prints out the diff between the current commit and the commit 2 commits below the HEAD.</td>
+</tr>
+<tr>
+<td><code>git diff &lt;branch&gt; &lt;branch1&gt;</code></td>
+<td>--</td>
+<td>Prints out the diff between tips of two branches.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="more-on-git-log">More on <code>git log</code><a class="headerlink" href="#more-on-git-log" title="Permanent link">&para;</a></h2>
+<p>Here are some important commands:</p>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>argument</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git log</code></td>
+<td>--</td>
+<td>Prints out the commit history in a list.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>--patch</code></td>
+<td>Prints a detailed diff for each commit in the log.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>--grep &lt;string&gt;</code></td>
+<td>Filters the log to show only commits that contain the string</td>
+</tr>
+<tr>
+<td></td>
+<td><code>-n</code></td>
+<td>Shows the log for <em>n</em> commits back.</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
