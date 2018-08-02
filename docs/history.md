@@ -154,6 +154,42 @@ Here are some important commands:
 |`git diff HEAD HEAD~2`|--|Prints out the diff between the current commit and the commit 2 commits below the HEAD.|
 |`git diff <branch> <branch1>`|--|Prints out the diff between tips of two branches.|
 
+#### Example
+
+Want to know if you need to rebase?
+
+The following command returned all of the commits that are on daily but not on my bug/hlp-3288 branch.
+
+```/c/git/help-documentation (bug/hlp-3288)
+$ git log bug/hlp-3288..daily --oneline
+32463c3c (origin/daily, daily) Merge branch 'cleanup2/Dan' into daily
+a741f376 Fix another capitalization issue plus change "which" to "that"
+7c33c9a5 Merge branch 'cleanup2/Dan' into daily
+8699c385 Fix "id" capitalization issues
+08ddae9a Merge branch 'kio/feature/HLP-3113' into daily
+2aae7670 Added FT and edited documents for updcoming Insight Advisor features
+39ec0c36 Merge branch 'improvement/hlp-2792' into daily
+d1091761 Merge branch 'epic/HLP-2326' into daily
+8fcb8ada Updated resource filter topic
+7f901344 added Ruggero's comments and prepared for tech+peer review
+2999a89a Merge branch 'improvement/hlp-2792' into daily
+14897a4d Fixed links (?)
+f2e38ea0 Merge branch 'hlp-3316' into daily
+c602b467 accessibility, links tables and images
+725638e5 Merge branch 'improvement/hlp-2792' into daily
+0631b375 Fixed broken links in certificates topics.
+57378fbb Merge branch 'QABDI_rnt' into daily
+c2f16ee8 Adding SSH to deployment
+baf94433 Merge branch 'cleanup2/Dan' into daily
+166d5956 Delete unused <ul> tag
+59f86cc0 Clean up capitalization and incomplete steps
+824b7199 Merge branch 'improvement/hlp-2792' into daily
+571d0ae3 HLP-2792 (certificates)
+6be876ef Merge branch 'hlp-2587' into daily
+```
+
+If I rebased daily onto my bug branch then these are the commits that I will get.
+
 ## More on `git log`
 
 Here are some important commands:
