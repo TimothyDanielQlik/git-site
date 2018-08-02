@@ -10,6 +10,10 @@ theme:
   name: material
   logo: 'assets/favicon.ico'
 
+extra:
+  search:
+    language: 'en'
+
 extra_css:
   - 'assets/stylesheets/custom-style1.css'
   - 'assets/stylesheets/custom-style.css'
