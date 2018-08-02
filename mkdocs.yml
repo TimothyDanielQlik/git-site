@@ -58,6 +58,7 @@ pages:
       - Fastforward Merge with Sourcetree: ff-sourcetree.md
     - Amend Commits:
       - Amend Commits with Sourcetree: amend-sourcetree.md
+      - Amend Commits from command line: amend.md
     - Squash Commits:
       - Squash Commits with Git Extension: squash-gitExt.md
       - Squash and Merge with Git Bash: squash_all.md
