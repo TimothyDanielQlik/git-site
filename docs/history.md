@@ -115,7 +115,6 @@ Here are some important commands:
 |`git blame <something>`|--|Prints out info about a commit|
 ||`<path/to/file>`|Shows the file line-by-line.|
 
-
 ```bash
 /c/git/git-site (master)
 $ git blame mkdocs.yml
