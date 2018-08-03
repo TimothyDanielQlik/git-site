@@ -1,6 +1,16 @@
 {
     "docs": [
         {
+            "location": "/home/", 
+            "text": "Welcome", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/home/#welcome", 
+            "text": "", 
+            "title": "Welcome"
+        }, 
+        {
             "location": "/", 
             "text": "Moving to Git\n\n\nWelcome to the learning portal for working with Git as a source control for our Flare documentation.\n\n\nAbout\n\n\nWe designed this website and its content to simplify the learning process of moving to git. Git is not too difficult to learn, but it is very powerful, and it offers us a lot of options in how we manage our source documentation.\n\n\nWe developed the topics on this site by going through different working scenarios while documenting our progress. You can use git via the command line or with a GUI. We recommend that you learn how to use Git Extension, which provides most of the functionality you will need for your daily work.\n\n\nFor basic git functions, you'll find topics written for Git Extension and for Git Bash. The advanced topics are written for Git Extension only. This was due to time, and the likelihood that most people will prefer using Git Extension for most of their work.\n\n\nInfo\nThere may be topics in here that are incomplete and there may be topics that need to be adjusted. This is an ongoing process! Feel free to submit a pull request to improve or change existing documentation.\n\nDownloads\n\n\nYou need to install Git, Git Bash, and Git Extension. You also need to ensure that you have access to the \nqlik-trial\n workspace on git.\n\n\n\n\n\n\nFollow these steps for qlik-trial access\n\n\n\n\n\n\nGet Git\n\n\n\n\n\n\nInstall Git Extensions\n\n\n\n\n\n\nRecommended learning path\n\n\n\n\nLearn the basics\n\n\nClone the repo\n\n\nWorking on a file\n\n\nBranching\n\n\nMerging\n\n\n\n\n\n\nWalk through some examples\n\n\nSimple Workflow using Git Extension\n\n\n\n\n\n\nPlay in the sandbox\n\n\nSandbox project\n\n\n\n\n\n\n\n\nAdditional sources\n\n\nYou can find other useful information here:\n\n\n\n\n\n\n\n\nTitle\n\n\nLink\n\n\n\n\n\n\n\n\n\n\nGit Extension Support\n\n\nGit Extensions\n\n\n\n\n\n\nComplete guide to git\n\n\nThe entire Pro Git book\n\n\n\n\n\n\nThe internet\n\n\nStackoverflow\nIf you have a problem, someone else has likely had that problem...", 
             "title": "Moving to Git"
