@@ -27,6 +27,7 @@ markdown_extensions:
       permalink: true
 
 pages:
+  - Home: home.md
   - Moving to Git: index.md
   - Downloads:
     - Get Git: get-git.md
