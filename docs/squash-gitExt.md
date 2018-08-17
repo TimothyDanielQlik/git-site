@@ -12,7 +12,7 @@ I created a `feature/2` branch and I have made three commits on this branch. I h
 
 My Git Extension graph looks like this right now:
 
-![squash](assets/images/squashing.png)
+![squash](images/gitext-squashing.png)
 
 To squash your commits if Git Extension, we use `git reset --soft`.
 
@@ -28,7 +28,7 @@ To squash your commits if Git Extension, we use `git reset --soft`.
 
     Select **Soft: leave working directory and index untouched**.
 
-    ![reset](assets/images/gitExt-d22.png)
+    ![reset](assets/images/gitext-resetsoft.png)
 
 1. Select OK.
 
@@ -42,7 +42,7 @@ To squash your commits if Git Extension, we use `git reset --soft`.
 
 1. Now you will see a single commit on your feature branch at the top of the graph.
 
-    ![reset](assets/images/gitExt-d23.png)
+    ![reset](images/gitext-squashed.png)
 
 Now this commit can be cherry-picked anywhere it needs to go.
 

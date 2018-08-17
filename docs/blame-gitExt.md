@@ -2,7 +2,7 @@
 
 Git Blame is a command that shows what revision and author last modified each line of a file.
 
-For this example, I'll use the current `omni-project`.
+For this example, I'll use a repo called `omni-project`.
 
 ## Git Blame
 
@@ -20,7 +20,7 @@ From the main window graph:
 
     A dialog opens.
 
-    ![blame](assets/images/gitExt-d24.png)
+    ![blame](images/gitext-blamedialog.png)
 
     I selected the `.gitignore` file, which is file that git uses to filter certain files and file types.
 
@@ -42,4 +42,4 @@ Let's say I want to know more information about when Output/** was added to the 
 
     The dialog will now show the commit associated with the change from line 10.
 
-    ![change](assets/images/gitExt-d25.png)
+    ![change](images/gitext-blamedialog2.png)

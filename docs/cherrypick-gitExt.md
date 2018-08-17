@@ -6,9 +6,9 @@ You might want to do this when you want to incorporate some small changes but no
 
 ## Cherry pick
 
-I want to cherry pick one commit from `feature/hlp-1` and commit it to `master`. Let's say that I want the first commit with the message "Fixed typos".
+I want to cherry pick one commit from `feature/hlp-1` and commit it to `master`. Let's say that I want the first commit with the message "Added condition".
 
-![pick](assets/images/gitExt-d19.png)
+![pick](images/gitext-cherrypick.png)
 
 1. Checkout the branch you want to commit to (`master`)
 
@@ -16,7 +16,7 @@ I want to cherry pick one commit from `feature/hlp-1` and commit it to `master`.
 
     A dialog opens.
 
-    ![pick2](assets/images/gitExt-d20.png)
+    ![pick2](images/gitext-cherrypickdialog.png)
 
     Leave both check boxes selected.
 
@@ -24,7 +24,7 @@ I want to cherry pick one commit from `feature/hlp-1` and commit it to `master`.
 
     The graph should now look like this:
 
-    ![pick2](assets/images/gitExt-d21.png)
+    ![pick2](images/gitext-cherrypickafter.png)
 
 ### Result
 
