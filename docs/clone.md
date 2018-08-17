@@ -47,7 +47,7 @@ and then push your local repository changes to the remote repository.
 !!! Tip
     Need some help getting started with Git Bash?
 
-    [Tips for using Git Bash](gitbash-tips.md)
+    [Tips for using Git Bash](commandline-tips.md)
 
 Do the following:
 
@@ -74,7 +74,7 @@ Do the following:
 
     ```bash
     cd c/git/
-    git clone https://github.com/qlik-trial/omni-project.git
+    git clone https://github.com/qlik-trial/help-documentation.git
     ```
 
     The omni-project is now cloned to your local machine.
@@ -90,7 +90,7 @@ Do the following:
     You should see (master) at the end of your directory path in Git Bash. Like this:
 
     ```bash
-    BDM@usott-bdm MINGW64 /c/git/omni-project (master)
+    BDM@usott-bdm MINGW64 /c/git/help-documentation (master)
     ```
 
 1. Check the status of the repo (just for fun, and it's always good to know the status).

@@ -46,7 +46,7 @@ pages:
       - About Branches: branches.md
       - Create a Branch with Git Extension: branching_gitExt.md
       - Create a Branch with Git Bash: branch-gitbash.md
-      - Git Extension Graph: branch-graph-gitExt.md
+      - Git Extension Graph: gitExt-graph.md
       - Branching Best Practices: best-practice-branch.md
     - Merging:
       - Merge with Git Extension: merge-gitExt.md
@@ -81,5 +81,5 @@ pages:
     - Git commands: commands.md
     - Git Extension Graph: gitExt-graph.md
     - Git Terminology: terminology.md
-    
+
   - About this website: about.md

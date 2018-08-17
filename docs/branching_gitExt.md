@@ -30,4 +30,4 @@ There are several ways to create a new branch. Choose whichever is most convenie
 
 The benefit of a GUI like Git Extension is that we can visually keep track of branches, commits, and merges. We also have a clear view of the messages attached to commits. So let's look at the Git Extension UI in more detail as we work with branches.
 
-Checkout the topic on the [Git Extension Graph](branch-graph-gitExt.md).
+Checkout the topic on the [Git Extension Graph](gitExt-graph.md).

@@ -6,11 +6,11 @@ The majority of our work involves creating and editing individual files. We can 
 
 You should be familiar with the basic git commands using Git Bash.
 
-* [Tips for using Git Bash](gitbash-tips.md)
+* [Tips for using Git Bash](commandline-tips.md)
 
 Either before of after, and to use as a reference anytime, the cheat sheet is a quick walk through of the basic Git Bash commands.
 
-* [Git Bash Cheat Sheet](cheat-gitbash.md)
+* [Git Bash Cheat Sheet](commands.md)
 
 ??? Tip
     If Git Bash goes into interactive shell mode when you are running the commands on this page, you can type `q` then hit `Enter` to return to the command shell. If you enter vim (the shell-bashed text editor), hit `esc` then type `x`, then hit `enter`.
