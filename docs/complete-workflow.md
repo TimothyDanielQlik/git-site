@@ -5,6 +5,9 @@ The other topics should have given you a good foundation for running some of the
 !!! Info
     ** marks a step that pulls content from the remote to your local branch. Pay attention to when you should run `git pull`.
 
+!!! Note
+    This workflow does not necessarily reflect our current workflow, but it does cover all of the git commands you'll need to know for your daily work. **In this tutorial pay attention to what happens where, and why it happens.**
+
 ## Create a local branch
 
 You create branches to isolate work. When you create a branch, it exists on your machine only. I refer to these branches as _local_ branches because they are local to you. You should not run `git push` or `git pull` on local branches, since these commands interface between your local repo and the remote repo.
@@ -100,7 +103,7 @@ How do we sync our _local_ branch with a remote branch?
 !!! Tip
     The `git pull` step is very important here. If you rebase a daily that is not up-to-date, you'll get into trouble later on.
 
-![diverge](assets/images/diverge.png)
+![diverge](images/branch-diverge.png)
 
 1. `git checkout daily`
 
@@ -110,7 +113,7 @@ How do we sync our _local_ branch with a remote branch?
 
 1. `git rebase daily`
 
-![rebase](assets/images/rebaseExt.png)
+![rebase](images/gitext-rebase.png)
 
 !!! Tip
     Compare the two graph images. Notice what happens when you rebase `daily` _onto_ your feature branch. Git _rewinds_ the head of your feature branch, then adds the commits from daily and then places your commit at the top.
@@ -131,7 +134,7 @@ Rebasing daily onto your local branch works even when there are more than one br
 !!! Warning
     Pay attention to what you are doing! Do not rebase onto shared branches. This increases the risk of having unwanted merge conflicts. Before rebasing, make sure you know what branch you have checked out.
 
-![long](assets/images/long.png)
+![long](images/long-history.png)
 
 1. `git checkout daily`
 
@@ -143,7 +146,7 @@ Rebasing daily onto your local branch works even when there are more than one br
 
 The result is the image below. Note that `daily` and `kyle` point to the same commit which shows you that `kyle` has all of the content from the two parents: 1 from the running `daily` branch and the other from `other-writer`.
 
-![long](assets/images/long2.png)
+![long](images/long-history-2.png)
 
 ### Summary
 

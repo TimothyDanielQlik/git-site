@@ -13,7 +13,7 @@
 |local|On your machine.|
 |merge|To bring the information from one branch into another.|
 |master|The default development branch </br> There is nothing inherently special about master.|
-|origin|The default upstream repository (on GitHub). Origin is often the same as remote, but this is not necessarily.|
+|origin|The default upstream repository (on GitHub). Origin is often the same as remote, but this is not necessarily true.|
 |pull request|A request for suggestions/review regarding some commits to be merged.|
 |push|To push the changes after a commit.|
 |remote (repository)|A repository that stored on the git server, and that is used to track your project. You push to the remote and pull/fetch from the remote.|

@@ -2,7 +2,7 @@
 
 ## The docs
 
-Docs are written in markdown. Docs are stored unders `/docs`. 
+Docs are written in markdown. Docs are stored under `/docs`. 
 
 ## The TOC
 
@@ -11,7 +11,7 @@ To add a doc to the website, you must include it in the `yml` file in the root d
 ## Local build
 
 The website is built with mkdocs. You can run the build locally by running `mkdocs serve`.
-The webiste runs locally on http://127.0.0.1:8000/
+The website runs locally on http://127.0.0.1:8000/
 
 If 8000 is busy, you specify the port number in the yml file.
 

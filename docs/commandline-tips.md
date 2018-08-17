@@ -1,10 +1,10 @@
-# Tips for Using Git Bash
+# Working with the Command Line
 
 If you don't have much experience using command-line, here are a couple of tips to help get you started.
 
 ## Navigating file directories
 
-* To move between directories, you use the `cd` command (the initialism stands for change directory).
+* To move between directories, you use the `cd` (change directory)command.
 
 * When you first open Git Bash, it opens in your home directory, which looks something like this:
 
@@ -12,7 +12,9 @@ If you don't have much experience using command-line, here are a couple of tips 
     C:\Users\%LocalUser%
     ```
 
-* You can move up to a parent folder by entering `..`. For example,
+* You can move up to a parent folder by entering `..`
+
+    For example,
 
     ```bash
     cd ../../
@@ -24,7 +26,7 @@ If you don't have much experience using command-line, here are a couple of tips 
     c/
     ```
 
-### It's easy to get lost in command-line.
+### Print current location
 
 * Use `pwd` to print your working directory (where you are).
 
@@ -59,17 +61,17 @@ If you don't have much experience using command-line, here are a couple of tips 
 
 When you open Git Bash, it should start in your Git directory.
 
-??? Tip
+!!! Tip
     After you change the starting path of Git Bash, pin it to your task bar.
 
 ## Git with Git Bash
 
 When you are in a git repository, you can run git commands.
 
-For example, if you are in the omni-project repo (which is currently checked out on the master branch),
+For example, if you are in the `help-documentation` repo (which is currently checked out on the master branch),
 
 ```bash
-BDM@usott-bdm MINGW64 /c/git/omni-project (master)
+BDM@usott-bdm MINGW64 /c/git/help-documentation (master)
 ```
 
 you can run git commands by specifying `git X`, where X = the git operation.
@@ -80,7 +82,7 @@ git branch
 git --version
 etc...
 ```
-If you try to run git commands from a not-git directory, you'll get the following error:
+If you try to run git commands from a non-git directory, you get the following error:
 
 ```bash
 BDM@usott-bdm MINGW64 /c/git
