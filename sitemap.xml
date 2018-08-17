@@ -3,16 +3,8 @@
 
     
     <url>
-     <loc>/home/</loc>
-     <lastmod>2018-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
      <loc>/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,26 +12,48 @@
     
         
     <url>
-     <loc>/get-git/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <loc>/git/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/gitExt-install/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <loc>/gitextension/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/lfs/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/meld/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <lastmod>2018-08-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/clone/</loc>
+     <lastmod>2018-08-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/artifactory/</loc>
+     <lastmod>2018-08-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/remote/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -58,28 +72,6 @@
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
         
     <url>
      <loc></loc>
@@ -113,7 +105,7 @@
         
     <url>
      <loc>/recover-branch/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -134,20 +126,8 @@
     
         
     <url>
-     <loc>/complete/</loc>
-     <lastmod>2018-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/build/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -156,14 +136,8 @@
     
         
     <url>
-     <loc>/gitbash-tips/</loc>
-     <lastmod>2018-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/cheat-gitbash/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <loc>/complete-workflow/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -172,25 +146,35 @@
     
         
     <url>
-     <loc>/branch-graph-gitExt/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <loc>/commandline-tips/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
-    
-
-    
     <url>
-     <loc>/gitterminology/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <loc>/commands/</loc>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/gitExt-graph/</loc>
+     <lastmod>2018-08-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/terminology/</loc>
+     <lastmod>2018-08-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2018-08-03</lastmod>
+     <lastmod>2018-08-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

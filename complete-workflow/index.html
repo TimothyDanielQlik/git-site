@@ -36,7 +36,7 @@
     
     
       
-        <title>Run a build in Jenkins - Writing Resources</title>
+        <title>Complete Workflow - Writing Resources</title>
       
     
     
@@ -94,11 +94,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Build with Jenkins
+                  Sample workflow
                 </span>
               
             
-            Run a build in Jenkins
+            Complete Workflow
           
         </span>
       </div>
@@ -842,12 +842,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Build with Jenkins
@@ -855,6 +853,44 @@
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
         Build with Jenkins
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build/" title="Run a build in Jenkins" class="md-nav__link">
+      Run a build in Jenkins
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Sample workflow
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Sample workflow
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -874,11 +910,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Run a build in Jenkins
+        Complete Workflow
       </label>
     
-    <a href="./" title="Run a build in Jenkins" class="md-nav__link md-nav__link--active">
-      Run a build in Jenkins
+    <a href="./" title="Complete Workflow" class="md-nav__link md-nav__link--active">
+      Complete Workflow
     </a>
     
       
@@ -892,23 +928,204 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-start-a-build" title="To start a build:" class="md-nav__link">
-    To start a build:
+  <a href="#create-a-local-branch" title="Create a local branch" class="md-nav__link">
+    Create a local branch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming" title="Naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-your-work" title="Commit your work" class="md-nav__link">
+    Commit your work
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario_1" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-your-branch" title="Merge your branch" class="md-nav__link">
+    Merge your branch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario_2" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-in-sync" title="Keeping in sync" class="md-nav__link">
+    Keeping in sync
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenarios" title="Scenarios" class="md-nav__link">
+    Scenarios
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins" title="You want to merge your feature with daily so you can check the output with Jenkins" class="md-nav__link">
+    You want to merge your feature with daily so you can check the output with Jenkins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-want-to-cherry-pick-your-feature-to-master" title="You want to cherry-pick your feature to master" class="md-nav__link">
+    You want to cherry-pick your feature to master
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily" title="You have a long running feature. You want to update your local branch with new content from daily" class="md-nav__link">
+    You have a long running feature. You want to update your local branch with new content from daily
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-complex-example" title="More complex example" class="md-nav__link">
+    More complex example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" title="Summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-in-jenkins" title="Build in Jenkins" class="md-nav__link">
+    Build in Jenkins
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-check-build-log" title="To check build log" class="md-nav__link">
-    To check build log
+  <a href="#squash-and-cherry-pick" title="Squash and cherry-pick" class="md-nav__link">
+    Squash and cherry-pick
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-git-actions" title="Two git actions" class="md-nav__link">
+    Two git actions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#squash" title="Squash" class="md-nav__link">
+    Squash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cherry-pick" title="Cherry-pick" class="md-nav__link">
+    Cherry-pick
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario_3" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" title="Output" class="md-nav__link">
-    Output
+  <a href="#writers-checklist" title="Writer's checklist" class="md-nav__link">
+    Writer's checklist
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checklist" title="Example checklist" class="md-nav__link">
+    Example checklist
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -918,42 +1135,6 @@
   
 </nav>
     
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      Sample workflow
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        Sample workflow
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../complete-workflow/" title="Complete Workflow" class="md-nav__link">
-      Complete Workflow
-    </a>
   </li>
 
         
@@ -1067,23 +1248,204 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-start-a-build" title="To start a build:" class="md-nav__link">
-    To start a build:
+  <a href="#create-a-local-branch" title="Create a local branch" class="md-nav__link">
+    Create a local branch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming" title="Naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-your-work" title="Commit your work" class="md-nav__link">
+    Commit your work
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario_1" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-your-branch" title="Merge your branch" class="md-nav__link">
+    Merge your branch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario_2" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-in-sync" title="Keeping in sync" class="md-nav__link">
+    Keeping in sync
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenarios" title="Scenarios" class="md-nav__link">
+    Scenarios
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins" title="You want to merge your feature with daily so you can check the output with Jenkins" class="md-nav__link">
+    You want to merge your feature with daily so you can check the output with Jenkins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-want-to-cherry-pick-your-feature-to-master" title="You want to cherry-pick your feature to master" class="md-nav__link">
+    You want to cherry-pick your feature to master
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily" title="You have a long running feature. You want to update your local branch with new content from daily" class="md-nav__link">
+    You have a long running feature. You want to update your local branch with new content from daily
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-complex-example" title="More complex example" class="md-nav__link">
+    More complex example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" title="Summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-in-jenkins" title="Build in Jenkins" class="md-nav__link">
+    Build in Jenkins
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-check-build-log" title="To check build log" class="md-nav__link">
-    To check build log
+  <a href="#squash-and-cherry-pick" title="Squash and cherry-pick" class="md-nav__link">
+    Squash and cherry-pick
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-git-actions" title="Two git actions" class="md-nav__link">
+    Two git actions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#squash" title="Squash" class="md-nav__link">
+    Squash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cherry-pick" title="Cherry-pick" class="md-nav__link">
+    Cherry-pick
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario_3" title="Scenario" class="md-nav__link">
+    Scenario
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" title="Output" class="md-nav__link">
-    Output
+  <a href="#writers-checklist" title="Writer's checklist" class="md-nav__link">
+    Writer's checklist
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checklist" title="Example checklist" class="md-nav__link">
+    Example checklist
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1101,78 +1463,292 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/build.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/complete-workflow.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="how-to-run-a-build-job">How to run a build job<a class="headerlink" href="#how-to-run-a-build-job" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>These steps are temporary</p>
+                <h1 id="a-complete-workflow">A complete workflow<a class="headerlink" href="#a-complete-workflow" title="Permanent link">&para;</a></h1>
+<p>The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more highlevel workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. <code>git merge</code>), but you can do the action with the Git Extensions.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>** marks a step that pulls content from the remote to your local branch. Pay attention to when you should run <code>git pull</code>.</p>
 </div>
-<h2 id="to-start-a-build">To start a build:<a class="headerlink" href="#to-start-a-build" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>Go <a href="https://ua.rdlund.qliktech.com/view/Help%20Documentation/">here</a></p>
-</li>
-<li>
-<p>Click <code>--- DOC - Start Build - LD</code></p>
-</li>
-<li>
-<p>Select <strong>Build with Parameters</strong>.</p>
-</li>
-<li>
-<p>Select the product, the section, and the branch.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The daily branch is what you normally want to build to check daily work.</p>
+<p>This workflow does not necessarily reflect our current workflow, but it does cover all of the git commands you'll need to know for your daily work. <strong>In this tutorial pay attention to what happens where, and why it happens.</strong></p>
 </div>
-</li>
-<li>
-<p>TEMP REQ:</p>
-<p>Deselect <code>ABORT_BUILD_ON_LOG_PARSE_FAILURE</code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The problem here - for you - is that this Start job kicks off another job where the log file is kind of messy. I'm (Ingemar) working on a tool to make it much easier to see the build result.</p>
-</div>
-</li>
-</ol>
-<h2 id="to-check-build-log">To check build log<a class="headerlink" href="#to-check-build-log" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>Run the build and remember the <em>build number</em> of your job.</p>
-</li>
-<li>
-<p>To see the console output for you build job, click the red/green ball to the left of the build number.</p>
-</li>
-<li>
-<p>In the console output, locate the link that says <code>DOC-Build_help-site #XX completed</code> where XX is your build number.</p>
-</li>
-<li>
-<p>Click the link.</p>
-</li>
-<li>
-<p>In the left hand menu, click <code>Parsed Console Output</code>. (If there are two entries, just choose one).</p>
-</li>
-<li>
-<p>In the <strong>Parsed Console Output</strong>, click <strong>Error (X)</strong>. </p>
-<p>Inside square brackets, you'll see the name of the build step where the problem occurs.</p>
-</li>
-</ol>
-<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<h2 id="create-a-local-branch">Create a local branch<a class="headerlink" href="#create-a-local-branch" title="Permanent link">&para;</a></h2>
+<p>You create branches to isolate work. When you create a branch, it exists on your machine only. I refer to these branches as <em>local</em> branches because they are local to you. You should not run <code>git push</code> or <code>git pull</code> on local branches, since these commands interface between your local repo and the remote repo.</p>
+<h3 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>NPrinting: http://rd-docloc.rdlund.qliktech.com/LD/en-US/nprinting/</p>
+<p>feature/HLP-XXXX</p>
 </li>
 <li>
-<p>Sense: http://rd-docloc.rdlund.qliktech.com/LD/en-US/sense/</p>
+<p>feature/PS-XXXX</p>
 </li>
 <li>
-<p>QlikView: http://rd-docloc.rdlund.qliktech.com/LD/en-US/qlikview/</p>
+<p>bug/HLP-XXXX</p>
 </li>
 <li>
-<p>Connectors: http://rd-docloc.rdlund.qliktech.com/LD/en-US/connectors/</p>
+<p>cleanup/name</p>
 </li>
 </ul>
+<h3 id="scenario">Scenario<a class="headerlink" href="#scenario" title="Permanent link">&para;</a></h3>
+<p>You want to create a branch.</p>
+<ol>
+<li>
+<p><code>git checkout daily</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git branch branch-name</code> (creates a branch) ... OR ...</p>
+<p><code>git checkout -b branch-name</code> (creates and checkouts branch)</p>
+</li>
+</ol>
+<h2 id="commit-your-work">Commit your work<a class="headerlink" href="#commit-your-work" title="Permanent link">&para;</a></h2>
+<p>Committing means adding content to a repository. When you are on a branch, you modify files, you stage the modifications, then you commit those modifications to the local repository.</p>
+<h3 id="scenario_1">Scenario<a class="headerlink" href="#scenario_1" title="Permanent link">&para;</a></h3>
+<p>You edit some files in Flare.</p>
+<ol>
+<li>
+<p><code>git status</code> (to list the modified files that are in the working area)</p>
+</li>
+<li>
+<p><code>git add &lt;file-name&gt;</code> ... OR ...</p>
+</li>
+<li>
+<p><code>git add --all</code> (adds all files in the working area)</p>
+</li>
+<li>
+<p><code>git commit -m "a good commit message"</code></p>
+</li>
+</ol>
+<h2 id="merge-your-branch">Merge your branch<a class="headerlink" href="#merge-your-branch" title="Permanent link">&para;</a></h2>
+<p>Merging means bringing the commit history from one branch into another branch. We merge local branches into shared branches.</p>
+<h3 id="scenario_2">Scenario<a class="headerlink" href="#scenario_2" title="Permanent link">&para;</a></h3>
+<p>You want to merge your local branch to <code>daily</code>.</p>
+<ol>
+<li>
+<p><code>git checkout daily</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git merge &lt;feature-branch&gt;</code></p>
+</li>
+</ol>
+<h2 id="keeping-in-sync">Keeping in sync<a class="headerlink" href="#keeping-in-sync" title="Permanent link">&para;</a></h2>
+<p>Keeping in sync means making sure that your local copies of the <code>master</code> and <code>daily</code> branches have the latest content. Whenever you checkout a shared branch (<code>master</code> or <code>daily</code>), you <em>must</em> run <code>git pull</code> first.</p>
+<h3 id="scenarios">Scenarios<a class="headerlink" href="#scenarios" title="Permanent link">&para;</a></h3>
+<h4 id="you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins">You want to merge your feature with <code>daily</code> so you can check the output with Jenkins<a class="headerlink" href="#you-want-to-merge-your-feature-with-daily-so-you-can-check-the-output-with-jenkins" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><code>git checkout daily</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git merge feature/branch</code></p>
+</li>
+<li>
+<p><code>git push</code> **</p>
+</li>
+</ol>
+<h4 id="you-want-to-cherry-pick-your-feature-to-master">You want to cherry-pick your feature to <code>master</code><a class="headerlink" href="#you-want-to-cherry-pick-your-feature-to-master" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><code>git checkout master</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git merge --squash feature/branch</code></p>
+</li>
+<li>
+<p><code>git add &lt;file-name&gt;</code> ... OR ...</p>
+</li>
+<li>
+<p><code>git add --all</code> (adds all files in the working area)</p>
+</li>
+<li>
+<p><code>git commit -m "a good commit message"</code></p>
+</li>
+<li>
+<p><code>git push</code> **</p>
+</li>
+</ol>
+<h4 id="you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily">You have a long running feature. You want to update your local branch with new content from <code>daily</code><a class="headerlink" href="#you-have-a-long-running-feature-you-want-to-update-your-local-branch-with-new-content-from-daily" title="Permanent link">&para;</a></h4>
+<p>How do we sync our <em>local</em> branch with a remote branch?</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code>git pull</code> step is very important here. If you rebase a daily that is not up-to-date, you'll get into trouble later on.</p>
+</div>
+<p><img alt="diverge" src="../images/branch-diverge.png" /></p>
+<ol>
+<li>
+<p><code>git checkout daily</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git checkout feature/branch</code></p>
+</li>
+<li>
+<p><code>git rebase daily</code></p>
+</li>
+</ol>
+<p><img alt="rebase" src="../images/gitext-rebase.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Compare the two graph images. Notice what happens when you rebase <code>daily</code> <em>onto</em> your feature branch. Git <em>rewinds</em> the head of your feature branch, then adds the commits from daily and then places your commit at the top.</p>
+</div>
+<h4 id="more-complex-example">More complex example<a class="headerlink" href="#more-complex-example" title="Permanent link">&para;</a></h4>
+<p>Rebasing daily onto your local branch works even when there are more than one branches involved. The image below shows a likely scenario:</p>
+<ul>
+<li>
+<p>Some other writer has a local branch and they are merging to <code>daily</code>.</p>
+</li>
+<li>
+<p>The <code>daily</code> branch has commits on it that are not part of your local branch.</p>
+</li>
+<li>
+<p>You are working on a local branch and have been merging to <code>daily</code>.</p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Don't necessarily rebase all the time. I would restrict this to times when you know there is work that you need to grab from daily that was added after you branched off of <code>daily</code>, or when you are working with another writer on a feature/area.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Pay attention to what you are doing! Do not rebase onto shared branches. This increases the risk of having unwanted merge conflicts. Before rebasing, make sure you know what branch you have checked out.</p>
+</div>
+<p><img alt="long" src="../images/long-history.png" /></p>
+<ol>
+<li>
+<p><code>git checkout daily</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git checkout feature/branch</code></p>
+</li>
+<li>
+<p><code>git rebase daily</code></p>
+</li>
+</ol>
+<p>The result is the image below. Note that <code>daily</code> and <code>kyle</code> point to the same commit which shows you that <code>kyle</code> has all of the content from the two parents: 1 from the running <code>daily</code> branch and the other from <code>other-writer</code>.</p>
+<p><img alt="long" src="../images/long-history-2.png" /></p>
+<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Use <code>git pull</code> whenever you interact with a shared branch. Even if you <em>think</em> there is nothing new, get into the habit of pulling often. This is how you grab other writers work <em>before</em> you create a branch.</p>
+</li>
+<li>
+<p>Use <code>git merge</code> to add content from your feature branch into <code>daily</code>. Do this when you want to see the build output from Jenkins. Once you merge into <code>daily</code>, other writers can see this content.</p>
+</li>
+<li>
+<p>Use <code>git rebase</code> when you need to grab <em>newer</em> content from <code>daily</code> to bring it into your feature branch. This is how you manage to keep your local branch content from diverging too much from the <code>daily</code> branch. This is probably not required for short lived features or if the area you are working in is not changing often.</p>
+</li>
+</ul>
+<h2 id="build-in-jenkins">Build in Jenkins<a class="headerlink" href="#build-in-jenkins" title="Permanent link">&para;</a></h2>
+<p>To build the output, Jenkins looks at the <code>daily</code> branch on github.com. The Jenkins build environment asks you to select the product to build, which area or areas of that product's help site, and the branch to build from. The <code>daily</code> branch is what you will build most often.</p>
+<h2 id="squash-and-cherry-pick">Squash and cherry-pick<a class="headerlink" href="#squash-and-cherry-pick" title="Permanent link">&para;</a></h2>
+<p>The <code>master</code> branch is a <em>clean</em> branch that we use to create release branches. This branch contains complete work that can be included in a release. </p>
+<p>We want to avoid having a messy commit history on <code>master</code> by cherry-picking features, bugs, and cleanup work, onto <code>master</code>.</p>
+<p>Think of it like this:</p>
+<ul>
+<li>
+<p>A merge commit results in a history of at least 2 commits:</p>
+<ul>
+<li>
+<p>1 merge commit (E).</p>
+</li>
+<li>
+<p>1 commit from the branch being merged (B).</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span>    B
+     \
+C--D--E (daily)
+</pre></div>
+
+</li>
+<li>
+<p>If the branch has many commits, then the number of commits in the branch history will be the number of commits + 1 merge commit.</p>
+</li>
+<li>
+<p>If 14 writers merge 14 branches with 6 commits on each branch, then the commit history for 14 branches (maybe 14 features) results in 98 commits (14branches *7commits).</p>
+</li>
+</ul>
+<h3 id="two-git-actions">Two git actions<a class="headerlink" href="#two-git-actions" title="Permanent link">&para;</a></h3>
+<h4 id="squash">Squash<a class="headerlink" href="#squash" title="Permanent link">&para;</a></h4>
+<p>This means to take 1+ commits and turn them into a single commit. A squash changes commits, therefore git is rewriting history.</p>
+<h4 id="cherry-pick">Cherry-pick<a class="headerlink" href="#cherry-pick" title="Permanent link">&para;</a></h4>
+<p>This means to take a single commit and add it to the tip of a branch without making a merge commit.</p>
+<h3 id="scenario_3">Scenario<a class="headerlink" href="#scenario_3" title="Permanent link">&para;</a></h3>
+<p>You have tested your feature on the <code>daily</code> branch + Jenkins build. No more work needs to be done.</p>
+<ol>
+<li>
+<p><code>git checkout master</code></p>
+</li>
+<li>
+<p><code>git pull</code> **</p>
+</li>
+<li>
+<p><code>git merge --squash &lt;feature-branch&gt;</code></p>
+<p>This command does not do a merge commit. The <code>--squash</code> option takes all of the modified files from all of the commits on the branch and puts them into the working area on <code>master</code>.</p>
+</li>
+<li>
+<p><code>git add --all</code></p>
+</li>
+<li>
+<p><code>git commit -m "Squash + cherry-pick feature-xxxx to master"</code></p>
+</li>
+<li>
+<p><code>git push</code></p>
+</li>
+</ol>
+<h2 id="writers-checklist">Writer's checklist<a class="headerlink" href="#writers-checklist" title="Permanent link">&para;</a></h2>
+<p>The writer's checklist refers to the steps from start to finish. A feature is finished when the feature has been cherry-picked to <code>master</code> and the local branch is deleted. You should have a checklist whenever you create a new branch.</p>
+<h3 id="example-checklist">Example checklist<a class="headerlink" href="#example-checklist" title="Permanent link">&para;</a></h3>
+<p>For each feature/bug/documentation task:</p>
+<ol>
+<li>
+<p>I create a branch from <code>daily</code>.</p>
+</li>
+<li>
+<p>I label the branch according to the naming convention.</p>
+</li>
+<li>
+<p>I make sure that I have my branch checked out.</p>
+</li>
+<li>
+<p>I do my work and commit my work to my local branch.</p>
+</li>
+<li>
+<p>I merge my branch to daily, I push daily to the remote, I run a build from Jenkins.</p>
+</li>
+<li>
+<p>When my work is finished, I make sure my branch is merged to daily.</p>
+</li>
+<li>
+<p>I squash my commits into a single commit.</p>
+</li>
+<li>
+<p>I cherry-pick that single commit to <code>master</code>.</p>
+</li>
+<li>
+<p>I delete my local branch.</p>
+</li>
+</ol>
                 
                   
                 
@@ -1191,7 +1767,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../history/" title="Git log" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../build/" title="Run a build in Jenkins" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1200,19 +1776,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Git log
+                Run a build in Jenkins
               </span>
             </div>
           </a>
         
         
-          <a href="../complete-workflow/" title="Complete Workflow" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../commandline-tips/" title="Tips for Using Git Bash" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Complete Workflow
+                Tips for Using Git Bash
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

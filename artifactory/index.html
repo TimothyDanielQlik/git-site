@@ -36,7 +36,7 @@
     
     
       
-        <title>With Git Extension - Writing Resources</title>
+        <title>Set up Artifactory - Writing Resources</title>
       
     
     
@@ -94,15 +94,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Tutorials
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  Cherry Pick
+                  Set up your repository
                 </span>
               
             
-            With Git Extension
+            Set up Artifactory
           
         </span>
       </div>
@@ -294,10 +290,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Set up your repository
@@ -325,11 +323,60 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../artifactory/" title="Set up Artifactory" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Set up Artifactory
+      </label>
+    
+    <a href="./" title="Set up Artifactory" class="md-nav__link md-nav__link--active">
       Set up Artifactory
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#test-credentials" title="Test credentials" class="md-nav__link">
+    Test credentials
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#credential-manager" title="Credential manager" class="md-nav__link">
+    Credential manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -354,12 +401,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Tutorials
@@ -531,12 +576,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
     
     <label class="md-nav__link" for="nav-4-4">
       Cherry Pick
@@ -552,60 +595,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        With Git Extension
-      </label>
-    
-    <a href="./" title="With Git Extension" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../cherrypick-gitExt/" title="With Git Extension" class="md-nav__link">
       With Git Extension
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cherry-pick" title="Cherry pick" class="md-nav__link">
-    Cherry pick
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#result" title="Result" class="md-nav__link">
-    Result
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1072,16 +1066,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cherry-pick" title="Cherry pick" class="md-nav__link">
-    Cherry pick
+  <a href="#test-credentials" title="Test credentials" class="md-nav__link">
+    Test credentials
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#result" title="Result" class="md-nav__link">
-    Result
+  <a href="#credential-manager" title="Credential manager" class="md-nav__link">
+    Credential manager
   </a>
   
 </li>
@@ -1105,34 +1099,115 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/cherrypick-gitExt.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/artifactory.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="cherry-pick-with-git-extension">Cherry Pick with Git Extension<a class="headerlink" href="#cherry-pick-with-git-extension" title="Permanent link">&para;</a></h1>
-<p>Cherry pick lets you select a commit from one branch and commit it to another.</p>
-<p>You might want to do this when you want to incorporate some small changes but not all of the changes of a branch.</p>
-<h2 id="cherry-pick">Cherry pick<a class="headerlink" href="#cherry-pick" title="Permanent link">&para;</a></h2>
-<p>I want to cherry pick one commit from <code>feature/hlp-1</code> and commit it to <code>master</code>. Let's say that I want the first commit with the message "Added condition".</p>
-<p><img alt="pick" src="../images/gitext-cherrypick.png" /></p>
+                <h1 id="set-up-artifactory-and-git-lfs">Set up Artifactory and git lfs<a class="headerlink" href="#set-up-artifactory-and-git-lfs" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This setup is done from the command line.</p>
+</div>
 <ol>
 <li>
-<p>Checkout the branch you want to commit to (<code>master</code>)</p>
+<p>Open git bash (or another terminal).</p>
+<p><code>cd</code> into the <code>help-documentation</code> on your local machine.</p>
 </li>
 <li>
-<p>Right-click the commit that you want to cherry pick.</p>
-<p>A dialog opens.</p>
-<p><img alt="pick2" src="../images/gitext-cherrypickdialog.png" /></p>
-<p>Leave both check boxes selected.</p>
+<p>In the root directory <code>c/git/help-documentation</code>, run <code>git lfs install</code>.</p>
 </li>
 <li>
-<p>Click <strong>Cherry pick</strong>.</p>
-<p>The graph should now look like this:</p>
-<p><img alt="pick2" src="../images/gitext-cherrypickafter.png" /></p>
+<p>Now, log into Okta &gt; Artifactory.</p>
+</li>
+<li>
+<p>Click your trigram in the top right-hand corner.</p>
+</li>
+<li>
+<p>Under <em>Authentication Settings</em>, generate API key.</p>
+<p>Copy this key to the clip board.</p>
 </li>
 </ol>
-<h3 id="result">Result<a class="headerlink" href="#result" title="Permanent link">&para;</a></h3>
-<p>The commit that we cherry picked is now on the <code>master</code> branch, and it appears at the top of the graph.</p>
-<p>Notice that this does not result in a merge. The commit is just added to the tip of the branch as if the work was actually done on the <code>master</code> branch.</p>
+<h2 id="test-credentials">Test credentials<a class="headerlink" href="#test-credentials" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Run the following commands from the help-documentation repository</p>
+</div>
+<ol>
+<li>
+<p>From the command line, run <code>git pull</code>.</p>
+</li>
+<li>
+<p>Make sure you are on the <code>daily</code> branch. See <a href="../remote/">Get the remote branches</a> if you haven't yet grabbed the <code>daily</code> branch.</p>
+</li>
+<li>
+<p>Save any small <code>png</code> file to your desktop (Google images).</p>
+</li>
+<li>
+<p>Now, drag this image file into the root <code>help-documentation</code> folder on your machine
+    (do not add it to content or project folders).</p>
+</li>
+<li>
+<p>Run <code>git status</code> to see that git has add the file to your working area. it will appear in red.</p>
+</li>
+<li>
+<p>Run <code>git add .</code> to add the image to the index.</p>
+</li>
+<li>
+<p>Run <code>git commit -m "Adding a test image"</code> to add the image on your branch.</p>
+</li>
+<li>
+<p>Run <code>git push</code>.</p>
+<p>Since this is your first time pushing with lfs, you should receive an SSH prompt.
+Here, enter your trigram and API key (not your password).</p>
+</li>
+</ol>
+<p>If the push is successful, you should see something like this:</p>
+<div class="codehilite"><pre><span></span>Uploading LFS objects: <span class="m">100</span>% <span class="o">(</span><span class="m">1</span>/1<span class="o">)</span>, <span class="m">4</span>.9 KB <span class="p">|</span> <span class="m">0</span> B/s, <span class="k">done</span>
+Counting objects: <span class="m">3</span>, <span class="k">done</span>.
+Delta compression using up to <span class="m">4</span> threads.
+Compressing objects: <span class="m">100</span>% <span class="o">(</span><span class="m">3</span>/3<span class="o">)</span>, <span class="k">done</span>.
+Writing objects: <span class="m">100</span>% <span class="o">(</span><span class="m">3</span>/3<span class="o">)</span>, <span class="m">379</span> bytes <span class="p">|</span> <span class="m">379</span>.00 KiB/s, <span class="k">done</span>.
+Total <span class="m">3</span> <span class="o">(</span>delta <span class="m">1</span><span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta <span class="m">0</span><span class="o">)</span>
+remote: Resolving deltas: <span class="m">100</span>% <span class="o">(</span><span class="m">1</span>/1<span class="o">)</span>, completed with <span class="m">1</span> <span class="nb">local</span> object.
+To https://github.com/qlik-trial/help-documentation.git
+   8acfae3..532fbb8  master -&gt; master
+</pre></div>
+
+<p>If you get something like this:</p>
+<div class="codehilite"><pre><span></span>Uploading LFS objects:   <span class="m">0</span>% <span class="o">(</span><span class="m">0</span>/1<span class="o">)</span>, <span class="m">0</span> B <span class="p">|</span> <span class="m">0</span> B/s, <span class="k">done</span>
+batch response: Authorization error: https://qliktech.jfrog.io/qliktech/api/lfs/git-lfs/objects/batch
+Check that you have proper access to the repository
+error: failed to push some refs to <span class="s1">&#39;https://github.com/qlik-trial/help-documentation.git&#39;</span>
+</pre></div>
+
+<p>then you'll need to fix your credential manager.</p>
+<h3 id="credential-manager">Credential manager<a class="headerlink" href="#credential-manager" title="Permanent link">&para;</a></h3>
+<p>Artifactory credentials are stored in the Windows Credential Manager,
+and git uses this to send the API call to Artifactory when you run <code>git push</code>.</p>
+<ol>
+<li>
+<p>Go to Control Panel &gt; User Accounts &gt; Credential Manager</p>
+</li>
+<li>
+<p>Under generic credentials, you might see a URL that contains <code>jfrog</code>.</p>
+<p>Delete this credential.</p>
+</li>
+<li>
+<p>Add a new generic credential.</p>
+<p>url: https://qliktech.jfrog.io/qliktech/api/lfs/git-lfs</p>
+<p>username: trigram</p>
+<p>pw: api key (not your Qlik password)</p>
+<p>Save and close.</p>
+</li>
+<li>
+<p>Try running <code>git push</code> again.</p>
+<p>This time, if a prompt should come up asking for your credentials, enter trigram and API key again.</p>
+<p>This time, your push should work and your credentials should be updated for future pushes.</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If everything goes well, please delete you image by doing the same thing as above, but instead of step 3 and 4, just delete the image from the folder. Then continue with steps for that sections.</p>
+</div>
                 
                   
                 
@@ -1151,7 +1226,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../merge-gitbash/" title="With Git Bash" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../clone/" title="Clone the repo" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1160,19 +1235,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                With Git Bash
+                Clone the repo
               </span>
             </div>
           </a>
         
         
-          <a href="../blame-gitExt/" title="With Git Extension" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../remote/" title="Get the remote branches" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                With Git Extension
+                Get the remote branches
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
