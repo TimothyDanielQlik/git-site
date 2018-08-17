@@ -41,7 +41,7 @@ I can combine the two previous commands into one, so I create and checkout at th
 git checkout -b <branch-name>
 ```
 
-My new branch is only on my machine. It won't appear on GitHub unless I push it to the remote (GitHub). For development branches this is required. For personal work, it is optional. If my work is only for me and I don't need to share it with anyone until it is finished, then I can leave it as a local branch.
+My new branch is only on my machine. It won't appear on Github unless I push it to the remote (Github). For development branches this is required. For personal work, it is optional. If my work is only for me and I don't need to share it with anyone until it is finished, then I can leave it as a local branch.
 
 However, I want this branched to be tracked so others can help me on this document. I need to push my branch upstream and set it to track changes.
 

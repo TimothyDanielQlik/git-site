@@ -34,9 +34,9 @@ I'll use my omni sandbox repo to show a merge with Git Extension.
 
 I created a `feature/hlp-1` and did some work on this branch. I also did some work on `daily`. `daily` points to the commit with the message "second commit" and `feature/HLP-1` points to a commit with the message "Added condition" Both branches have commits that the other branch does not have.
 
-![merge](assets/images/gitExt-d15.png)
+![merge](images/gitext-merge.png)
 
-Sourcetree also shows me that I am on `feature/HLP-1` (square commit).
+Git Extensions also shows me that I am on `feature/HLP-1` (square commit).
 
 I want to take the latest commit from `feature/HLP-1` and merge that into `daily`.
 
@@ -48,19 +48,19 @@ I want to take the latest commit from `feature/HLP-1` and merge that into `daily
 
     A dialog opens that looks like this:
 
-    ![openmerge](assets/images/gitExt-d17.png)
+    ![openmerge](images/gitext-merge2.png)
 
     This dialog shows you the graphical representation of what will happen to your branches after a merge commit. Also, since the **Keep single branch line if possible** is selected, when you hover over the image you'll see this:
 
-    ![hover](assets/images/gitExt-d16.png)
+    ![hover](images/gitext-merge-ff.png)
 
-    This is shwoing you a fast-forward merge if this is possible. In our current example, this is not possible since our branch histories differ.
+    This is showing you a fast-forward merge if this is possible. In our current example, this is not possible since our branch histories differ.
 
 1. Select **Merge**.
 
     The graph now looks like this:
 
-    ![result](assets/images/gitExt-d18.png)
+    ![result](images/gitext-merge3.png)
 
 ## Delete after finished
 
@@ -70,9 +70,9 @@ Make sure you are not checkout on the branch that you want to delete.
 
 1. Select **Delete branch** > `feature/HLP-1`
 
-    A dialog opens. You can select **Force delete** if you have some uncommited changes on this branch that have not been merged (and that you don't want to keep).
+    A dialog opens. You can select **Force delete** if you have some uncommitted changes on this branch that have not been merged (and that you don't want to keep).
 
 1. Click **Delete**.
 
-???Note
+!!! Note
     You only want to delete feature branches after the work is finished that the commits have been squashed and cherry-picked to master.

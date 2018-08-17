@@ -20,7 +20,7 @@ There are several ways to create a new branch. Choose whichever is most convenie
 
     1. Select **Checkout branch**.
 
-        ![branch](assets/images/gitExt-d14.png)
+        ![branch](images/gitext-checkout.png)
 
     1. Name your branch `feature/HLP-XXX` or `feature/PS-XXX1` where XXX is the correct JIRA number.
 
