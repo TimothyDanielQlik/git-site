@@ -6,9 +6,9 @@ The majority of our work involves creating and editing individual files. Git Ext
 
 When you start to edit a file in a git repo, git keeps tracks of the changes.
 
-Look at the image below. The second menu bar at the top indicates that we have _Commit (1)_, telling us that we have one uncommited change.
+Look at the image below. The second menu bar at the top indicates that we have _Commit (1)_, telling us that we have one uncommitted change.
 
-![diffs](assets/images/gitExt-d2.png)
+![diffs](images/gitext-commitbutton.png)
 
 ## Stage the file and/or changes
 
@@ -36,7 +36,7 @@ Why would you want to stage a file in hunks?
 
     Use the down arrows to stage a file or stage all, and use the up arrows to unstage a file or unstage all.
 
-    ![stage](assets/images/gitExt-d3.png)
+    ![stage](images/gitext-stage.png)
 
 ### Stage hunks
 
@@ -48,9 +48,9 @@ If you are working on a file and have many added/removed lines, you can stage hu
 
     When you stage hunks, make sure to select the add/remove equivalent. For example, line 1 changed by adding the encoding UTF=8. Make sure to stage both the line highlighted in red and that line 1 highlighted in green.
 
-    ![add/remove](assets/images/gitExt-d4.png)
+    ![add/remove](images/gitext-lines.png)
 
-    ???Tip
+    !!!Tip
         Always stage _added_ and _removed_ lines together. If you don't, you'll end up with conflicts in the files.
 
 ## Commit file changes to a branch
@@ -61,13 +61,13 @@ After you stage individual files, hunks, or lines, you then commit those staged 
 
 1. Click **Commit**.
 
-    Feature branches are not tracked on GitHub so we don't need to push changes. If you are commiting directly to a shared branch then you can select **Commit & push**.
+    Feature branches are not tracked on Github so we don't need to push changes. If you are committing directly to a shared branch then you can select **Commit & push**.
 
-![commit](assets/images/commit.png)
+![commit](images/gitext-commit.png)
 
 After you commit the changes to the branch, the Git Extension graph will show the newest commit at the top with the message that you added.
 
-![commit](assets/images/commithistory.png)
+![commit](images/gitext-commithistory.png)
 
 More on branches in the [branching](branches.md) section.
 
@@ -93,21 +93,19 @@ To stash changes:
 
     The stash is saved to the stash dialog window under `WIP <branch> <file>`.
 
-    
-
 Now I want to bring my stash back into the working area.
 
 1. Click **Commands** > **Stash Changes**.
 
     A dialog opens.
 
-    ![stash](assets/images/shashstore.png)
+    ![stash](images/gitext-stashstore.png)
 
 1. Select the stash, then **Apply Select Stash** to apply the stash to the current branch.
 
     The graph will show that the index has been added and there will be a pending commit.
 
-    ![stash](assets/images/gitExt-d5.png)
+    ![stash](images/gitext-pending.png)
 
 1. Commit the changes as normal.
 
@@ -121,11 +119,11 @@ It can be useful to be able to quickly see the state of a file at any point alon
 
     Right-click the file and select **View History**.
 
-    ![d6](assets/images/gitExt-d6.png)
+    ![d6](images/gitext-filetree.png)
 
     A dialog opens.
 
-    ![opens](assets/images/gitExt-d7.png)
+    ![opens](images/gitext-filehistory.png)
 
     At the top, you can see which file history you are looking at.
 
@@ -148,7 +146,7 @@ It can be useful to be able to quickly see the state of a file at any point alon
 
     A new commit is added to the top of the graph that reverts the files to the previous version.
 
-!!!Info
-    If there were more than one file associated with a commit, those files are added back into the working area. After you commit the file you want to revert, just discard the files in the working area. 
+!!! Reminder
+    If there were more than one file associated with a commit, those files are added back into the working area. After you commit the file you want to revert, just discard the files in the working area.
 
     Right-click the files and select **Reset files or directory changes**.

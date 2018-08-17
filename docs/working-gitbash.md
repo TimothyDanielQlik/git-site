@@ -12,7 +12,7 @@ Either before of after, and to use as a reference anytime, the cheat sheet is a 
 
 * [Git Bash Cheat Sheet](commands.md)
 
-??? Tip
+!!! Tip
     If Git Bash goes into interactive shell mode when you are running the commands on this page, you can type `q` then hit `Enter` to return to the command shell. If you enter vim (the shell-bashed text editor), hit `esc` then type `x`, then hit `enter`.
 
 ## See the changes to a file
@@ -166,7 +166,7 @@ After running `git add -p <file-name>`, print the patch help by entering `?` opt
 
 Enter `s` and press enter. If git is able to automatically split the hunk, it will. If the hunk cannot be split, you'll have to do this manually with a GUI like Sourcetree (or read the git documentation to do this manually with Git Bash: [Git Tools - Interactive Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)).
 
-??? Info
+!!! Info
     I am not documenting splitting hunks with Git Bash because it is much easier just to use Sourcetree. </br>See how you can do this with a GUI: [Stage the file and/or changes](working-gitExt.md#stage-the-file-andor-changes).
 
 ## Commit file changes to a branch

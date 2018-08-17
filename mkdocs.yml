@@ -38,32 +38,25 @@ pages:
     - Set up Artifactory: artifactory.md
     - Get the remote branches: remote.md
   - Tutorials:
-    - Working on Files:
-      - mergetool: mergetool.md
-      - Working on a File in Git Extension: working-gitExt.md
-      - Working on a File with Git Bash: working-gitbash.md
+    - Changing files:
+      - With Git Extension: working-gitExt.md
+      - With Git Bash: working-gitbash.md
     - Branching:
-      - About Branches: branches.md
-      - Create a Branch with Git Extension: branching_gitExt.md
-      - Create a Branch with Git Bash: branch-gitbash.md
-      - Git Extension Graph: gitExt-graph.md
-      - Branching Best Practices: best-practice-branch.md
+      - What are branches: branches.md
+      - With Git Extension: branching-gitExt.md
+      - With Git Bash: branch-gitbash.md
     - Merging:
-      - Merge with Git Extension: merge-gitExt.md
-      - Merge with Git Bash: merge-gitbash.md
-    - Building:
-        - Run a build in Jenkins: build.md
+      - With Git Extension: merge-gitExt.md
+      - With Git Bash: merge-gitbash.md
     - Cherry Pick:
-      - Cherry Pick with Git Extension: cherrypick-gitExt.md
+      - With Git Extension: cherrypick-gitExt.md
     - Blame:
-      - Blame with Git Extension: blame-gitExt.md
-    - Merge and Rebase:
-      - Rebase with Sourcetree: rebase-sourcetree.md
+      - With Git Extension: blame-gitExt.md
     - Amend Commits:
       - Amend Commits from command line: amend.md
     - Squash Commits:
-      - Squash Commits with Git Extension: squash-gitExt.md
-      - Squash and Merge with Git Bash: squash_all.md
+      - With Git Extension: squash-gitExt.md
+      - With Git Bash: squash_all.md
     - Recover a deleted branch: recover-branch.md
     - Reverse Commits:
       - Revert Commits with Git Extension: revert-gitExt.md
@@ -72,8 +65,11 @@ pages:
       - Revert merge commits: revert-merge-commit.md
     - Important Concepts:
       - Fetch vs. Pull: fetch-v-pull.md
-      - Merge Conflicts: conflicts.md
+      - What is a merge conflict: conflicts.md
+      - Using the mergetool: mergetool.md
       - Git log: history.md
+  - Build with Jenkins:
+    - Run a build in Jenkins: build.md
   - Sample workflow:
     - Complete Workflow: complete-workflow.md
   - Extras: 
@@ -81,5 +77,4 @@ pages:
     - Git commands: commands.md
     - Git Extension Graph: gitExt-graph.md
     - Git Terminology: terminology.md
-
   - About this website: about.md
