@@ -6,7 +6,7 @@ If you forget to cherry-pick your feature to `master`, and you delete your branc
 
 The easiest way to find your commits is to use the filter option in Git Extension.
 
-![filter](assets/images/filter.png)
+![filter](images/gitext-filter.png)
 
 1. Select **Author**.
 
@@ -24,7 +24,7 @@ The easiest way to find your commits is to use the filter option in Git Extensio
 
 After you add the filter, you only see your own commits.
 
-![recover](assets/images/recover-graph.png)
+![recover](images/gitext-recovergraph.png)
 
 The branch I want to recover is `feature/HLP-3103`. I can see which files were changed in each commit by clicking on a commit and looking at the **Commit** (shows the files) and **Diff** (shows the changes) tabs.
 
@@ -44,9 +44,9 @@ I want to create a branch at the latest relevant commit that was merged into `da
 
 1. Select **View** > **Show current branch only**.
 
-    ![only](assets/images/saveonly.png)
+    ![only](images/gitext-showonly.png)
 
-??? Note
+!!! Note
     Now the graph is showing your recovered branch and only your commits.
 
 !!! Note
@@ -60,7 +60,7 @@ I want to create a branch at the latest relevant commit that was merged into `da
 
     In the image below, in red are the commits associated with the feature. In green is the parent of the earliest commit on my feature branch. How do I know it is the parent? Locate the earliest commit and trace that branch down.
 
-    ![parent](assets/images/parent.png)
+    ![parent](images/gitext-parent.png)
 
     ```ASCII
     *   Replace hard-coded SW version with variable (earliest commit)
@@ -79,7 +79,7 @@ The commit button will indicate that you have some files to commit. Click on the
 
 You might see files not part of your feature. This is because other people have committed to `daily`, and these commits are parents of other commits in the new branch.
 
-![asset](assets/images/recommit.png)
+![asset](images/gitext-recommit.png)
 
 1. Select the files associated with the feature and stage them.
 
@@ -89,7 +89,7 @@ You might see files not part of your feature. This is because other people have 
 
 1. Select **Commit**.
 
-    ![recommit](assets/images/recommit1.png)
+    ![recommit](images/gitext-recommit1.png)
 
     At the top of the branch we now have a single commit associated with the feature.
 
@@ -113,6 +113,6 @@ You might see files not part of your feature. This is because other people have 
 
 ## The result
 
-![picked](assets/images/picked.png)
+![picked](images/gitext-picked.png)
 
 Verify the content before deleting the local branch.
