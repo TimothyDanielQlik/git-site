@@ -1137,7 +1137,12 @@
                 
                 
                 <h1 id="reset-a-commit-with-git-extension">Reset a Commit with Git Extension<a class="headerlink" href="#reset-a-commit-with-git-extension" title="Permanent link">&para;</a></h1>
-<details class="warning"><summary>Warning</summary><p>Git Reset (delete) is a destructive process, and by this I mean that git reset changes the history of a branch and when you change histories you increase the chances of having problematic merges between branches. Only reset a commit if it is absolutely necessary.</br>Instead, use <a href="../revert-gitExt/">Git Revert</a>.</p></details><p>There may be times when you need to reset (delete) a commit, but this should be a last-resort operation. However, reset is also the function we use to squash commits, so some of this content might be familiar. This topic covers deleted commits rather than squashing them.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Git Reset (delete) is a destructive process, and by this I mean that git reset changes the history of a branch and when you change histories you increase the chances of having problematic merges between branches. Only reset a commit if it is absolutely necessary.</p>
+<p>Instead, use <a href="../revert-gitExt/">Git Revert</a>.</p>
+</div>
+<p>There may be times when you need to reset (delete) a commit, but this should be a last-resort operation. However, reset is also the function we use to squash commits, so some of this content might be familiar. This topic covers deleted commits rather than squashing them.</p>
 <p>There are three options:</p>
 <table>
 <thead>
@@ -1170,10 +1175,10 @@
 <li>
 <p>Right-click the parent of the commit you want to delete and select <strong>Reset current branch to here</strong>.</p>
 <p>A dialog opens.</p>
-<p><img alt="reset" src="../assets/images/gitExt-d22.png" /></p>
 </li>
 <li>
 <p>Select one of the options.</p>
+<p>See: <a href="#reset-options">Reset Options</a></p>
 </li>
 <li>
 <p>Click <strong>OK</strong>.</p>

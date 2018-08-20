@@ -1467,7 +1467,7 @@
                 
                 
                 <h1 id="a-complete-workflow">A complete workflow<a class="headerlink" href="#a-complete-workflow" title="Permanent link">&para;</a></h1>
-<p>The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more highlevel workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. <code>git merge</code>), but you can do the action with the Git Extensions.</p>
+<p>The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more high-level workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. <code>git merge</code>), but you can do the action with the Git Extensions.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>** marks a step that pulls content from the remote to your local branch. Pay attention to when you should run <code>git pull</code>.</p>
@@ -1588,7 +1588,7 @@
 <p class="admonition-title">Tip</p>
 <p>The <code>git pull</code> step is very important here. If you rebase a daily that is not up-to-date, you'll get into trouble later on.</p>
 </div>
-<p><img alt="diverge" src="../images/branch-diverge.png" /></p>
+<p><img alt="diverge" src="../images/gitext-branchdiverge.png" /></p>
 <ol>
 <li>
 <p><code>git checkout daily</code></p>
@@ -1629,7 +1629,7 @@
 <p class="admonition-title">Warning</p>
 <p>Pay attention to what you are doing! Do not rebase onto shared branches. This increases the risk of having unwanted merge conflicts. Before rebasing, make sure you know what branch you have checked out.</p>
 </div>
-<p><img alt="long" src="../images/long-history.png" /></p>
+<p><img alt="long" src="../images/gitext-longhistory.png" /></p>
 <ol>
 <li>
 <p><code>git checkout daily</code></p>
@@ -1645,7 +1645,7 @@
 </li>
 </ol>
 <p>The result is the image below. Note that <code>daily</code> and <code>kyle</code> point to the same commit which shows you that <code>kyle</code> has all of the content from the two parents: 1 from the running <code>daily</code> branch and the other from <code>other-writer</code>.</p>
-<p><img alt="long" src="../images/long-history-2.png" /></p>
+<p><img alt="long" src="../images/gitext-longhistory2.png" /></p>
 <h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
