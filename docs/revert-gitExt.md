@@ -38,17 +38,17 @@ To reverse a commit, do the following:
 1. Select **Revert commit**.
 1. Click **Revert this commit**.
 
-    If you leave the **Automatically create a new commit** box unselected, the files associated with this commit will be staged but not commited. You will have to commit them manually. This might be useful if a commit contains many files, and you only want to revert _some_ of the files.
+    If you leave the **Automatically create a new commit** box unselected, the files associated with this commit will be staged but not committed. You will have to commit them manually. This might be useful if a commit contains many files, and you only want to revert _some_ of the files.
 
 For example, after reverting a commit but not automatically merging, I can see 6 files in the index.
 
-![ex](assets/images/gitExt-d26.png)
+![ex](images/gitext-unstage3.png)
 
 I only want to revert changes associated with the Engine API.
 
 1. Unstage the files that you don't want to revert.
 
-    ![ex](assets/images/gitExt-d27.png)
+    ![ex](images/gitext-unstage.png)
 
 1. Add a commit message of add to the auto-generated message.
 
@@ -56,7 +56,7 @@ I only want to revert changes associated with the Engine API.
 
     The unstaged files are still modified in the working area.
 
-    ![ex](assets/images/gitExt-d28.png)
+    ![ex](images/gitext-unstage2.png)
 
 1. Highlight the unstaged files.
 

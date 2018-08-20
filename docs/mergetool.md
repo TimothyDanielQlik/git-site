@@ -2,7 +2,9 @@
 
 When a conflict occurs, Git Extensions suggests that you solve the conflict. Git Extension opens conflicts in whichever tool you configure as your default merge and diff tool. In this example, we look at Meld, but other tools work similarily.
 
-### Understanding the windows
+## Overview of the mergetool
+
+### Mine, theirs, and ancestor
 
 ![meld](images/meld-windows.png)
 

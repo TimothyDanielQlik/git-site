@@ -1,7 +1,9 @@
 # Reset a Commit with Git Extension
 
-??? Warning
-    Git Reset (delete) is a destructive process, and by this I mean that git reset changes the history of a branch and when you change histories you increase the chances of having problematic merges between branches. Only reset a commit if it is absolutely necessary.</br>Instead, use [Git Revert](revert-gitExt.md).
+!!! Warning
+    Git Reset (delete) is a destructive process, and by this I mean that git reset changes the history of a branch and when you change histories you increase the chances of having problematic merges between branches. Only reset a commit if it is absolutely necessary.
+
+    Instead, use [Git Revert](revert-gitExt.md).
 
 There may be times when you need to reset (delete) a commit, but this should be a last-resort operation. However, reset is also the function we use to squash commits, so some of this content might be familiar. This topic covers deleted commits rather than squashing them.
 
@@ -13,7 +15,7 @@ There are three options:
 |Mixed |Reverts branch to previous commit and unstages the file(s).|
 |Hard   |Reverts branch to previous commit and deletes any changes associated with the deleted commit.|
 
-!!!Tip
+!!! Tip
     You most always want to do a soft or mixed reset.
 
 To reset commits, do the following:
@@ -22,9 +24,9 @@ To reset commits, do the following:
 
     A dialog opens.
 
-    ![reset](assets/images/gitExt-d22.png)
-
 1. Select one of the options.
+
+    See: [Reset Options](#reset-options)
 
 1. Click **OK**.
 

@@ -1,6 +1,6 @@
 # A complete workflow
 
-The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more highlevel workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. `git merge`), but you can do the action with the Git Extensions.
+The other topics should have given you a good foundation for running some of the many git processes in Git Bash and Git Extension. This topic will cover a more high-level workflow without going too much into the small details which are covered in other topics. When referring to git actions, I will use the command name (ex. `git merge`), but you can do the action with the Git Extensions.
 
 !!! Info
     ** marks a step that pulls content from the remote to your local branch. Pay attention to when you should run `git pull`.
@@ -103,7 +103,7 @@ How do we sync our _local_ branch with a remote branch?
 !!! Tip
     The `git pull` step is very important here. If you rebase a daily that is not up-to-date, you'll get into trouble later on.
 
-![diverge](images/branch-diverge.png)
+![diverge](images/gitext-branchdiverge.png)
 
 1. `git checkout daily`
 
@@ -134,7 +134,7 @@ Rebasing daily onto your local branch works even when there are more than one br
 !!! Warning
     Pay attention to what you are doing! Do not rebase onto shared branches. This increases the risk of having unwanted merge conflicts. Before rebasing, make sure you know what branch you have checked out.
 
-![long](images/long-history.png)
+![long](images/gitext-longhistory.png)
 
 1. `git checkout daily`
 
@@ -146,7 +146,7 @@ Rebasing daily onto your local branch works even when there are more than one br
 
 The result is the image below. Note that `daily` and `kyle` point to the same commit which shows you that `kyle` has all of the content from the two parents: 1 from the running `daily` branch and the other from `other-writer`.
 
-![long](images/long-history-2.png)
+![long](images/gitext-longhistory2.png)
 
 ### Summary
 

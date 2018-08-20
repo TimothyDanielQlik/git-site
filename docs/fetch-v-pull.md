@@ -9,9 +9,12 @@ When you run `git fetch`, git gathers any commits from the remote branch that do
 1. `fetch` is a simple process.
 1. `pull` is a complex process (`fetch` + `merge`).
 
-    ![assets](assets/images/fetch-v-pull.png)
+    ![assets](images/fetch-v-pull.png)
 
-### Sourcetree
+### Example
+
+!!! Note
+    The screenshots below reflect the Sourcetree GUI, but the idea is much the same when using Git Extensions.
 
 Let's say there are changes on the remote `master` branch.
 
@@ -19,19 +22,19 @@ Let's say there are changes on the remote `master` branch.
 
     Notice that the pull button is marked with a number. This indicates how many commits were fetched from the remote that are now in your local repository, but are not yet merged with your current branch.
 
-    ![button](assets/images/fetch-button.png)
+    ![button](images/sourcetree-fetchbutton.png)
 
 1. Click **Pull** from the ribbon to merge the fetched changes.
 
     You can continue to commit changes to your local branch. Now the push button is marked with a number that indicates how many commits from the local branch are not pushed to the remote.
 
-    ![fetch](assets/images/fetch-commit.png)
+    ![fetch](images/sourcetree-fetchcommit.png)
 
     You cannot push your changes to the remote before you pull.
 
 After you pull the changes, the graph will show a merge commit and an auto-generated message.
 
-![merge](assets/images/pull-merge.png)
+![merge](images/sourcetree-pullmerge.png)
 
 ### Git Bash
 
@@ -88,7 +91,7 @@ Git is telling me that I have 1 commit to pull, and 1 commit to push (just like 
 
 I need to pull before I push.
 
-??? Recommendation
+!!! Recommendation
     The shell is telling you to run `git pull`. Remember though, pull is two operations: `fetch` and `merge`. Since you purposely used `git fetch`, you should probably use `git merge`. This will merge the commits from your fetch, but it wont pull any new changes from remote. For the sake of consistency, I'll use `git pull` to finish the example.
 
 When I run `git pull`, git puts me into interactive mode.
@@ -97,7 +100,7 @@ Remember in the Sourcetree example above, Sourcetree creates an automatic commit
 
 Your shell will look like this (the commit message is boxed in green):
 
-![insert](assets/images/insert.png)
+![insert](images/gitbash-insertmessage.png)
 
 #### To save this message
 
@@ -111,7 +114,7 @@ Your shell will look like this (the commit message is boxed in green):
 1. Then type `esc`.
 1. Then, type `:x` to save and exit interactive mode.
 
-??? Info
+!!! Note
     If you don't have any local commits when you run `git pull`, you will not enter interactive mode since git is able to do a fast-forward merge.
     ```bash
     git pull

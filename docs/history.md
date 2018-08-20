@@ -4,7 +4,7 @@ Use Git Bash to explore your git history.
 
 ## The git graph
 
-The git graph is the ASCII version of a git GUI, like Git Extension.
+The git graph is the ASCII version of a git GUI, like Git Extensions.
 
 Here are some important commands:
 
@@ -15,7 +15,7 @@ Here are some important commands:
 ||`--decorate`|Shows the positional references: HEAD, branch|
 ||`--oneline`|Formats log to single line|
 
-![log](assets/images/gitlog.png)
+![log](images/gitbash-gitlog.png)
 
 ## Show a commit
 

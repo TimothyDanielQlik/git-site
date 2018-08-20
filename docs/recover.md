@@ -1,6 +1,7 @@
 # Recover a Deleted Commit
 
-Well, you've decided to delete a commit, but now you realize you shouldn't have done that! Not all is lost, but you'll need to abandon Sourcetree and open up Git Bash.
+Well, you've decided to delete a commit, but now you realize you shouldn't have done that! Not all is lost,
+but you'll need to abandon your GUI and open up Git Bash.
 
 To recover a deleted commit (or any deleted object), do the following:
 
@@ -18,7 +19,8 @@ To recover a deleted commit (or any deleted object), do the following:
     dangling tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904
     ...
     ```
-    Dangling objects are not associated with a branch. They exist in the git log but they are not traceable to anything (because you deleted it!).
+    Dangling objects are not associated with a branch.
+    They exist in the git log but they are not traceable to anything (because you deleted it!).
 
     Unfortunately, there is no particular order to these dangling objects so it is difficult to know what we're looking for. If you can't find it with `git fsck`, run `reflog`.
 
@@ -33,9 +35,10 @@ To recover a deleted commit (or any deleted object), do the following:
     ...
     ```
 
-    The `reflog` keeps a record of when the tip of a branch was updated. Deleting a commit is also like updating the tip of a branch. The reflof is ordered.
+    The `reflog` keeps a record of when the tip of a branch was updated.
+    Deleting a commit is also like updating the tip of a branch. The reflof is ordered.
 
-    ??? Info
+    !!! Note
         Remember that a git reset takes the commit message from the commit you are reseting the branch to, and puts a `reset:` infront. Use this to located deleted commits.
 
     The commit I wan to recover is bcbb398 (the commit above it was `reset`).
@@ -68,9 +71,10 @@ To recover a deleted commit (or any deleted object), do the following:
     git merge bcbb398
     ```
 
-1. Open Sourcetree.
+1. Open Git Extensions.
 
     You should see the recovered commit.
 
-    ??? Tip
-        You might see some uncommitted changes that come along with the merge. These should not be a problem. Just have a look to see what is uncommitted before you commit them.
+    !!! Tip
+        You might see some uncommitted changes that come along with the merge.
+        These should not be a problem. Just have a look to see what is uncommitted before you commit them.
