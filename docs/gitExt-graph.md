@@ -2,7 +2,7 @@
 
 When you open Git Extension, it looks something like this:
 
-![tree](assets/images/gitExt-branches.png)
+![tree](images/gitext-rebase.png)
 
 When you first clone our documentation project (or any git repo), the first thing you'll notice a graph. This graph shows your commit history. Branches are indicated with labels that point to a commit. Each dot along the line is a previous commit with a commit message.
 
@@ -27,7 +27,7 @@ You can click on a commit to bring up the commit details. There are 4 tabs:
 |Diff | The differences added to the selected file in this commit.|
 |Console | A console to use command line.|
 
-![diffs](assets/images/gitExt-d8.png)
+![diffs](images/gitext-recommit1.png)
 
 ## Committing your work
 
@@ -42,7 +42,7 @@ When you work on files, they are added the working area and are currently unstag
 
 In Git Extension, this looks like this:
 
-![staged](assets/images/staged.png)
+![staged](images/gitext-unstage2.png)
 
 Files in the red area are modified and in the working area. Files in the green area are modified and added to the index.
 
@@ -64,7 +64,7 @@ After you commit files to the repository, you can close this dialog. You'll see 
 
 From the main window, you can toggle your remote branches under **View**. In the screen capture below, I have toggled them ON (in red) so that they appear in the graph.
 
-![remotes](assets/images/gitExt-d9.png)
+![remotes](images/gitext-showonly.png)
 
 Notice that they are pointing to previous commits, and importantly, different commits than their local counterparts. This means that my local `master` and `daily` are out-of-sync with the remotes.
 
@@ -72,11 +72,11 @@ To push changes:
 
 1. Use the blue arrow to push changes to the remotes.
 
-    ![arrow](assets/images/gitExt-d10.png)
+    ![arrow](images/gitExt-d10.png)
 
 1. The default behaviour is to push the checked-out branch. You can also select the **Push multiple branches** tab to select more than one branch.
 
-    ![push](assets/images/gitExt-d11.png)
+    ![push](images/gitExt-d11.png)
 
 Note that:
 
@@ -94,7 +94,7 @@ When the remote and local branches diverge, the remote takes precedence in that 
 
 If you try to push first, Git Extension will throw this error.
 
-![pushpull](assets/images/gitExt-d12.png)
+![pushpull](images/gitExt-d12.png)
 
 You just need to do a `pull` first. Select **Pull with last action**.
 

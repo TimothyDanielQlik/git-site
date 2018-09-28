@@ -48,6 +48,8 @@ If you are working on a file and have many added/removed lines, you can stage hu
 
     When you stage hunks, make sure to select the add/remove equivalent. For example, line 1 changed by adding the encoding UTF=8. Make sure to stage both the line highlighted in red and that line 1 highlighted in green.
 
+    ![line](images/gitExt-lines.png)
+
 ## Commit file changes to a branch
 
 After you stage individual files, hunks, or lines, you then commit those staged files to the branch. When you commit, all _staged_ files (files that are added to the index) are included in the commit.
