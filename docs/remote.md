@@ -10,14 +10,11 @@ When you clone the `help-documentationn` repo, whether it be with git bash or Gi
 
 1. Click the branch drop-down and select **Checkout branch**.
 
-    ![remote](assets/images/remote.png)
-
     A dialog opens.
 
+1. Select **Remote branch**.
 
-1. Make sure to use the following selections:
-
-    ![remote](assets/images/remote2.png)
+    Choose `origin/daily` or whichever remote branch you want to pull.
 
 1. Select **Checkout**.
 

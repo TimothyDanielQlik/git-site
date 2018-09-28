@@ -62,21 +62,23 @@ After you commit files to the repository, you can close this dialog. You'll see 
 
 ## Committing locally but not pushing to remote
 
-From the main window, you can toggle your remote branches under **View**. In the screen capture below, I have toggled them ON (in red) so that they appear in the graph.
+From the main window, you can toggle your remote branches under **View**. In the screen capture below, I have toggled them on so that they appear in the graph.
 
 ![remotes](images/gitext-showonly.png)
 
-Notice that they are pointing to previous commits, and importantly, different commits than their local counterparts. This means that my local `master` and `daily` are out-of-sync with the remotes.
+You'll notice that sometimes the remote branch and the local branch are pointing to different commits -- they are out of sync. This means that I need to `push` changes to the remote branch so that they are back in sync.
+
+![arrow](images/gitext-remote.png)
 
 To push changes:
 
 1. Use the blue arrow to push changes to the remotes.
 
-    ![arrow](images/gitExt-d10.png)
+    ![arrow](images/gitext-push.png)
 
-1. The default behaviour is to push the checked-out branch. You can also select the **Push multiple branches** tab to select more than one branch.
+1. The default behavior is to push the checked-out branch. You can also select the **Push multiple branches** tab to select more than one branch.
 
-    ![push](images/gitExt-d11.png)
+    ![push](images/gitext-pushDialog.png)
 
 Note that:
 
@@ -92,9 +94,7 @@ What happens when someone else is working on the same branch as you, and they pu
 
 When the remote and local branches diverge, the remote takes precedence in that we can't push changes to a remote if the history of the two branches is different. Git forces you to either `fetch` or `pull` the changes from the remote before you `push`.
 
-If you try to push first, Git Extension will throw this error.
-
-![pushpull](images/gitExt-d12.png)
+If you try to push first, Git Extension will throw an error telling you to pull first.
 
 You just need to do a `pull` first. Select **Pull with last action**.
 
