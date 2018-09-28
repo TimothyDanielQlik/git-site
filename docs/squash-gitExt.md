@@ -28,8 +28,6 @@ To squash your commits if Git Extension, we use `git reset --soft`.
 
     Select **Soft: leave working directory and index untouched**.
 
-    ![reset](assets/images/gitext-resetsoft.png)
-
 1. Select OK.
 
     When you come back to your graph, it will look a bit messy, but that is because the action rest the files from the feature branch commits. Notice the commit menu has a number beside it now.
