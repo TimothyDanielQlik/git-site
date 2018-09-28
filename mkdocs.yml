@@ -1,32 +1,39 @@
+# Site information
 site_name: Writing Resources
-
 site_author: Kyle Weishaar
-
 site_description: A learning portal for working with git as a source control for Flare documentation
-
 repo_url: https://github.com/kyleweishaar/git-site
+# Uncomment the line below to specify a new local port if 8000 is busy.
+# dev_addr: 127.0.0.1:<your-port-number>`
 
+# Site theme
+# You can download and install other themes. You'll need add the new theme here.
 theme:
   name: material
-  logo: 'assets/favicon.ico'
+  logo: 'assets/favicon.ico' #This si the logo in upper left hand corner
 
 extra:
   search:
     language: 'en'
 
+# You can add custom style sheets here
 extra_css:
   - 'assets/stylesheets/custom-style1.css'
-  - 'assets/stylesheets/custom-style.css'
 
+# List extensions here
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - codehilite
-  - pymdownx.superfences
+  - admonition #extension for the content boxes https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+  - pymdownx.details #extension for making content boxes expandable https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - codehilite #code block extension https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - pymdownx.superfences # same as above
   - toc:
-      permalink: true
+      permalink: true # this makes the headers into links https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
 
-pages:
+
+# TOC here. 
+# The old (deprecated) heading was 'pages'. 
+# Current heading is 'nav'. You cannot nest linked headings.
+nav:
   - Moving to Git: index.md
   - Download Software:
     - Git: git.md
@@ -78,3 +85,4 @@ pages:
     - Git Extension Graph: gitExt-graph.md
     - Git Terminology: terminology.md
   - About this website: about.md
+  - Github markdown: github-markdown.md
