@@ -40,7 +40,7 @@
     
     
       
-        <title>With Git Bash - Writing Resources</title>
+        <title>Set up Artifactory - Writing Resources</title>
       
     
     
@@ -96,7 +96,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#working-on-a-file-with-git-bash" tabindex="1" class="md-skip">
+      <a href="../#set-up-artifactory" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -122,7 +122,7 @@
                 Writing Resources
               </span>
               <span class="md-header-nav__topic">
-                With Git Bash
+                Set up Artifactory
               </span>
             
           
@@ -297,10 +297,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Set up your repository
@@ -316,11 +318,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../artifactory2/" title="Set up Artifactory" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Set up Artifactory
+      </label>
+    
+    <a href="./" title="Set up Artifactory" class="md-nav__link md-nav__link--active">
       Set up Artifactory
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#artifactory" title="Artifactory" class="md-nav__link">
+    Artifactory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credential-manager" title="Credential manager" class="md-nav__link">
+    Credential manager
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -369,12 +416,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Tutorials
@@ -390,12 +435,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
     
     <label class="md-nav__link" for="nav-4-1">
       Changing files
@@ -423,138 +466,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        With Git Bash
-      </label>
-    
-    <a href="./" title="With Git Bash" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../working-gitbash/" title="With Git Bash" class="md-nav__link">
       With Git Bash
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-the-changes-to-a-file" title="See the changes to a file" class="md-nav__link">
-    See the changes to a file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-the-file-andor-changes" title="Stage the file and/or changes" class="md-nav__link">
-    Stage the file and/or changes
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#stage-all" title="Stage all" class="md-nav__link">
-    Stage all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stage-hunks" title="Stage hunks" class="md-nav__link">
-    Stage hunks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#split-hunks-with-patch" title="Split hunks with patch" class="md-nav__link">
-    Split hunks with patch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-file-changes-to-a-branch" title="Commit file changes to a branch" class="md-nav__link">
-    Commit file changes to a branch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stash-file-changes-for-later" title="Stash file changes for later" class="md-nav__link">
-    Stash file changes for later
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommit-a-file-to-a-previous-version" title="Recommit a file to a previous version" class="md-nav__link">
-    Recommit a file to a previous version
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#find-the-commit-hash" title="Find the commit hash" class="md-nav__link">
-    Find the commit hash
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-the-file" title="Check the file" class="md-nav__link">
-    Check the file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkout-and-recommit" title="Checkout and recommit" class="md-nav__link">
-    Checkout and recommit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1177,98 +1093,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#artifactory" title="Artifactory" class="md-nav__link">
+    Artifactory
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#see-the-changes-to-a-file" title="See the changes to a file" class="md-nav__link">
-    See the changes to a file
+  <a href="#credential-manager" title="Credential manager" class="md-nav__link">
+    Credential manager
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-the-file-andor-changes" title="Stage the file and/or changes" class="md-nav__link">
-    Stage the file and/or changes
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#stage-all" title="Stage all" class="md-nav__link">
-    Stage all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stage-hunks" title="Stage hunks" class="md-nav__link">
-    Stage hunks
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#split-hunks-with-patch" title="Split hunks with patch" class="md-nav__link">
-    Split hunks with patch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commit-file-changes-to-a-branch" title="Commit file changes to a branch" class="md-nav__link">
-    Commit file changes to a branch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stash-file-changes-for-later" title="Stash file changes for later" class="md-nav__link">
-    Stash file changes for later
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommit-a-file-to-a-previous-version" title="Recommit a file to a previous version" class="md-nav__link">
-    Recommit a file to a previous version
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#find-the-commit-hash" title="Find the commit hash" class="md-nav__link">
-    Find the commit hash
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-the-file" title="Check the file" class="md-nav__link">
-    Check the file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkout-and-recommit" title="Checkout and recommit" class="md-nav__link">
-    Checkout and recommit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1288,279 +1122,53 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/working-gitbash.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/artifactory2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="working-on-a-file-with-git-bash">Working on a file with Git Bash<a class="headerlink" href="#working-on-a-file-with-git-bash" title="Permanent link">&para;</a></h1>
-<p>The majority of our work involves creating and editing individual files. We can use Git Bash to do things like see file changes, stage files, commit files, and stash changes.</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<p>You should be familiar with the basic git commands using Git Bash.</p>
-<ul>
-<li><a href="../commandline-tips/">Tips for using Git Bash</a></li>
-</ul>
-<p>Either before of after, and to use as a reference anytime, the cheat sheet is a quick walk through of the basic Git Bash commands.</p>
-<ul>
-<li><a href="../commands/">Git Bash Cheat Sheet</a></li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If Git Bash goes into interactive shell mode when you are running the commands on this page, you can type <code>q</code> then hit <code>Enter</code> to return to the command shell. If you enter vim (the shell-bashed text editor), hit <code>esc</code> then type <code>x</code>, then hit <code>enter</code>.</p>
-</div>
-<h2 id="see-the-changes-to-a-file">See the changes to a file<a class="headerlink" href="#see-the-changes-to-a-file" title="Permanent link">&para;</a></h2>
-<p>When you start to edit a file in a git repo, git keeps tracks of the change and places the file in an <em>unstaged</em> state.</p>
-<ul>
-<li>Run: <code>git status</code></li>
-</ul>
-<div class="codehilite"><pre><span></span>git status
-On branch master
-Your branch is up to date with <span class="s1">&#39;origin/master&#39;</span>.
-
-Changes not staged <span class="k">for</span> commit:
-  <span class="o">(</span>use <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> to update what will be committed<span class="o">)</span>
-  <span class="o">(</span>use <span class="s2">&quot;git checkout -- &lt;file&gt;...&quot;</span> to discard changes in working directory<span class="o">)</span>
-
-        modified:   text.md
-
-no changes added to commit <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> and/or <span class="s2">&quot;git commit -a&quot;</span><span class="o">)</span>
-</pre></div>
-
-<p>Beside <strong>modified</strong>, git lists the files that have changed. We can see the difference in Git Bash.</p>
-<ul>
-<li>Run: <code>git diff &lt;file-name&gt;</code></li>
-</ul>
-<div class="codehilite"><pre><span></span>git diff text.md
-diff --git a/text.md b/text.md
-index a791549..818c005 <span class="m">100644</span>
---- a/text.md
-+++ b/text.md
-@@ -1,9 +1,4 @@
--# Title
-+# Gaius Marius
-</pre></div>
-
-<p>Git shows the difference of <em>unstaged</em> files relative to the index (the current file version on git). In other words, git shows what changes can be added to the index.</p>
-<p>The change is shown like this:</p>
-<div class="codehilite"><pre><span></span>-# Title
-+# Gaius Marius
-</pre></div>
-
-<p>"# Title" is removed and "# Gaius Marius" is added.</p>
-<h2 id="stage-the-file-andor-changes">Stage the file and/or changes<a class="headerlink" href="#stage-the-file-andor-changes" title="Permanent link">&para;</a></h2>
-<p>Files in git are in one of three states:</p>
-<ul>
-<li><em>unstaged</em> (they are being worked on - not in index)</li>
-<li><em>staged</em> (they are ready to be committed - added to index)</li>
-<li><em>committed</em> (they have been pushed to a branch - committed to branch)</li>
-</ul>
-<p>When you make changes to a file or files, git tracks those files and their chages.</p>
-<p>Run: <code>git status</code></p>
-<div class="codehilite"><pre><span></span>git status
-On branch master
-Your branch is up to date with &#39;origin/master&#39;.
-
-Changes not staged for commit:
-  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
-  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
-
-        modified:   text.md
-        modified:   text_3.md
-
-no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
-</pre></div>
-
-<p>So far, I've change two files. They appear beside modified, and they should be highlighted in red in your Git Bash shell.</p>
-<div class="codehilite"><pre><span></span>modified:   text.md
-modified:   text_3.md
-</pre></div>
-
-<h3 id="stage-all">Stage all<a class="headerlink" href="#stage-all" title="Permanent link">&para;</a></h3>
-<p>If you have many files to stage, use a shorthand command to stage all.</p>
-<p>Run <code>git add .</code> or <code>git add --all</code> or <code>git add -A</code>. Stage individual files with <code>git add &lt;file&gt;</code>.</p>
-<div class="codehilite"><pre><span></span>git add --all
-git status
-</pre></div>
-
-<p>The previously <em>unstaged</em> files are now <em>staged</em> and they appear in green.</p>
-<p>To <em>unstage</em> the newly <em>staged</em> files, run <code>git reset</code> or <code>git reset HEAD &lt;file&gt;</code> to unstage a specific file.</p>
-<div class="codehilite"><pre><span></span>git reset HEAD text.md
-git reset HEAD text_3.md
-</pre></div>
-
-<h3 id="stage-hunks">Stage hunks<a class="headerlink" href="#stage-hunks" title="Permanent link">&para;</a></h3>
-<p>You can stage a subset of the file by staging hunks. You can do this with the <code>git add -p</code> or <code>git add --patch</code> command. Git determines hunks by proximity/distance. Changes that are close together are <em>hunked</em> together.</p>
-<p>First, run <code>git status</code> to see your <em>unstaged</em> files, then run <code>git add -p &lt;file-name&gt;</code> to open the <code>diff</code> in Git Bash. Git will show you each hunk and ask you what to do in interactive shell mode.</p>
-<p>If Git calculates multiple hunks, Git will show you one hunk at a time. After the hunk, Git gives the following options:</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>y</code></td>
-<td>Yes, stage this hunk.</td>
-</tr>
-<tr>
-<td><code>n</code></td>
-<td>No, don't stage this hunk.</td>
-</tr>
-<tr>
-<td><code>q</code></td>
-<td>Quit, clear this command.</td>
-</tr>
-<tr>
-<td><code>a</code></td>
-<td>Stage this and all hunks.</td>
-</tr>
-<tr>
-<td><code>d</code></td>
-<td>Don't stage this or any hunks.</td>
-</tr>
-<tr>
-<td><code>/</code></td>
-<td>Search for a hunk given a regex.</td>
-</tr>
-<tr>
-<td><code>e</code></td>
-<td>Edit the current hunk.</td>
-</tr>
-<tr>
-<td><code>?</code></td>
-<td>Print help</td>
-</tr>
-</tbody>
-</table>
-<p>Say that I only want to commit one hunk, not the other. I type <code>y</code> then hit <code>Enter</code> to stage the first hunk. Then I type <code>n</code>, then hit <code>Enter</code> to not stage the second hunk. Now, when I run <code>git status</code>, I see the same file in both <em>unstaged</em> (Changes to be committed) and <em>staged</em> (Changes not staged for commit) states. This represents the two hunks of the same file.</p>
-<div class="codehilite"><pre><span></span>git status
-On branch master
-Your branch is ahead of <span class="s1">&#39;origin/master&#39;</span> by <span class="m">1</span> commit.
-  <span class="o">(</span>use <span class="s2">&quot;git push&quot;</span> to publish your <span class="nb">local</span> commits<span class="o">)</span>
-
-Changes to be committed:
-  <span class="o">(</span>use <span class="s2">&quot;git reset HEAD &lt;file&gt;...&quot;</span> to unstage<span class="o">)</span>
-
-        modified:   README.md
-
-Changes not staged <span class="k">for</span> commit:
-  <span class="o">(</span>use <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> to update what will be committed<span class="o">)</span>
-  <span class="o">(</span>use <span class="s2">&quot;git checkout -- &lt;file&gt;...&quot;</span> to discard changes in working directory<span class="o">)</span>
-
-        modified:   README.md
-</pre></div>
-
-<p>The reason to do this might be to have a specific changeset associated with a single commit. This is useful when you want to reverse commit some changes or you want a more granular and focused commit history.</p>
-<h3 id="split-hunks-with-patch">Split hunks with patch<a class="headerlink" href="#split-hunks-with-patch" title="Permanent link">&para;</a></h3>
-<p>If you have a file that you want to stage in hunks, but it only shows you one hunk, you can force a split.</p>
-<p>After running <code>git add -p &lt;file-name&gt;</code>, print the patch help by entering <code>?</code> option. Notice that you have more options than what's displayed.</p>
-<p><code>s - split the current hunk into smaller hunk</code></p>
-<p>Enter <code>s</code> and press enter. If git is able to automatically split the hunk, it will. If the hunk cannot be split, you'll have to do this manually with a GUI like Sourcetree (or read the git documentation to do this manually with Git Bash: <a href="https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging">Git Tools - Interactive Staging</a>).</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>I am not documenting splitting hunks with Git Bash because it is much easier just to use Sourcetree. </br>See how you can do this with a GUI: <a href="../working-gitExt/#stage-the-file-andor-changes">Stage the file and/or changes</a>.</p>
-</div>
-<h2 id="commit-file-changes-to-a-branch">Commit file changes to a branch<a class="headerlink" href="#commit-file-changes-to-a-branch" title="Permanent link">&para;</a></h2>
-<p>Your files are staged, now you commit.</p>
-<p>Run <code>git commit</code> to commit the changes.</p>
-<div class="codehilite"><pre><span></span>git commit -m <span class="s2">&quot;some message&quot;</span>
-</pre></div>
-
-<p>Use the <code>-m</code> flag to add a commit message. Messages should be succinct and useful. Include the JIRA if possible.</p>
-<p>Run <code>git status</code>.</p>
-<p>If you've staged and committed all of the tracked files, you'll notice that when you run <code>git status</code> there is nothing to commit but that you are ahead of <code>origin/master</code>.</p>
-<div class="codehilite"><pre><span></span>git status
-On branch master
-Your branch is ahead of <span class="s1">&#39;origin/master&#39;</span> by <span class="m">1</span> commit.
-  <span class="o">(</span>use <span class="s2">&quot;git push&quot;</span> to publish your <span class="nb">local</span> commits<span class="o">)</span>
-
-nothing to commit, working tree clean
-</pre></div>
-
-<p>You need to push your changes to the remote. If your branch is tracked upstream, run <code>git push</code>.</p>
-<p>If you do not yet have an upstream branch, you'll have to set the upstream remote.</p>
-<div class="codehilite"><pre><span></span>git push -u origin &lt;branch-name&gt;
-</pre></div>
-
-<p>or</p>
-<div class="codehilite"><pre><span></span>git push --set-upstream origin &lt;branch-name&gt;
-</pre></div>
-
-<p>To learn about branching, and tracking branches upstream, see: <a href="../branch-gitbash/">Branching with Git Bash</a>.</p>
-<h2 id="stash-file-changes-for-later">Stash file changes for later<a class="headerlink" href="#stash-file-changes-for-later" title="Permanent link">&para;</a></h2>
-<p>You can stash changes to a file with the <code>git stash</code> command. Stash stores the changes to a file and the index, and returns to a clean working directory. This is helpful when you are making changes to a file that you do not yet want to commit to a branch, but that you don't want to lose.</p>
-<p>There are a couple ways to do this. If we have a single file that has changes, we can stage and then stash.</p>
-<p><div class="codehilite"><pre><span></span>git add &lt;file&gt;
-git stash save <span class="s2">&quot;A good stash message&quot;</span>
-</pre></div>
-This creates a stash with the appended message and returns your index to a clean state.</p>
-<p>Run <code>git status</code> to see that the <em>staged</em> file is no longer there.</p>
-<p>Run <code>git stash list</code> to see your stash.</p>
-<div class="codehilite"><pre><span></span>git stash list
-stash@<span class="o">{</span><span class="m">0</span><span class="o">}</span>: On master: a good stash message
-</pre></div>
-
-<p>You can create as many stashes as you want.</p>
-<p>If I make another change to the file and stash it again, see what happens.</p>
-<div class="codehilite"><pre><span></span>git stash list
-stash@<span class="o">{</span><span class="m">0</span><span class="o">}</span>: On master: another really good stash message
-stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>: On master: a good stash message
-</pre></div>
-
-<p>Notice that the first stash changed its index: stash@{1}. This is a zero-based index which means that 0 is the first item in the index.</p>
-<p>To apply a stash, use <code>git stash apply</code></p>
-<p>Now, we have two stashes in the index: 0 and 1.</p>
-<p><code>git apply</code> by default applies the stash at the top of the index. When you apply a stash, it is brought back into the working directory in an <em>unstaged</em> state. You need to run <code>git add</code> to stage it and <code>git commit</code> to commit it.</p>
-<p><code>git apply</code> does not delete the stash, so it remains in the index.</p>
-<p><code>git stash pop</code> applies the top stash and deletes it.</p>
-<p>You can select the stash to apply by specifying the index.</p>
-<div class="codehilite"><pre><span></span>git stash apply stash@<span class="o">{</span><span class="m">1</span><span class="o">}</span>
-</pre></div>
-
-<p>This would apply the second stash, at index position 1.</p>
-<p>To force delete a stash, use <code>git stash drop stash@{index}</code>.</p>
-<p>To delete all stashes, use <code>git stash clear</code>.</p>
-<h2 id="recommit-a-file-to-a-previous-version">Recommit a file to a previous version<a class="headerlink" href="#recommit-a-file-to-a-previous-version" title="Permanent link">&para;</a></h2>
-<p>Sometimes you need to return a file to a previous version. You can do this with Git Bash by restoring a specific file to the state it was in for a given commit.</p>
-<p>You need to take several steps:</p>
+                <h1 id="set-up-artifactory">Set up Artifactory<a class="headerlink" href="#set-up-artifactory" title="Permanent link">&para;</a></h1>
+<h2 id="artifactory">Artifactory<a class="headerlink" href="#artifactory" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Find the commit hash that you want to restore.</li>
-<li>Check the file.</li>
-<li>Checkout the file from that commit.</li>
-<li>Commit the file again.</li>
+<li>
+<p>Log into Okta &gt; Artifactory.</p>
+</li>
+<li>
+<p>Click your trigram in the top right-hand corner.</p>
+</li>
+<li>
+<p>Under <em>Authentication Settings</em>, generate API key.</p>
+<p>Copy this key to the clip board.</p>
+</li>
 </ol>
-<h3 id="find-the-commit-hash">Find the commit hash<a class="headerlink" href="#find-the-commit-hash" title="Permanent link">&para;</a></h3>
-<p>You can see a quick commit history by running <code>git log</code>. This command returns a list of commits and their SHA1s, dates, and commit messages. You might want to see a history for a specific file rather than the commit history of a branch. Run the following command to get a file history for a specific file.</p>
-<div class="codehilite"><pre><span></span>git log -p -- &lt;file-name&gt;
-</pre></div>
-
-<p>You'll see a commit history with the file changes at each commit</p>
-<p>If the file has been renamed, use the <code>--follow</code> flag to track a file across name changes.</p>
-<div class="codehilite"><pre><span></span>git log --follow -p -- &lt;file-name&gt;
-</pre></div>
-
-<p>When you see the commit you want to recommit, copy the first 6 digits of the SHA1.</p>
-<h3 id="check-the-file">Check the file<a class="headerlink" href="#check-the-file" title="Permanent link">&para;</a></h3>
-<p>To see all of the file changes at a commit, use <code>git diff</code>.</p>
-<div class="codehilite"><pre><span></span>git diff -p &lt;hash&gt; -- &lt;file-name&gt;
-</pre></div>
-
-<p>The <code>-p</code> flag prints the patches (the changes) for the file at the specific commit &lt;hash>.
-You'll see the patches for the named file for the specified commit.</p>
-<p>You can see the state of the file (what the file looked like) at this commit wit <code>git show</code>.</p>
-<div class="codehilite"><pre><span></span>git show &lt;hash&gt;:&lt;file-name&gt;
-</pre></div>
-
-<p>You'll see the state of the file at this commit. You won't see what patches are associated with the commit.</p>
-<h3 id="checkout-and-recommit">Checkout and recommit<a class="headerlink" href="#checkout-and-recommit" title="Permanent link">&para;</a></h3>
-<p>To restore the file to a previous version, run the following commands.</p>
-<div class="codehilite"><pre><span></span>git checkout &lt;hash&gt; -- &lt;file-name&gt;
-git add &lt;file-name&gt;
-git commit -m <span class="s2">&quot;restoring &lt;file-name&gt; to previous commit&quot;</span>
-git push
-</pre></div>
-
-<p>If you run <code>git log</code> again, your new commit will appear at the top.</p>
+<p>You will now need to follow the credential manager procedure below.</p>
+<h2 id="credential-manager">Credential manager<a class="headerlink" href="#credential-manager" title="Permanent link">&para;</a></h2>
+<p>Artifactory credentials are stored in the Windows Credential Manager,
+and git uses this to send the API call to Artifactory when you run <code>git push</code>.</p>
+<ol>
+<li>
+<p>Go to Control Panel &gt; User Accounts &gt; Credential Manager</p>
+</li>
+<li>
+<p>Under generic credentials, you might see a URL that contains <code>jfrog</code>.</p>
+<p>Delete this credential.</p>
+</li>
+<li>
+<p>Add a new generic credential.</p>
+<ol>
+<li>
+<p>URL: https://qliktech.jfrog.io/qliktech/api/lfs/git-lfs</p>
+</li>
+<li>
+<p>Username: your trigram</p>
+</li>
+<li>
+<p>Password: the API key you copied from Artifactory (not your Qlik password).</p>
+</li>
+<li>
+<p>Save and close.</p>
+</li>
+</ol>
+</li>
+</ol>
                 
                   
                 
@@ -1581,7 +1189,7 @@ git push
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../working-gitExt/" title="With Git Extension" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../meld/" title="Meld" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1590,19 +1198,19 @@ git push
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                With Git Extension
+                Meld
               </span>
             </div>
           </a>
         
         
-          <a href="../branches/" title="What are branches" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lfs/" title="LFS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                What are branches
+                LFS
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

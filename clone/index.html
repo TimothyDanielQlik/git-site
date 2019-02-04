@@ -255,11 +255,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
-      Download Software
+      Install Software
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        Download Software
+        Install Software
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -270,32 +270,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../git/" title="Git" class="md-nav__link">
-      Git
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gitextension/" title="Git Extension" class="md-nav__link">
-      Git Extension
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../lfs/" title="Git LFS" class="md-nav__link">
-      Git LFS
+    <a href="../gitandextension/" title="Git and Git Extensions" class="md-nav__link">
+      Git and Git Extensions
     </a>
   </li>
 
@@ -337,6 +313,30 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../artifactory2/" title="Set up Artifactory" class="md-nav__link">
+      Set up Artifactory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lfs/" title="LFS" class="md-nav__link">
+      LFS
+    </a>
+  </li>
+
         
           
           
@@ -412,18 +412,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../artifactory/" title="Set up Artifactory" class="md-nav__link">
-      Set up Artifactory
-    </a>
   </li>
 
         
@@ -1179,7 +1167,15 @@
                 
                 <h1 id="clone-the-repo">Clone the repo<a class="headerlink" href="#clone-the-repo" title="Permanent link">&para;</a></h1>
 <p>Cloning a repository means to copy the actual content of the repository and its history to your local computer.
-The local copy of the repository is exact same as the repository on Github.</p>
+The local copy of the repository is exactly the same as the repository on Github.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>During the cloning of the repo you will be asked to log in GitHub using your login credentials and the two-factor authentication. Have that at the ready. You might also be asked to enter the Artifactory credentials (your triagram and the API key you used in the Credential manager).</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the first cloning attempt fails, read the message in the pop-up window. If you see URL link in there, copy it in a browser. It will likely prompt a login into GitHub. Once logged in, try to clone the repo again.</p>
+</div>
 <p>You can clone the repository using the command line or Git Extensions.</p>
 <h2 id="using-git-extensions">Using Git Extensions<a class="headerlink" href="#using-git-extensions" title="Permanent link">&para;</a></h2>
 <p>Do the following:</p>
@@ -1285,7 +1281,7 @@ git clone https://github.com/qlik-trial/help-documentation.git
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../meld/" title="Meld" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lfs/" title="LFS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1294,19 +1290,19 @@ git clone https://github.com/qlik-trial/help-documentation.git
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Meld
+                LFS
               </span>
             </div>
           </a>
         
         
-          <a href="../artifactory/" title="Set up Artifactory" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../remote/" title="Get the remote branches" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Set up Artifactory
+                Get the remote branches
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
