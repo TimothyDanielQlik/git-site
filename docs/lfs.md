@@ -16,4 +16,4 @@ At Qlik, large files are stored on Artifactory, which means we need to configure
 
 1. Double-click the `exe` file to run the installer.
 
-The rest of the lfs set up must be done after you clone the `help-documentation` repository.
+The rest of the lfs setup must be done after you clone the `help-documentation` repository.

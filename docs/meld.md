@@ -1,8 +1,5 @@
 # Meld
 
-!!! Reminder
-    Meld is an optional download. You are not required to use Meld.
-
 Meld is a visual diff and merge tool. Although Git Extension has default integration with KDiff, you can change the default diff and merge tool to Meld, which is visually more simple than KDiff.
 
 ## Installing Meld

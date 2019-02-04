@@ -1,7 +1,14 @@
 # Clone the repo
 
 Cloning a repository means to copy the actual content of the repository and its history to your local computer.
-The local copy of the repository is exact same as the repository on Github.
+The local copy of the repository is exactly the same as the repository on Github.
+
+!!! Tip
+    During the cloning of the repo you will be asked to log in GitHub using your login credentials and the two-factor authentication. Have that at the ready. You might also be asked to enter the Artifactory credentials (your triagram and the API key you used in the Credential manager).
+
+!!! Warning
+	 If the first cloning attempt fails, read the message in the pop-up window. If you see URL link in there, copy it in a browser. It will likely prompt a login into GitHub. Once logged in, try to clone the repo again.
+
 
 You can clone the repository using the command line or Git Extensions.
 

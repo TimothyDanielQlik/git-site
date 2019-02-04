@@ -35,14 +35,13 @@ markdown_extensions:
 # Current heading is 'nav'. You cannot nest linked headings.
 nav:
   - Moving to Git: index.md
-  - Download Software:
-    - Git: git.md
-    - Git Extension: gitextension.md
-    - Git LFS: lfs.md
+  - Install Software:
+    - Git and Git Extensions: gitandextension.md
     - Meld: meld.md
   - Set up your repository:
+    - Set up Artifactory: artifactory2.md
+    - LFS: lfs.md
     - Clone the repo: clone.md
-    - Set up Artifactory: artifactory.md
     - Get the remote branches: remote.md
   - Tutorials:
     - Changing files:
