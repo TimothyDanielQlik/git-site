@@ -44,6 +44,7 @@ nav:
     - Clone the repo: clone.md
     - Get the remote branches: remote.md
   - Tutorials:
+    - Qlik Chart: qlik.html
     - Changing files:
       - With Git Extension: working-gitExt.md
       - With Git Bash: working-gitbash.md
