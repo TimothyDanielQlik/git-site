@@ -10,6 +10,11 @@ html, body {
   height:100%;
 }
 
+#big {
+  height:100%;
+  width:100%;
+}
+
 /* iframe {
   height:100%;
   width:auto;
