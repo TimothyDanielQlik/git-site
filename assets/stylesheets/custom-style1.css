@@ -3,15 +3,17 @@ This custom stylesheet is for the Materials theme
 */
 
 /* qlik chart */
-
+html, body {
+  height: 100%;
+}
 #qlikchart {
   height:100%;
 }
 
-iframe {
+/* iframe {
   height:100%;
   width:auto;
-}
+} */
 
 /* ---------Main HTML elements --------------*/
 
