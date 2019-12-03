@@ -8,6 +8,11 @@ This custom stylesheet is for the Materials theme
   height:100%;
 }
 
+iframe {
+  height:100%;
+  width:auto;
+}
+
 /* ---------Main HTML elements --------------*/
 
 h1 {
