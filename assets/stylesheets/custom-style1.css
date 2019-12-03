@@ -4,10 +4,10 @@ This custom stylesheet is for the Materials theme
 
 /* qlik chart */
 html, body {
-  height: 100%;
+  height: auto !important;
 }
 #qlikchart {
-  height:100%;
+  height:100vh;
 }
 
 #big {
