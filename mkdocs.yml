@@ -51,6 +51,7 @@ nav:
       - What are branches: branches.md
       - With Git Extension: branching-gitExt.md
       - With Git Bash: branch-gitbash.md
+      - Fetch remote branches: fetchBranch.md
     - Merging:
       - With Git Extension: merge-gitExt.md
       - With Git Bash: merge-gitbash.md
