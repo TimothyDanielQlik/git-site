@@ -40,7 +40,7 @@
     
     
       
-        <title>Git Terminology - Writing Resources</title>
+        <title>Fetch remote branches - Writing Resources</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#git-terminology" tabindex="1" class="md-skip">
+      <a href="#fetch-remote-branches" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -109,7 +109,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Git Terminology
+                Fetch remote branches
               
             </span>
           
@@ -926,12 +926,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       Extras
@@ -983,20 +981,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Git Terminology" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../terminology/" title="Git Terminology" class="md-nav__link">
       Git Terminology
     </a>
-    
   </li>
 
         
@@ -1046,6 +1035,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#view-remote-branches" class="md-nav__link">
+    View remote branches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fetch-a-remote-branch" class="md-nav__link">
+    Fetch a remote branch
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1056,81 +1068,27 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/terminology.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/kyleweishaar/git-site/edit/master/docs/fecthBranch.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="git-terminology">Git Terminology<a class="headerlink" href="#git-terminology" title="Permanent link">&para;</a></h1>
-<p><a href="https://git-scm.com/docs/gitglossary">Complete git glossary</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">Command</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">branch</td>
-<td align="left">An active area of development in Git. The tip of a branch is the most recent commit.</td>
-</tr>
-<tr>
-<td align="left">checkout</td>
-<td align="left">To take a commit from the repository and recreate the state of that commit (files and trees) in your working directory.</td>
-</tr>
-<tr>
-<td align="left">commit (n)</td>
-<td align="left">A single point in the git history that holds the information about a changeset.</td>
-</tr>
-<tr>
-<td align="left">commit (v)</td>
-<td align="left">To store a new snapshot of state of your project in the git history. When you commit, you advance the HEAD.</td>
-</tr>
-<tr>
-<td align="left">fetch</td>
-<td align="left">To find the latest changes in a branch from local and remote repo.</td>
-</tr>
-<tr>
-<td align="left">head</td>
-<td align="left">A reference to the tip (commit) of a branch.</td>
-</tr>
-<tr>
-<td align="left">local</td>
-<td align="left">On your machine.</td>
-</tr>
-<tr>
-<td align="left">merge</td>
-<td align="left">To bring the information from one branch into another.</td>
-</tr>
-<tr>
-<td align="left">master</td>
-<td align="left">The default development branch </br> There is nothing inherently special about master.</td>
-</tr>
-<tr>
-<td align="left">origin</td>
-<td align="left">The default upstream repository (on GitHub). Origin is often the same as remote, but this is not necessarily true.</td>
-</tr>
-<tr>
-<td align="left">pull request</td>
-<td align="left">A request for suggestions/review regarding some commits to be merged.</td>
-</tr>
-<tr>
-<td align="left">push</td>
-<td align="left">To push the changes after a commit.</td>
-</tr>
-<tr>
-<td align="left">remote (repository)</td>
-<td align="left">A repository that stored on the git server, and that is used to track your project. You push to the remote and pull/fetch from the remote.</td>
-</tr>
-<tr>
-<td align="left">repository</td>
-<td align="left">A collection of commits, branches, objects, and tags.</td>
-</tr>
-<tr>
-<td align="left">working tree</td>
-<td align="left">A representation of your tree and tree objects (your working directory).</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="fetch-remote-branches">Fetch remote branches<a class="headerlink" href="#fetch-remote-branches" title="Permanent link">&para;</a></h1>
+<p>When you first clone a repo, you only fetch the main branch — usually <code>master</code>. The repo may have many branches that are not automatically pulled onto your local machine. Follow these instructions to fetch remote branches.</p>
+<h2 id="view-remote-branches">View remote branches<a class="headerlink" href="#view-remote-branches" title="Permanent link">&para;</a></h2>
+<p><code>git branch -r</code> — This command will list all branches that exist on the remote. </p>
+<p><code>BDM@USOTT-BDM MINGW64 /c/git/git-site (fetchBranch)
+$ git branch -r
+  origin/HEAD -&gt; origin/master
+  origin/gh-pages
+  origin/master
+  origin/testBranch</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>My current branch <code>fetchBranch</code> is not listed. This means my local branch is not on the remote.</p>
+</div>
+<h2 id="fetch-a-remote-branch">Fetch a remote branch<a class="headerlink" href="#fetch-a-remote-branch" title="Permanent link">&para;</a></h2>
+<p><code>git fetch origin testBranch</code> — This command will ftech the branch meaning it will add the branch information to your working area (not the index). You will need to checkout the branch to add the branch to your index.</p>
+<p>Run the following command: </p>
+<p><code>git checkout testBranch</code> — This command will switch to the <code>testBranch</code> branch and add it to the index. </p>
                 
                   
                 
@@ -1147,41 +1105,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../gitExt-graph/" title="Git Extension Graph" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Git Extension Graph
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../about/" title="About this website" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                About this website
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
