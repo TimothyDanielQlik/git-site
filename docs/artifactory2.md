@@ -4,7 +4,7 @@
 
 1. Log into Okta > Artifactory.
 
-2. Click your trigram in the top right-hand corner.
+2. Click your trigram in the top right-hand corner, and then click *Edit Profile*.
 
 3. Under *Authentication Settings*, generate API key.
 
